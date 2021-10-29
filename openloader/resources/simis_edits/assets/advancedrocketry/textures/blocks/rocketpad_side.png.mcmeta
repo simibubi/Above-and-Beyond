@@ -1,0 +1,11 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm_horizontal",
+		"extra": {
+			"connect_to": [
+			    { "block": "advancedrocketry:launchpad" }
+			]
+        }
+	}
+}

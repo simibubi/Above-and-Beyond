@@ -1,0 +1,28 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "pack:oil_fountain"
+    },
+
+    "averageSpacing": 13,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -49,
+        "terraform": 49,
+        "minY": 60,
+        "maxY": 70,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#desert",
+        "#mesa",
+        "#savanna"
+    ]
+
+}

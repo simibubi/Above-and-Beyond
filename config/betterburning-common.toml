@@ -1,0 +1,35 @@
+
+#General settings for the mod.
+[general]
+	#Should having fire resistance stop things from being on fire visually?
+	fireResistanceExtinguish = true
+	#Fixes some fire related damage sources not causing mobs to drop cooked items?
+	fireFromDamagesource = true
+	#Should fire damage spread between mobs when they hurt eachother? Zombies already do this and won't be changed.
+	fireDamageSpreads = true
+	#What is the % chance that fire damage will spread between mobs?
+	#Range: 0.0 ~ 1.0
+	fireDamageSpreadChance = 0.3
+	#Should skeletons shoot flaming arrows while on fire?
+	flameArrowSkeletons = true
+	#What is the % chance skeletons will shoot flaming arrows while on fire?
+	#Range: 0.0 ~ 1.0
+	flameArrowSkeletonChance = 0.7
+	#Should flint and steel deal fire damage when used as a weapon?
+	ShouldFlintAndSteelDoFireDamage = true
+	#How much fire damage should flint and steel do?
+	#Range: > 0
+	flintAndSteelFireDamage = 3
+	#Should the fire/burning HUD overlay be hidden if the player has fire immunity?
+	hideFireOverlayWhenImmune = true
+	#How long should Fire burn players if they try to punch it out?
+	#Range: > 0
+	fireHitBurnTime = 1
+	#How long should Soulfire burn players if they try to punch it out?
+	#Range: > 0
+	soulfireHitBurnTime = 2
+	#Should players be able to put out fire blocks by punching them?
+	punchOutFlames = true
+	#Can players put out fire with bottled water?
+	extinguishWithBottledWater = true
+

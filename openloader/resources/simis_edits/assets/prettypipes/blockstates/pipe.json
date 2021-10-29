@@ -1,0 +1,576 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "down": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/legs",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "down": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "connected"
+      },
+      "apply": {
+        "model": "prettypipes:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "down": "connected",
+        "west": "disconnected|blocked|legs",
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "connected",
+        "west": "disconnected|blocked|legs",
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "connected",
+        "west": "disconnected|blocked|legs",
+        "east": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "connected",
+        "west": "disconnected|blocked|legs",
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "connected",
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "connected",
+        "west": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "east": "connected",
+            "west": "connected",
+            "north": "connected"
+          },
+          {
+            "east": "connected",
+            "west": "connected",
+            "south": "connected"
+          },
+          {
+            "east": "connected",
+            "west": "connected",
+            "up": "connected"
+          },
+          {
+            "east": "connected",
+            "west": "connected",
+            "down": "connected"
+          },
+          {
+            "east": "connected",
+            "north": "connected",
+            "south": "connected"
+          },
+          {
+            "east": "connected",
+            "north": "connected",
+            "up": "connected"
+          },
+          {
+            "east": "connected",
+            "north": "connected",
+            "down": "connected"
+          },
+          {
+            "east": "connected",
+            "south": "connected",
+            "up": "connected"
+          },
+          {
+            "east": "connected",
+            "south": "connected",
+            "down": "connected"
+          },
+          {
+            "east": "connected",
+            "up": "connected",
+            "down": "connected"
+          },
+          {
+            "west": "connected",
+            "north": "connected",
+            "south": "connected"
+          },
+          {
+            "west": "connected",
+            "north": "connected",
+            "up": "connected"
+          },
+          {
+            "west": "connected",
+            "north": "connected",
+            "down": "connected"
+          },
+          {
+            "west": "connected",
+            "south": "connected",
+            "up": "connected"
+          },
+          {
+            "west": "connected",
+            "south": "connected",
+            "down": "connected"
+          },
+          {
+            "west": "connected",
+            "up": "connected",
+            "down": "connected"
+          },
+          {
+            "north": "connected",
+            "south": "connected",
+            "up": "connected"
+          },
+          {
+            "north": "connected",
+            "south": "connected",
+            "down": "connected"
+          },
+          {
+            "north": "connected",
+            "up": "connected",
+            "down": "connected"
+          },
+          {
+            "south": "connected",
+            "up": "connected",
+            "down": "connected"
+          }
+        ]
+      },
+      "apply": {
+        "model": "prettypipes:block/cover"
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "north": "connected",
+        "south": "disconnected|blocked|legs",
+        "up": "connected",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/bottom_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "south": "connected",
+        "north": "disconnected|blocked|legs",
+        "up": "connected",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/bottom_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "west": "connected",
+        "south": "disconnected|blocked|legs",
+        "up": "connected",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/bottom_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "north": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "east": "connected",
+        "south": "disconnected|blocked|legs",
+        "up": "connected",
+        "down": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/bottom_corner",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "north": "connected",
+        "south": "disconnected|blocked|legs",
+        "down": "connected",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/top_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "south": "connected",
+        "north": "disconnected|blocked|legs",
+        "down": "connected",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/top_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "west": "connected",
+        "south": "disconnected|blocked|legs",
+        "down": "connected",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/top_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "north": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "east": "connected",
+        "south": "disconnected|blocked|legs",
+        "down": "connected",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/top_corner",
+        "y": 90
+      }
+    },
+
+
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "west": "connected",
+        "north": "connected",
+        "south": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/side_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "connected",
+        "west": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "north": "connected",
+        "down": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/side_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "disconnected|blocked|legs",
+        "north": "disconnected|blocked|legs",
+        "west": "connected",
+        "south": "connected",
+        "down": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/side_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "north": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "east": "connected",
+        "south": "connected",
+        "down": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/side_corner",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "disconnected|blocked|legs",
+        "west": "disconnected|blocked|legs",
+        "east": "disconnected|blocked|legs",
+        "south": "disconnected|blocked|legs",
+        "down": "disconnected|blocked|legs",
+        "up": "disconnected|blocked|legs"
+      },
+      "apply": {
+        "model": "prettypipes:block/single"
+      }
+    }
+  ]
+}

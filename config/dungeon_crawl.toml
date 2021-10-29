@@ -1,0 +1,104 @@
+
+["Miscellaneous Settings"]
+	#----------------------------------------------------------------------------------------------------#
+	#Enables the dungeon crawl developer tools. Do not use this for normal gameplay.
+	#
+	enable_tools = false
+	#----------------------------------------------------------------------------------------------------#
+	#Enables extended debug logging to help detecting errors. Enabled by default.
+	#
+	extended_debug = false
+	#----------------------------------------------------------------------------------------------------#
+	#Prints all biome categories and their biomes to the console when entering a world.
+	#Might be useful for modpack creators. Ignore this for normal gameplay.
+	#
+	"Print Biome Categories" = false
+
+["World Generation"]
+	#----------------------------------------------------------------------------------------------------#
+	#Makes the entire dungeon solid, preventing caves, ravines, etc... from interfering with the dungeon.
+	#
+	solid = false
+	#----------------------------------------------------------------------------------------------------#
+	#Whether falling blocks like sand or gravel should drop down after being placed during dungeon generation.
+	#
+	tick_falling_blocks = true
+
+["Dungeon Placement"]
+	#----------------------------------------------------------------------------------------------------#
+	#The cell size of the grid used to generate the dungeons in chunks. Each cell of this grid can only contain one dungeon.
+	#You can also interpret this as the average distance between two adjacent dungeons in chunks.
+	#Has to be higher than the separation!
+	#
+	#Range: 9 ~ 8192
+	spacing = 32
+	#----------------------------------------------------------------------------------------------------#
+	#The minimum distance between the dungeons in chunks. Has to be lower than the spacing!
+	#The closer the separation is to the spacing, the more grid-aligned and predictable the dungeon placement will be.
+	#Generally, bigger values allow for less, and smaller values for more randomness.
+	#
+	#Range: 8 ~ 8191
+	separation = 16
+
+	["Dungeon Placement".Biomes]
+		#----------------------------------------------------------------------------------------------------#
+		#List of biomes the dungeons should spawn in.
+		#Entries have to be comma-separated.
+		#You can use this together with the Biome Categories.
+		#
+		"Biome Whitelist" = ""
+		#----------------------------------------------------------------------------------------------------#
+		#List of biomes that should never contain dungeons.
+		#
+		"Biome Blacklist" = "advancedrocketry:moonold"
+		#----------------------------------------------------------------------------------------------------#
+		#List of biome categories the dungeons should spawn in.
+		#Entries have to be comma-separated.
+		#Biome Categories are groupings of biomes of specific types. Using these allows Dungeon Crawl to
+		#  automatically generate in suitable mod biomes and to ignore unsuitable ones like ocean biomes.
+		#You can use this together with the Biome Whitelist and you can blacklist specific biomes with the Biome Blacklist.
+		#All categories: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end
+		#To receive a list of all categories and their respective biomes (including biomes of mods you have installed), enable the 'Print Biome Categories' option.
+		#
+		"Biome Categories" = "desert, extreme_hills, forest, icy, jungle, mesa, plains, savanna, swamp, taiga"
+
+	["Dungeon Placement".Dimensions]
+		#----------------------------------------------------------------------------------------------------#
+		#List of dimensions the dungeons should spawn in.
+		#Entries have to be comma-separated.
+		#
+		"Dimension Whitelist" = "minecraft:overworld"
+
+["Dungeon Settings"]
+	#----------------------------------------------------------------------------------------------------#
+	#Whether the dungeons should have secret rooms or not.
+	#
+	secret_rooms = true
+	#----------------------------------------------------------------------------------------------------#
+	#Whether loot tables of certain spawner entities should be overwritten.
+	#For example, wither skeletons from dungeon spawners will never drop skulls if this is enabled.
+	#
+	overwrite_entity_loot_tables = true
+	#----------------------------------------------------------------------------------------------------#
+	#Whether the hell stage should be built with blocks from the overworld instead from the nether.
+	#
+	no_nether_blocks = true
+	#----------------------------------------------------------------------------------------------------#
+	#The activation range for the spawners in the dungeons.
+	#
+	#Range: 1 ~ 64
+	spawner_activation_range = 12
+	#----------------------------------------------------------------------------------------------------#
+	#The number of different entities per spawner. Increasing the number increases the diversity of the monster equipment.
+	#
+	#Range: 1 ~ 128
+	spawner_entities = 6
+	#----------------------------------------------------------------------------------------------------#
+	#Whether custom mob spawners with equipment, etc.. should be used.
+	#
+	custom_spawners = true
+	#----------------------------------------------------------------------------------------------------#
+	#Whether mobs from spawners should despawn naturally or not.
+	#
+	natural_despawn = true
+

@@ -1,0 +1,74 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:coal_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:iron_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:gold_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:redstone_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:lapis_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:diamond_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:emerald_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:nether_quartz_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:nether_gold_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:ancient_debris",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    }
+  ]
+}

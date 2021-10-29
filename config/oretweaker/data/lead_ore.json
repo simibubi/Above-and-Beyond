@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "thermal:lead_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 20,
+      "maxVeinSize": 12,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

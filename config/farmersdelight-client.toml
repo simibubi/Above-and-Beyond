@@ -1,0 +1,6 @@
+
+#Client settings
+[client]
+	#Should the hunger bar have a gilded overlay when the player is Nourished?
+	nourishedHungerOverlay = true
+

@@ -1,0 +1,7 @@
+
+[Power]
+	#"How many power unit one EU makes"
+	EUPowerMultiplier = 7.0
+	#Power multiplier on machines
+	PowerMultiplier = 1.0
+

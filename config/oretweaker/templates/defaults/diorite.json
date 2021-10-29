@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:diorite",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 80,
+      "maxVeinSize": 32,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

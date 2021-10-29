@@ -1,0 +1,54 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "simibubi",
+      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
+    },
+    "time": 1634045968303,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/GbxQp2Mwjo"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "simibubi",
+      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
+    },
+    "time": 1633625624685,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/25GmTIL0Xw"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "simibubi",
+      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
+    },
+    "time": 1633625603476,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bjTsRrv1Lb"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "simibubi",
+      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
+    },
+    "time": 1630588535425,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/CBWOZae9Kr"
+    }
+  }
+]

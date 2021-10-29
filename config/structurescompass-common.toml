@@ -1,0 +1,27 @@
+
+#configs for both server and clients
+[General]
+	#
+	#A list of structures that the compass will not search, specified by resource location. 
+	#Ex: ["minecraft:stronghold", "quark:big_dungeon"]
+	blacklist = ["worldshape:pack/slime", "worldshape:pack/moonbase", "worldshape:pack/crashed_rocket", "worldshape:pack/ruins", "dungeoncrawl:dungeon", "worldshape:pack/railshaft", "worldshape:pack/oil_fountain", "worldshape:pack/log_cabin", "worldshape:pack/broken_windmill", "tconstruct:overworld_slime_island", "tconstruct:nether_slime_island", "tconstruct:end_slime_island", "tconstruct:earth_slime_island", "tconstruct:clay_island", "repurposed_structures:witch_hut_taiga", "repurposed_structures:witch_hut_dark_forest", "repurposed_structures:witch_hut_oak", "repurposed_structures:witch_hut_giant_tree_taiga", "repurposed_structures:witch_hut_birch", "repurposed_structures:village_warped", "repurposed_structures:village_mushroom", "repurposed_structures:village_swamp", "repurposed_structures:village_oak", "repurposed_structures:village_mountains", "repurposed_structures:village_jungle", "repurposed_structures:village_giant_taiga", "repurposed_structures:village_dark_oak", "repurposed_structures:village_crimson", "repurposed_structures:village_birch", "repurposed_structures:village_badlands", "repurposed_structures:temple_nether_wasteland", "repurposed_structures:temple_nether_warped", "repurposed_structures:temple_nether_soul", "repurposed_structures:temple_nether_basalt", "repurposed_structures:temple_nether_crimson", "repurposed_structures:stronghold_nether", "repurposed_structures:stronghold_end", "repurposed_structures:shipwreck_warped", "repurposed_structures:shipwreck_nether_bricks", "repurposed_structures:shipwreck_end", "repurposed_structures:shipwreck_crimson", "repurposed_structures:ruins_nether", "repurposed_structures:ruins_land_warm", "repurposed_structures:ruins_land_hot", "repurposed_structures:ruined_portal_end", "repurposed_structures:pyramid_snowy", "repurposed_structures:pyramid_ocean", "repurposed_structures:pyramid_nether", "repurposed_structures:pyramid_mushroom", "repurposed_structures:pyramid_jungle", "repurposed_structures:pyramid_icy", "repurposed_structures:pyramid_giant_tree_taiga", "repurposed_structures:pyramid_flower_forest", "repurposed_structures:pyramid_end", "repurposed_structures:pyramid_badlands", "repurposed_structures:outpost_warped", "repurposed_structures:outpost_taiga", "repurposed_structures:outpost_snowy", "repurposed_structures:outpost_oak", "repurposed_structures:outpost_nether_brick", "repurposed_structures:outpost_jungle", "repurposed_structures:outpost_icy", "repurposed_structures:outpost_giant_tree_taiga", "repurposed_structures:outpost_end", "repurposed_structures:outpost_desert", "repurposed_structures:outpost_crimson", "repurposed_structures:outpost_birch", "repurposed_structures:outpost_badlands", "repurposed_structures:mineshaft_warped", "repurposed_structures:mineshaft_taiga", "repurposed_structures:mineshaft_swamp", "repurposed_structures:mineshaft_stone", "repurposed_structures:mineshaft_savanna", "repurposed_structures:mineshaft_ocean", "repurposed_structures:mineshaft_nether", "repurposed_structures:mineshaft_jungle", "repurposed_structures:mineshaft_icy", "repurposed_structures:mineshaft_end", "repurposed_structures:mineshaft_desert", "repurposed_structures:mineshaft_dark_forest", "repurposed_structures:mineshaft_crimson", "repurposed_structures:mineshaft_birch", "repurposed_structures:mansion_taiga", "repurposed_structures:mansion_snowy", "repurposed_structures:mansion_oak", "repurposed_structures:mansion_savanna", "repurposed_structures:mansion_jungle", "repurposed_structures:mansion_desert", "repurposed_structures:mansion_birch", "repurposed_structures:igloo_stone", "repurposed_structures:igloo_grassy", "repurposed_structures:fortress_jungle", "repurposed_structures:city_nether", "repurposed_structures:bastion_underground", "forbidden_arcanus:nipa", "appliedenergistics2:meteorite", "advancedrocketry:volcano", "advancedrocketry:geode", "advancedrocketry:crater", "supplementaries:way_sign", "minecraft:village", "minecraft:bastion_remnant", "minecraft:endcity", "minecraft:desert_pyramid", "minecraft:buried_treasure", "minecraft:igloo", "minecraft:jungle_pyramid", "minecraft:mansion", "minecraft:mineshaft", "minecraft:monument", "minecraft:nether_fossil", "minecraft:ocean_ruin", "minecraft:pillager_outpost", "minecraft:ruined_portal", "minecraft:shipwreck", "minecraft:stronghold", "minecraft:swamp_hut"]
+	#
+	#The pseudo maximum searching radius.
+	#If the distance to the structure exceeds this value, HUD would display 'Not Found'
+	#Range: 20.0 ~ 20000.0
+	MaxSearchRadius = 5000.0
+	#
+	#The real maximum searching radius used by the underlying method (no idea how it works.)
+	#If you still couldn't find a structure with a big enough MaxSearchRadius, increase this one.
+	#If you think searching makes the server slow, decrease this one.
+	#Range: 1 ~ 128
+	RealRadius = 64
+	#
+	#HUD information detail level.
+	#0: Nothing.
+	#1+: Structure and Dimension name.
+	#2+: Distance to the structure.
+	#3: Position of the structure and distance in x/y/z axis.
+	#Range: 0 ~ 3
+	HUD_Level = 3
+

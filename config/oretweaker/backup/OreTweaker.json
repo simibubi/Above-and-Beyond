@@ -1,0 +1,94 @@
+{
+  "oreConfig": [
+	{
+      "ore": "appliedenergistics2:quartz_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 10,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:sapphire_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 6,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:cinnabar_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 6,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "minecraft:emerald_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 2,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:ruby_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 6,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:niter_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 8,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:apatite_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 8,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:nickel_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 40,
+      "maxVeinSize": 10,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+	{
+      "ore": "thermal:lead_ore",
+	  "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 20,
+      "maxVeinSize": 12,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "pack:railshaft/house",
+        "maxDepth": 12
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -8,
+        "minY": 0,
+        "maxY": 70,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#plains",
+        "#forest",
+        "#taiga",
+        "#savanna",
+        "#jungle"
+    ]
+
+}

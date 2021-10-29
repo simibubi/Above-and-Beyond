@@ -1,0 +1,60 @@
+
+[appearance]
+	#The size (in GUI pixels) of a marker on the map.
+	#Note that this will change with Minecraft's GUI scale configuration.
+	#Range: > 0
+	markerSize = 16
+	#The size (in GUI pixels) of a map's tile.
+	#Note that this will change with Minecraft's GUI scale configuration.
+	#When using a small gui scale, the map may look better with a TILE_SIZE of 16 or more.
+	#Range: 1 ~ 10
+	tileSize = 8
+	#If true, the minimap will show the map of an atlas only while it is held.
+	#If false, the minimap will show the map of the first atlas in the hotbar.
+	requiresHold = true
+	#The width (in GUI pixels) of the player's icon.
+	#Range: > 0
+	playerIconWidth = 14
+	#The height (in GUI pixels) of the player's icon.
+	#Range: > 0
+	playerIconHeight = 16
+	#The width of the map border on the left and right sides of the minimap tiles.
+	#Represented as a fraction of the image width.
+	#Below a certain threshold, this border will be overtaken by the map border graphic.
+	#Range: 0.0 ~ 0.5
+	borderX = 0.05
+	#Set true to enable minimap
+	enabled = false
+	#The width of the map border on the top and bottom sides of the minimap tiles.
+	#Represented as a fraction of the image width.
+	#Below a certain threshold, this border will be overtaken by the map border graphic.
+	#Range: 0.0 ~ 0.5
+	borderY = 0.05
+
+[userInterface]
+	#Default zoom level. The number corresponds to the size of a block on the map relative to the size of a GUI pixel. Preferrably a power of 2.
+	#Range: 0.001953125 ~ 16.0
+	defaultScale = 0.5
+	#Maximum zoom level. The number corresponds to the size of a block on the map relative to the size of a GUI pixel. Preferrably a power of 2.
+	#Range: 0.001953125 ~ 16.0
+	maxScale = 4.0
+	#If false (by default), then mousewheel up is zoom in, mousewheel down is zoom out.
+	#If true, then the direction is reversed.
+	doReverseWheelZoom = false
+	#Minimum zoom level. The number corresponds to the size of a block on the map relative to the size of a GUI pixel. Preferrably a power of 2. Smaller values may decrease performance!
+	#Range: 0.001953125 ~ 16.0
+	minScale = 0.03125
+
+[gameplay]
+	#Whether to add local marker for the spot where the player died.
+	autoDeathMarker = true
+	#Player will need to craft atlas item to use atlas.
+	itemNeeded = true
+	#Whether to remember last open browsing position and zoom level for each dimension in every atlas.
+	#If disabled, all dimensions and all atlases will be "synchronized" at the same coordinates and zoom level, and map will "follow" player by default.
+	doSaveBrowsingPos = true
+	#Whether to add global markers for Nether Portals.
+	autoNetherPortalMarkers = true
+	#Whether to add global markers for NPC villages.
+	autoVillageMarkers = true
+

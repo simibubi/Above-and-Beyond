@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "prettypipes:block/pipe_rims",
+		"2": "prettypipes:block/pipe_rims_inner",
+		"particle": "prettypipes:block/pipe_rims"
+	},
+	"elements": [
+		{
+			"from": [4, 10, 10],
+			"to": [12, 12, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 12, 12, 10], "texture": "#2"},
+				"east": {"uv": [4, 12, 6, 10], "texture": "#0"},
+				"south": {"uv": [4, 12, 12, 10], "texture": "#0"},
+				"west": {"uv": [10, 12, 12, 10], "texture": "#0"},
+				"up": {"uv": [4, 12, 12, 10], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [4, 12, 12, 10], "texture": "#2"}
+			}
+		}
+	]
+}

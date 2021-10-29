@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:blackstone",
+      "filler": "minecraft:netherrack",
+      "minY": 5,
+      "maxY": 31,
+      "maxVeinSize": 10,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+
+["Global Options"]
+	#If TRUE, most Thermal Blocks will retain Inventory Contents when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Inventory" = false
+	#If TRUE, Thermal Blocks will retain Redstone Control configuration when dropped.
+	"Blocks Retain Redstone Control" = true
+	#If TRUE, Thermal Blocks will retain Side configuration when dropped.
+	"Blocks Retain Side Configuration" = false
+	#If TRUE, Thermal Blocks will retain Transfer Control configuration when dropped.
+	"Blocks Retain Transfer Control" = true
+	#If TRUE, most Thermal Blocks will retain Tank Contents when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Tank Contents" = false
+	#If TRUE, Thermal Blocks will retain Augments when dropped.
+	"Blocks Retain Augments" = true
+	#If TRUE, most Thermal Blocks will retain Energy when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Energy" = false
+
+[Features]
+	#If TRUE, various 'Vanilla+' Blocks and Recipes are enabled.
+	"Vanilla+" = true
+	#If TRUE, the Blitz Mob is enabled.
+	Blitz = true
+	#If TRUE, Rockwool Blocks and Recipes are enabled.
+	Rockwool = false
+	#If TRUE, the Basalz Mob is enabled.
+	Basalz = true
+	#If TRUE, the Blizz Mob is enabled.
+	Blizz = true
+
+[Augments]
+	#If TRUE, Side Reconfiguration is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default Side Reconfiguration" = false
+	#If TRUE, Redstone Control is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default Redstone Control" = true
+	#If TRUE, XP Storage is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default XP Storage" = false
+
+[Villagers]
+	#If TRUE, trades will be added to various Villagers.
+	"Enable Villager Trades" = true
+
+[Devices]
+
+	[Devices.TreeExtractor]
+		#This sets the base time constant (in ticks) for the Arboreal Extractor.
+		#Range: 20 ~ 72000
+		"Time Constant" = 500
+
+["World Generation"]
+	#Set to FALSE to prevent 'Thermal Series' Silver from generating.
+	Silver = false
+	#Set to FALSE to prevent 'Thermal Series' Oil Sands from generating.
+	Oil = true
+	#Set to FALSE to prevent 'Thermal Series' Cinnabar from generating.
+	Cinnabar = true
+	#Set to FALSE to prevent 'Thermal Series' Tin from generating.
+	Tin = false
+	#Set to FALSE to prevent 'Thermal Series' Lead from generating.
+	Lead = false
+	#Set to FALSE to prevent 'Thermal Series' Apatite from generating.
+	Apatite = true
+	#Set to FALSE to prevent 'Thermal Series' Niter from generating.
+	Niter = true
+	#Set to FALSE to prevent 'Thermal Series' Nickel from generating.
+	Nickel = false
+	#Set to FALSE to prevent 'Thermal Series' Sulfur from generating.
+	Sulfur = true
+	#Set to FALSE to prevent 'Thermal Series' Copper from generating.
+	Copper = false
+

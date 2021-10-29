@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "forbidden_arcanus:arcane_crystal_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 9,
+      "maxVeinSize": 7,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

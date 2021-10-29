@@ -1,0 +1,11 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:infested",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    }
+  ]
+}

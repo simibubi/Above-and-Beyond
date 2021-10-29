@@ -1,0 +1,33 @@
+
+[performance]
+	#Whether to rescan chunks in the area that have been previously mapped. This is useful in case of changes in coastline (including small ponds of water and lava), or if land disappears completely (for sky worlds).
+	#Disable for better performance.
+	doRescan = true
+	#Whether to perform additional scanning to locate ravines.
+	#Disable for better performance.
+	doScanRavines = true
+	#If true, map render time will be output.
+	debugRender = false
+	#The radius of the area around the player which is scanned by the Atlas at regular intervals.
+	#Note that this will not force faraway chunks to load, unless force_chunk_loading is enabled.
+	#Lower value gives better performance.
+	#Range: > 0
+	scanRadius = 11
+	#The maximum number of markers a particular atlas can hold.
+	#Range: > 0
+	markerLimit = 1024
+	#Whether to perform additional scanning to locate small ponds of water or lava.
+	#Disable for better performance.
+	doScanPonds = true
+	#Force loading of chunks within scan radius even if it exceeds regular chunk loading distance.
+	#Enabling this may SEVERELY decrease performance!
+	forceChunkLoading = false
+	#Time in seconds between two scans of the area.
+	#Higher value gives better performance.
+	#Range: 0.0 ~ 2.147483647E9
+	newScanInterval = 1.0
+	#The number of area scans between full rescans.
+	#Higher value gives better performance.
+	#Range: 1 ~ 1000
+	rescanRate = 4
+

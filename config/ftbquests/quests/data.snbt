@@ -1,0 +1,22 @@
+{
+	version: 13
+	title: "&6 Above &f\\&&6 Beyond"
+	icon: "kubejs:abstruse_mechanism"
+	disable_toast: true
+	default_reward_team: true
+	default_consume_items: true
+	default_autoclaim_rewards: "disabled"
+	default_quest_shape: "square"
+	default_quest_disable_jei: false
+	emergency_items_cooldown: 300
+	drop_loot_crates: false
+	loot_crate_no_drop: {
+		passive: 4000
+		monster: 600
+		boss: 0
+	}
+	disable_gui: false
+	grid_scale: 1.0d
+	pause_game: false
+	lock_message: ""
+}

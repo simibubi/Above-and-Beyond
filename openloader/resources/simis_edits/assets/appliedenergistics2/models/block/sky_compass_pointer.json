@@ -1,0 +1,118 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "create:block/large_wheels",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "appliedenergistics2:block/sky_compass",
+		"particle": "create:block/cogwheel",
+		"1_2": "create:block/cogwheel"
+	},
+	"elements": [
+		{
+			"name": "Pointer",
+			"from": [7.625, 2, 5],
+			"to": [8.375, 2.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -0.5, 0]},
+			"faces": {
+				"north": {"uv": [2, 13, 3, 14], "texture": "#0"},
+				"east": {"uv": [2, 13, 8, 14], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [7, 13, 8, 14], "texture": "#0"},
+				"west": {"uv": [2, 13, 8, 14], "texture": "#0"},
+				"up": {"uv": [2, 13, 8, 14], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [2, 13, 8, 14], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Pointer",
+			"from": [7.75, 1.95, 6.85],
+			"to": [8.25, 2.55, 9.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.95, 2.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 7, 2, 8], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [0, 4, 1, 10], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 9, 1, 10], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [0, 6, 1, 10], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 5, 1, 10], "texture": "#0"},
+				"down": {"uv": [0, 6, 1, 10], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Gear",
+			"from": [4.5, 0.25, 7.25],
+			"to": [11.5, 1, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -3.75, 4]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"east": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"south": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"west": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"up": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"},
+				"down": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"}
+			}
+		},
+		{
+			"name": "Gear2",
+			"from": [4.5, 0.25, 7.25],
+			"to": [11.5, 1, 8.75],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"east": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"south": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"west": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"up": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"},
+				"down": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"}
+			}
+		},
+		{
+			"name": "Gear3",
+			"from": [4.5, 0.25, 7.25],
+			"to": [11.5, 1, 8.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"north": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"east": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"south": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"west": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"up": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"},
+				"down": {"uv": [7, 6, 16, 7.5], "texture": "#1_2"}
+			}
+		},
+		{
+			"name": "Gear4",
+			"from": [7.25, 0.25, 4.5],
+			"to": [8.75, 1, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -3.75, 4]},
+			"faces": {
+				"north": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"east": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"south": {"uv": [5.5, 7.5, 7, 9], "texture": "#1_2"},
+				"west": {"uv": [7, 7.5, 16, 9], "texture": "#1_2"},
+				"up": {"uv": [7, 6, 16, 7.5], "rotation": 90, "texture": "#1_2"},
+				"down": {"uv": [7, 6, 16, 7.5], "rotation": 90, "texture": "#1_2"}
+			}
+		},
+		{
+			"name": "GearCaseOuter",
+			"from": [6, 0, 6],
+			"to": [10, 1.25, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, -3.75, 4]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 6], "texture": "#1_2"},
+				"east": {"uv": [0, 4, 4, 6], "texture": "#1_2"},
+				"south": {"uv": [0, 4, 4, 6], "texture": "#1_2"},
+				"west": {"uv": [0, 4, 4, 6], "texture": "#1_2"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#1_2"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#1_2"}
+			}
+		}
+	],
+	"groups": [0, 1,
+		{
+			"name": "cogwheel_shaftless",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3, 4, 5, 6]
+		}
+	]
+}

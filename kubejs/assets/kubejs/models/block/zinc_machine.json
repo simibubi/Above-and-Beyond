@@ -1,0 +1,13 @@
+{
+  "parent": "thermal:block/frame_base",
+  "textures": {
+    "particle": "kubejs:block/zinc_machine_top",
+    "down": "kubejs:block/zinc_machine_bottom",
+    "up": "kubejs:block/zinc_machine_top",
+    "north": "kubejs:block/zinc_machine_side",
+    "east": "kubejs:block/zinc_machine_side",
+    "south": "kubejs:block/zinc_machine_side",
+    "west": "kubejs:block/zinc_machine_side",
+    "inner": "kubejs:block/zinc_machine_inner"
+  }
+}

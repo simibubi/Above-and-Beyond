@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:redstone_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 16,
+      "maxVeinSize": 7,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

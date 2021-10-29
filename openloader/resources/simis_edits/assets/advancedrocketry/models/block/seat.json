@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/seat",
+  "textures": {
+    "1": "advancedrocketry:blocks/seat_top",
+    "2": "advancedrocketry:blocks/seat"
+  }
+}

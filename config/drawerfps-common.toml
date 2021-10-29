@@ -1,0 +1,6 @@
+
+["Drawer Fps settings"]
+	#Range at which the drawers should render their item. Default = 10 blocks
+	#Range: 1 ~ 500
+	renderRange = 10
+

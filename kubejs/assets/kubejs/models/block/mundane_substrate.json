@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:block/substrate",
+  "textures": {
+    "particle": "block/glass",
+    "0": "kubejs:block/mundane_glass"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "pack:moonbase"
+    },
+
+    "averageSpacing": 24,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -1,
+        "terraform": 1,
+        "minY": 60,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "custommoon:moon"
+    ],
+
+    "biomes": [
+        "advancedrocketry:moonold"
+    ]
+
+}

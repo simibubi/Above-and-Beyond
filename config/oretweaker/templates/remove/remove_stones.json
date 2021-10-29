@@ -1,0 +1,67 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:dirt",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:gravel",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:granite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:diorite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:andesite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:infested_stone",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:soul_sand",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:blackstone",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:magma_block",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    }
+  ]
+}

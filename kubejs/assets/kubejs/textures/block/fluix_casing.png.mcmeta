@@ -1,0 +1,7 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [ "kubejs:block/fluix_casing_ctm" ]
+	}
+}

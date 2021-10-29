@@ -1,0 +1,59 @@
+
+[Harvesting]
+	#Allow the straw golems to replant a crop when they harvest it.
+	enableReplant = true
+	#Allow the straw golem to deliver a crop (requires replantEnabled = true)
+	enableDelivery = true
+	#Horizontal search range for crops and chests
+	#Range: 8 ~ 32
+	searchRangeHorizontal = 12
+	#Vertical search range for crops and chests
+	#Range: 2 ~ 8
+	searchRangeVertical = 3
+
+[Filtration]
+	#Sets the method for applying harvest filters.  Note that only the most specific match will be taken into consideration.
+	#If a crop's mod appears in the whitelist, but the crop itself is in the blacklist, the crop will be banned.
+	#Likewise if a crop's mod appears in the blacklist, but the crop itself is in the whitelist, the crop will be allowed.
+	#"none": allow all crops to be harvested (default).
+	#"whitelist": will deny crops from being harvested unless the most specific match is in the whitelist.
+	#"blacklist": will allows crops to be harvested unless the most specific match is in the blacklist.
+	filterMode = "none"
+	#Whitelist Filter
+	whitelist = []
+	#Blacklist Filter
+	blacklist = []
+
+[Lifespan]
+	#Set the lifespan, in tick, of new created straw golems. Set -1 for infinite.
+	#Range: > -2
+	lifespan = 168000
+	#Enable lifespan penalty for carrying a heavy item
+	penaltyHeavy = true
+	#Enable lifespan penalty for being in the rain
+	penaltyRain = true
+	#Enable lifespan penalty for being in the water
+	penaltyWater = true
+
+[Tether]
+	#Anchor golems to a spot so they don't wander very far.
+	tetherEnabled = true
+	#Tempting golems with an apple updates their tether location if pulled too far
+	temptResetsTether = false
+	#Range that golems will consider within their tether location
+	#Range: 1 ~ 16
+	tetherMinRange = 4
+	#Range from tether that will cause golems to turn and run back
+	#Range: 1 ~ 48
+	tetherMaxRange = 24
+
+[Miscellaneous]
+	#Enable/disable golem sounds
+	soundsEnabled = true
+	#Enable/disable golem shivering in cold
+	shiverEnabled = true
+	#Enable iron golems picking up straw golems occasionally
+	golemInteract = true
+	#Enable HWYLA compatibility
+	enableHwyla = true
+

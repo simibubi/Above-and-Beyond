@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:diamond_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 16,
+      "maxVeinSize": 7,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

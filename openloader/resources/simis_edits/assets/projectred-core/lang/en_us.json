@@ -1,0 +1,43 @@
+{
+	"item.projectred-core.platformed_plate": "Circuit Assembly",
+	
+	"item.projectred-illumination.white_cage_light": "White Laser Lamp",
+	"item.projectred-illumination.orange_cage_light": "Orange Laser Lamp",
+	"item.projectred-illumination.magenta_cage_light": "Magenta Laser Lamp",
+	"item.projectred-illumination.light_blue_cage_light": "Light Blue Laser Lamp",
+	
+	"item.projectred-illumination.lime_cage_light": "Lime Laser Lamp",
+	"item.projectred-illumination.yellow_cage_light": "Yellow Laser Lamp",
+	"item.projectred-illumination.pink_cage_light": "Pink Laser Lamp",
+	"item.projectred-illumination.purple_cage_light": "Purple Laser Lamp",
+	
+	"item.projectred-illumination.gray_cage_light": "Gray Laser Lamp",
+	"item.projectred-illumination.light_gray_cage_light": "Light Gray Laser Lamp",
+	"item.projectred-illumination.cyan_cage_light": "Cyan Laser Lamp",
+	"item.projectred-illumination.blue_cage_light": "Blue Laser Lamp",
+	
+	"item.projectred-illumination.brown_cage_light": "Brown Laser Lamp",
+	"item.projectred-illumination.green_cage_light": "Green Laser Lamp",
+	"item.projectred-illumination.red_cage_light": "Red Laser Lamp",
+	"item.projectred-illumination.black_cage_light": "Black Laser Lamp",
+	
+	"item.projectred-illumination.white_inverted_cage_light": "Inverted White Laser Lamp",
+	"item.projectred-illumination.orange_inverted_cage_light": "Inverted Orange Laser Lamp",
+	"item.projectred-illumination.magenta_inverted_cage_light": "Inverted Magenta Laser Lamp",
+	"item.projectred-illumination.light_blue_inverted_cage_light": "Inverted Light Blue Laser Lamp",
+	
+	"item.projectred-illumination.lime_inverted_cage_light": "Inverted Lime Laser Lamp",
+	"item.projectred-illumination.yellow_inverted_cage_light": "Inverted Yellow Laser Lamp",
+	"item.projectred-illumination.pink_inverted_cage_light": "Inverted Pink Laser Lamp",
+	"item.projectred-illumination.purple_inverted_cage_light": "Inverted Purple Laser Lamp",
+	
+	"item.projectred-illumination.gray_inverted_cage_light": "Inverted Gray Laser Lamp",
+	"item.projectred-illumination.light_gray_inverted_cage_light": "Inverted Light Gray Laser Lamp",
+	"item.projectred-illumination.cyan_inverted_cage_light": "Inverted Cyan Laser Lamp",
+	"item.projectred-illumination.blue_inverted_cage_light": "Inverted Blue Laser Lamp",
+	
+	"item.projectred-illumination.brown_inverted_cage_light": "Inverted Brown Laser Lamp",
+	"item.projectred-illumination.green_inverted_cage_light": "Inverted Green Laser Lamp",
+	"item.projectred-illumination.red_inverted_cage_light": "Inverted Red Laser Lamp",
+	"item.projectred-illumination.black_inverted_cage_light": "Inverted Black Laser Lamp"
+}

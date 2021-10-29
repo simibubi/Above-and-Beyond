@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:block/substrate",
+  "textures": {
+    "particle": "thermal:block/glass/lumium_glass",
+    "0": "kubejs:block/catalyst_glass"
+  }
+}

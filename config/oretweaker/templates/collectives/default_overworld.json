@@ -1,0 +1,138 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:dirt",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 256,
+      "maxVeinSize": 32,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:gravel",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 256,
+      "maxVeinSize": 32,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:granite",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 80,
+      "maxVeinSize": 32,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:diorite",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 80,
+      "maxVeinSize": 32,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:andesite",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 80,
+      "maxVeinSize": 32,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:infested_stone",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 8,
+      "spawnRate": 7.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": [
+        "MOUNTAIN"
+      ]
+    },
+    {
+      "ore": "minecraft:coal_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 128,
+      "maxVeinSize": 16,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:iron_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 64,
+      "maxVeinSize": 8,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:gold_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 8,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:redstone_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 16,
+      "maxVeinSize": 7,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:lapis_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 6,
+      "spawnRate": 3.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:diamond_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 16,
+      "maxVeinSize": 7,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:emerald_ore",
+      "filler": "minecraft:stone",
+      "minY": 4,
+      "maxY": 32,
+      "maxVeinSize": 1,
+      "spawnRate": 5.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": [
+        "MOUNTAIN"
+      ]
+    }
+  ]
+}

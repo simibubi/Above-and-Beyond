@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:soul_sand",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 12,
+      "spawnRate": 12.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

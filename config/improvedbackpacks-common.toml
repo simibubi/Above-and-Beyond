@@ -1,0 +1,36 @@
+#Number of slots in new crafted backpack
+#Range: 1 ~ 63
+defaultBackpackSize = 18
+#Durability of Ender Backpack (-1 to make it unbreakable)
+#Range: > -1
+enderBackpackDurability = 128
+#Number of levels required to rename backpack
+#Range: > 0
+backpackRenameLevelCost = 3
+
+[pockets]
+
+	[pockets.tiny]
+		#Max count of this pocket per one backpack
+		#Range: > 0
+		maxCount = 3
+		#Number of slots that one pocket adds to backpack
+		#Range: > 1
+		addSlotsCount = 3
+
+	[pockets.medium]
+		#Max count of this pocket per one backpack
+		#Range: > 0
+		maxCount = 3
+		#Number of slots that one pocket adds to backpack
+		#Range: > 1
+		addSlotsCount = 6
+
+	[pockets.large]
+		#Max count of this pocket per one backpack
+		#Range: > 0
+		maxCount = 2
+		#Number of slots that one pocket adds to backpack
+		#Range: > 1
+		addSlotsCount = 9
+

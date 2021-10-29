@@ -1,0 +1,52 @@
+
+["basic options"]
+	#Enable fish mob spawning? Weight & biomes can be modified in the Aquaculture fish loot table
+	"Enable fish spawning?" = true
+	"Enable weight for fish? Useful for fishing competitions" = false
+	"Should fish be added as compostables for the composter/worm farm? (Based on fish, or weight if enabled)" = true
+	"Should Aquaculture fish be able to be used to breed cats & ocelots?" = true
+	"Enable debug mode? (Enables additional logging)" = false
+	"Show Fillet recipes in JEI?" = true
+
+	["basic options"."Amount of Message In A Bottle messages"]
+		#Range: 0 ~ 255
+		" Used to add additional custom messages" = 29
+
+["neptunium options"]
+	"Enable recipes for Neptunium items?" = true
+	"Enable recipes for Neptunium armor?" = true
+	#Should Neptune's bounty be added as fishing loot? Very rare.
+	"Add Neptune's Bounty as loot?" = true
+
+["spawn options"]
+
+	["spawn options".box_turtle]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 10
+		include = ["SWAMP"]
+		exclude = [""]
+
+	["spawn options".arrau_turtle]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 8
+		include = ["JUNGLE"]
+		exclude = [""]
+
+	["spawn options".starshell_turtle]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 5
+		include = ["TWILIGHT"]
+		exclude = [""]
+

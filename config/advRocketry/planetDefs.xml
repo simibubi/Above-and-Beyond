@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<galaxy>
+    <star blackHole="false" name="Sol" numGasGiants="0" numPlanets="0" size="1.0" temp="100" x="0" y="0">
+        <planet DIMID="minecraft:overworld" dimMapping="" name=" Earth ">
+            <isKnown>true</isKnown>
+            <fogColor>1.0,1.0,1.0</fogColor>
+            <skyColor>1.0,1.0,1.0</skyColor>
+            <gravitationalMultiplier>100</gravitationalMultiplier>
+            <orbitalDistance>100</orbitalDistance>
+            <orbitalTheta>-180</orbitalTheta>
+            <orbitalPhi>0</orbitalPhi>
+            <retrograde>false</retrograde>
+            <peakInsolation>0.9995093734316032</peakInsolation>
+            <peakInsolationNoAtmosphere>1.308</peakInsolationNoAtmosphere>
+            <avgTemperature>287</avgTemperature>
+            <rotationalPeriod>24000</rotationalPeriod>
+            <atmosphereDensity>100</atmosphereDensity>
+            <generateCraters>false</generateCraters>
+            <generateVolcanos>false</generateVolcanos>
+            <generateStructures>false</generateStructures>
+            <generateGeodes>false</generateGeodes>
+            <planet DIMID="custommoon:moon" dimMapping="" name=" The Moon ">
+                <isKnown>true</isKnown>
+                <fogColor>1.0,1.0,1.0</fogColor>
+                <skyColor>1.0,1.0,1.0</skyColor>
+                <gravitationalMultiplier>16</gravitationalMultiplier>
+                <orbitalDistance>75</orbitalDistance>
+                <orbitalTheta>-180</orbitalTheta>
+                <orbitalPhi>0</orbitalPhi>
+                <retrograde>false</retrograde>
+                <peakInsolation>0.5813333333333334</peakInsolation>
+                <peakInsolationNoAtmosphere>0.5813333333333334</peakInsolationNoAtmosphere>
+                <avgTemperature>208</avgTemperature>
+                <rotationalPeriod>128000</rotationalPeriod>
+                <atmosphereDensity>0</atmosphereDensity>
+                <generateCraters>true</generateCraters>
+                <generateVolcanos>false</generateVolcanos>
+                <generateStructures>false</generateStructures>
+                <generateGeodes>false</generateGeodes>
+                <craterFrequencyMultiplier>1.0</craterFrequencyMultiplier>
+                <biomeIds>minecraft:moon</biomeIds>
+                <oceanBlock>minecraft:water</oceanBlock>
+                <fillerBlock>minecraft:stone</fillerBlock>
+            </planet>
+            <oceanBlock>minecraft:water</oceanBlock>
+            <fillerBlock>minecraft:stone</fillerBlock>
+        </planet>
+    </star>
+</galaxy>

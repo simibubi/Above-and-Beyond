@@ -1,0 +1,7 @@
+#The renderer to use for monitors. Generally this should be kept at "best" - if monitors have performance issues, you may wish to experiment with alternative renderers.
+#Allowed Values: BEST, TBO, VBO
+monitor_renderer = "BEST"
+#The maximum distance monitors will render at. This defaults to the standard tile entity limit, but may be extended if you wish to build larger monitors.
+#Range: 16 ~ 1024
+monitor_distance = 64
+

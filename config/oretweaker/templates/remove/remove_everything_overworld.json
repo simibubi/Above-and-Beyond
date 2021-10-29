@@ -1,0 +1,95 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:dirt",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:gravel",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:granite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:diorite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:andesite",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:infested_stone",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:coal_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:iron_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:gold_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:redstone_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:lapis_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:diamond_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    },
+    {
+      "ore": "minecraft:emerald_ore",
+      "minY": -1,
+      "maxY": -1,
+      "maxVeinSize": -1,
+      "spawnRate": -1.0
+    }
+  ]
+}

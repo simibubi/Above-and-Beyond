@@ -1,0 +1,628 @@
+{
+	id: "45AEDCD3B795E95A"
+	group: "331B6409EF6A7840"
+	order_index: 1
+	filename: "stage_1"
+	title: "&f1&r High Aspirations"
+	icon: "kubejs:andesite_machine"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Automatic Forest"
+			icon: "minecraft:oak_log"
+			x: -1.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Contraption 1"
+			description: [
+				"Building Material, Fuel and Ingredient. A passive supply of timber would be a good first effort. "
+				""
+				"Mechanical Saws are a powerful way to achieve this."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5799D55BB26BA52C"]
+			id: "2CB570195DA7E106"
+			tasks: [
+				{
+					id: "58AB6E0FF2EA6AD4"
+					type: "item"
+					title: "Any Wooden Log"
+					icon: "minecraft:oak_log"
+					disable_toast: true
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+				}
+				{
+					id: "0842082756DA73FE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Underwater Garden"
+			icon: "minecraft:kelp"
+			x: 5.0d
+			y: 1.0d
+			subtitle: "Contraption 3"
+			description: [
+				"Kelp is vital ingredient to our first Assembly Line target: Andesite Alloy."
+				""
+				"Kelp can be gathered automatically with Mechanical Harvesters."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5799D55BB26BA52C"]
+			id: "608BF7BE3CB666F3"
+			tasks: [
+				{
+					id: "247A58659E47A4D8"
+					type: "item"
+					item: "minecraft:kelp"
+				}
+				{
+					id: "0631FA27CEE5D67D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Catching Sediment"
+			icon: "minecraft:sand"
+			x: 3.0d
+			y: 1.0d
+			subtitle: "Contraption 2"
+			description: ["A good way to automate Sand at this moment is to build Strainers."]
+			hide_dependency_lines: true
+			dependencies: ["5799D55BB26BA52C"]
+			id: "4CC420A6B673176A"
+			tasks: [
+				{
+					id: "72FE446F5BB1A93E"
+					type: "item"
+					title: "Sand"
+					icon: "minecraft:sand"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "biomesoplenty:white_sand"
+									Count: 1b
+								}
+								{
+									id: "minecraft:sand"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:orange_sand"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "4208FAAC229CACA6"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Bedrock's Bounty"
+			icon: "create:andesite_cobblestone"
+			x: 1.0d
+			y: 1.0d
+			subtitle: "Contraption 4"
+			description: [
+				"Gathering Andesite manually takes time. Thankfully, bedrock can cause lava to form Andesite infinitely."
+				""
+				"At this time it is best to set up drills to break generated blocks between lava and water."
+				"Since bedrock is blocking the space beneath, you'll have to find a way to collect the drops from other sides."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5799D55BB26BA52C"]
+			id: "106C6DFDCB97327C"
+			tasks: [
+				{
+					id: "5E14AA73F8E1AFE4"
+					type: "item"
+					item: "create:andesite_cobblestone"
+				}
+				{
+					id: "29B78BB983BE39FC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "The Andesite Lift"
+			icon: "create:rope_pulley"
+			x: 1.0d
+			y: 3.0d
+			shape: "circle"
+			subtitle: "Contraption 5"
+			description: ["All your Andesite is likely not being generated near your factory. Figure out a way to bring it to the surface."]
+			dependencies: ["106C6DFDCB97327C"]
+			id: "6B7F0631060A9E62"
+			tasks: [{
+				id: "0C764FDD555E8CCD"
+				type: "checkmark"
+				title: "Automated"
+			}]
+		}
+		{
+			title: "Clay Washer"
+			icon: "minecraft:clay_ball"
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Contraption 6-1"
+			description: ["With the help of Encased Fans, sand can be refined into clay."]
+			dependencies: ["4CC420A6B673176A"]
+			id: "729FB5DD07C234E8"
+			tasks: [
+				{
+					id: "714FE76FE8D62EBF"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+				{
+					id: "02EE2F24FDF534BC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Algae Blender"
+			icon: "architects_palette:algal_blend"
+			x: 5.0d
+			y: 3.5d
+			subtitle: "Contraption 6-2"
+			description: ["In the Mix! Clay and Kelp can be processed with the Mechanical Mixer."]
+			dependencies: [
+				"729FB5DD07C234E8"
+				"608BF7BE3CB666F3"
+			]
+			id: "72BE175C83834838"
+			tasks: [
+				{
+					id: "1CE8BFE460CB41E0"
+					type: "item"
+					item: "architects_palette:algal_blend"
+				}
+				{
+					id: "63EA7BF746BF3254"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Log Stripper"
+			icon: "minecraft:stripped_oak_log"
+			x: -1.0d
+			y: 3.5d
+			subtitle: "Contraption 7-1"
+			description: ["Upwards-facing Mechanical Saws can process the harvested logs further..."]
+			dependencies: ["2CB570195DA7E106"]
+			id: "532EFE32C3A515B5"
+			tasks: [
+				{
+					id: "3C7A4BA98EEC90E8"
+					type: "item"
+					title: "Any Stripped Log"
+					icon: "minecraft:stripped_oak_log"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+				}
+				{
+					id: "7B60357D06FE3ADC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Plank Cutter"
+			icon: "minecraft:oak_planks"
+			x: -0.5d
+			y: 4.5d
+			subtitle: "Contraption 7-2"
+			description: ["...and further..."]
+			dependencies: ["532EFE32C3A515B5"]
+			id: "19921941321965A4"
+			tasks: [
+				{
+					id: "1A63E51B0CF5C6DD"
+					type: "item"
+					title: "Any Planks"
+					icon: "minecraft:oak_planks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+				}
+				{
+					id: "175767726FBCAA8D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Cutter of Cut Planks"
+			icon: "minecraft:oak_slab"
+			x: 0.5d
+			y: 5.0d
+			subtitle: "Contraption 7-3"
+			description: [
+				"...and further, into the perfect base for our first Mechanism."
+				""
+				"Note: before the machine starts showering you with random furniture, place a wooden slab in the filter slot of the Mechanical Saw."
+			]
+			dependencies: ["19921941321965A4"]
+			id: "59E4A6163753BC12"
+			tasks: [
+				{
+					id: "23030B6D0072EBE8"
+					type: "item"
+					title: "Any Wooden Slab"
+					icon: "minecraft:oak_slab"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:wooden_slabs"
+						}
+					}
+				}
+				{
+					id: "59B260F52722A1FE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Algaesite Mixer"
+			icon: "create:andesite_alloy"
+			x: 3.5d
+			y: 5.0d
+			subtitle: "Contraption 6-4"
+			description: ["In another Mix! This time it'll be the bricks and your surfaced Andesite Cobblestone."]
+			dependencies: [
+				"106C6DFDCB97327C"
+				"32786E9D145FFE25"
+			]
+			id: "73FCA432DEFC1DED"
+			tasks: [
+				{
+					id: "4F50D847118D6E62"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "6AA98FC4680D6521"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Algae Cooker"
+			icon: "architects_palette:algal_brick"
+			x: 4.5d
+			y: 4.5d
+			subtitle: "Contraption 6-3"
+			description: ["Smelt the Algal blend into bricks. While a Furnace works great, an Encased Fan can do it without the need of Fuel."]
+			dependencies: ["72BE175C83834838"]
+			id: "32786E9D145FFE25"
+			tasks: [
+				{
+					id: "706BA4E65686CA1B"
+					type: "item"
+					item: "architects_palette:algal_brick"
+				}
+				{
+					id: "1484A9A6DB85EA6D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Deploy, Deploy, Deploy."
+			icon: "kubejs:kinetic_mechanism"
+			x: 2.0d
+			y: 6.5d
+			subtitle: "Contraption 8"
+			description: ["Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line."]
+			dependencies: [
+				"59E4A6163753BC12"
+				"73FCA432DEFC1DED"
+				"5A055D0421861318"
+			]
+			id: "675C395B2074C24C"
+			tasks: [
+				{
+					id: "68B67FDC410885B3"
+					type: "item"
+					item: "kubejs:kinetic_mechanism"
+				}
+				{
+					id: "34C54664AB22ECFD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Arming the Deployer"
+			icon: {
+				id: "cb_microblock:stone_saw"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 6.5d
+			shape: "circle"
+			description: [
+				"It'll be good to stock up on a couple of saws for the Mechanism Assembly."
+				"However, they are not nearly consumed as quickly as something that would require an automated supply."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"59E4A6163753BC12"
+				"73FCA432DEFC1DED"
+			]
+			id: "5A055D0421861318"
+			tasks: [{
+				id: "52A4AF128B571664"
+				type: "item"
+				title: "Any Saw"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:saws"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "Chapter 1 Start!"
+			icon: "create:wrench"
+			x: 2.0d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"Before you start making your way down the quest line:"
+				""
+				"These Quests are an Automation Guide. Always view them as recommendations on what you should have a passive supply of. The flowgraph roughly depicts the connections between relevant recipes/processing."
+				""
+				"Happy engineering!"
+			]
+			dependencies: ["5A8DF2D8553904BF"]
+			hide: true
+			size: 2.0d
+			id: "5799D55BB26BA52C"
+			tasks: [{
+				id: "1B5F1E9F5EE6EB2C"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "49A9C8798141C302"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Chapter 1 Complete!"
+			x: 2.0d
+			y: 8.5d
+			shape: "hexagon"
+			description: [
+				"Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit."
+				""
+				"Before moving on, check back through your factory and search for any major bottlenecks."
+				"It'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough."
+			]
+			dependencies: ["675C395B2074C24C"]
+			size: 2.0d
+			id: "3F45DFEF31838A00"
+			tasks: [{
+				id: "2D4BB6A2E22A86E3"
+				type: "item"
+				item: "kubejs:andesite_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "30E03E42611E5613"
+					type: "item"
+					item: "kubejs:kinetic_mechanism"
+					count: 16
+				}
+				{
+					id: "006F556964FDC753"
+					type: "item"
+					item: "minecraft:redstone"
+					random_bonus: 4
+				}
+				{
+					id: "641C2EF6193736A1"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Ah wait, don't chop"
+			icon: "thermal:resin_bucket"
+			x: 0.0d
+			y: 10.0d
+			shape: "square"
+			subtitle: "Contraption 9-1"
+			description: ["Liquid resin can be extracted from healthy Trees using Arboreal Extractors. The more the merrier."]
+			dependencies: [
+				"3F45DFEF31838A00"
+				"681DACF11F193771"
+			]
+			hide: true
+			id: "3728DF562D6DCE3A"
+			tasks: [
+				{
+					id: "52B181D406A5AC67"
+					type: "item"
+					item: "thermal:device_tree_extractor"
+					count: 4L
+					consume_items: false
+				}
+				{
+					id: "29BEB0A31C3FB00B"
+					type: "checkmark"
+					title: "Automated (Resin)"
+				}
+			]
+		}
+		{
+			title: "Rubber Stamper"
+			icon: "thermal:rubber"
+			x: 1.0d
+			y: 10.5d
+			subtitle: "Contraption 9-2"
+			description: ["Gather the resin via a network of Fluid Pipes and use a Basin-Press to solidify it."]
+			dependencies: ["3728DF562D6DCE3A"]
+			id: "3EF5F89DBD6959E3"
+			tasks: [
+				{
+					id: "0F98BACE3B940BC9"
+					type: "item"
+					item: "thermal:rubber"
+				}
+				{
+					id: "5BBF2E1143CD356E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Curing by Flame"
+			icon: "thermal:cured_rubber"
+			x: 2.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Contraption 9-3"
+			description: [
+				"Finally, smelt the raw rubber into its cured state."
+				""
+				"Bon Appétit!"
+			]
+			dependencies: ["3EF5F89DBD6959E3"]
+			id: "29D37095C73B3DEC"
+			tasks: [
+				{
+					id: "7D328EB34500FE28"
+					type: "item"
+					item: "thermal:cured_rubber"
+				}
+				{
+					id: "17286271B0667AAA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "All Sealed Up"
+			x: 3.5d
+			y: 11.5d
+			shape: "circle"
+			description: ["From here it's really no hassle to do things manually. If you must, you can always come back with some Mechanical Crafters later on."]
+			dependencies: ["29D37095C73B3DEC"]
+			id: "6545C3F427B12106"
+			tasks: [{
+				id: "2C94C22FBED69EE4"
+				type: "item"
+				item: "kubejs:sealed_mechanism"
+			}]
+		}
+		{
+			title: "Bonus 1A Complete!"
+			x: 2.0d
+			y: 13.0d
+			shape: "hexagon"
+			description: ["Congrats! Now you have a good supply of Sealed Mechanisms. Your future self will thank you."]
+			dependencies: ["6545C3F427B12106"]
+			size: 2.0d
+			id: "0E0535849D8D9279"
+			tasks: [{
+				id: "31511DA3C34905F1"
+				type: "item"
+				item: "kubejs:copper_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "0CDF1AD650CC3EA0"
+					type: "item"
+					item: "kubejs:sealed_mechanism"
+					count: 16
+				}
+				{
+					id: "200F3D1A04E713EF"
+					type: "item"
+					item: "thermal:cured_rubber"
+					random_bonus: 4
+				}
+				{
+					id: "38E1B6571EDAA96B"
+					type: "item"
+					item: "create:copper_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Speedrun"
+			icon: "appliedenergistics2:speed_card"
+			x: 0.0d
+			y: -1.0d
+			shape: "circle"
+			description: [
+				"The rigid flowgraph of this automation guide may suggest that items aren't accessible until they have been automated."
+				""
+				"Be reassured that if a convenience of later ages, such as filtering, would be helpful early on, you may have access to it already- albeit with a bit of extra work."
+			]
+			dependencies: ["5799D55BB26BA52C"]
+			id: "6892AE55581393C6"
+			tasks: [{
+				id: "4DC18CB3A19686E5"
+				type: "checkmark"
+			}]
+		}
+	]
+}

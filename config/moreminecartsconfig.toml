@@ -1,0 +1,4 @@
+#Changes how expensive keeping the chunk loader on is. Set to zero to prevent chunk loading completely.
+#Range: 0.0 ~ 100.0
+chunk_loader_multiplier = 1.0
+

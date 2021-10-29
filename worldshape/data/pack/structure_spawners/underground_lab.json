@@ -1,0 +1,22 @@
+{
+    "template": {
+        "type": "single",
+        "id": "pack:underground_lab"
+    },
+
+    "averageSpacing": 6,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -11,
+        "minY": 16,
+        "maxY": 70,
+        "minSpace": 3,
+        "type": "cave"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+
+}

@@ -1,0 +1,1068 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1.0,
+        "max": 3.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "tconstruct:tables",
+          "expand": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2.0,
+        "max": 4.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "tconstruct:seared_blocks",
+          "expand": true,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 12.0,
+        "max": 18.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pickaxe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:hammer_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_axe_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:broad_blade",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_binding",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:large_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tool_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:cobalt\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:tinkers_bronze\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:rose_gold\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:silver\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:bone\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:lead\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:wood\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tough_handle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Material\": \"tconstruct:flint\"}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2.0,
+        "max": 8.0,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:pattern",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

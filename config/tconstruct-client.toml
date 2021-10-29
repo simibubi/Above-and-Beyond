@@ -1,0 +1,13 @@
+
+#Client only settings
+[client]
+	#If true tools will show additional info in their tooltips
+	extraToolTips = true
+	#Experimental. If true, renders fluids in tanks using a dynamic model, being more efficient when the tank is static
+	#If false, renders fluids in tanks using a TESR, which is more efficient when the tank contents are changing
+	tankFluidModel = false
+	#If true, the game will log all modifier textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
+	logMissingModifierTextures = false
+	#If true, the game will log all material textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
+	logMissingMaterialTextures = false
+

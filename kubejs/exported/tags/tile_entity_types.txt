@@ -1,0 +1,12 @@
+To refresh this file, delete it and run /reload command again! Last updated: Aug 15, 2021 10:40:00 PM
+
+#tconstruct:crafting_station_blacklist
+- tconstruct:crafting_station
+- tconstruct:tinker_station
+- tconstruct:part_builder
+- tconstruct:part_chest
+- tconstruct:modifier_chest
+- tconstruct:cast_chest
+- tconstruct:basin
+- tconstruct:table
+- tconstruct:smeltery

@@ -1,0 +1,502 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.075
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:apple",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Motivational Apple",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cookie",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Motivational Cookie",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:pufferfish",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Motivational Pufferfish",
+								"italic": false
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.09
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Keep going.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Let's do this.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Don't stop until you're proud.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Dream big.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "You get what you give.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Be you.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Take the risk or lose the chance.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "You are stronger than you think",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Never ever give up.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Anything is possible.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "It always seems impossible until it's done.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Believe in yourself.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Getting there...",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "You've got this.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Prove them wrong.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Failure is success in progress.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Don't let go.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Be brave.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Just keep trying.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Be stronger than your excuses",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Any minute now...",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "I'm sorry.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Persistence is key.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "Today is a good day.",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "The next crate could be the one!",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "So close yet so far...",
+								"italic": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "This took forever to package.",
+								"italic": false
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 2500000,
+					"name": "minecraft:barrel",
+					"functions": [
+						{
+							"function": "minecraft:set_loot_table",
+							"name": "custom:chests/patience_1"
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "The fabled prize awaits at the bottom...",
+									"italic": true,
+									"color": "gray"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "minecraft:barrel",
+					"functions": [
+						{
+							"function": "minecraft:set_loot_table",
+							"name": "custom:chests/patience_2"
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": {
+								"text": "The Reward of Patience",
+								"italic": false,
+								"color": "dark_green"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"text": "The fabled prize...",
+									"italic": true,
+									"color": "gray"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

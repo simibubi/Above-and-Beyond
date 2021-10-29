@@ -1,0 +1,104 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:soul_sand",
+      "filler": "minecraft:netherrack",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 12,
+      "spawnRate": 12.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:gravel",
+      "filler": "minecraft:netherrack",
+      "minY": 5,
+      "maxY": 37,
+      "maxVeinSize": 32,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:nether_quartz_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 10,
+      "maxY": 246,
+      "maxVeinSize": 14,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:nether_quartz_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 10,
+      "maxY": 246,
+      "maxVeinSize": 14,
+      "spawnRate": 32.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:nether_gold_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 10,
+      "maxY": 118,
+      "maxVeinSize": 10,
+      "spawnRate": 10.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:nether_gold_ore",
+      "filler": "minecraft:netherrack",
+      "minY": 10,
+      "maxY": 118,
+      "maxVeinSize": 10,
+      "spawnRate": 20.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:blackstone",
+      "filler": "minecraft:netherrack",
+      "minY": 5,
+      "maxY": 31,
+      "maxVeinSize": 10,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:magma_block",
+      "filler": "minecraft:netherrack",
+      "minY": 26,
+      "maxY": 36,
+      "maxVeinSize": 10,
+      "spawnRate": 15.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:ancient_debris",
+      "filler": "minecraft:netherrack",
+      "minY": 8,
+      "maxY": 120,
+      "maxVeinSize": 1,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:ancient_debris",
+      "filler": "minecraft:netherrack",
+      "minY": 8,
+      "maxY": 24,
+      "maxVeinSize": 2,
+      "spawnRate": 1.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

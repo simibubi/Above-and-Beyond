@@ -1,0 +1,24 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:gravel",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 256,
+      "maxVeinSize": 32,
+      "spawnRate": 8.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    },
+    {
+      "ore": "minecraft:gravel",
+      "filler": "minecraft:netherrack",
+      "minY": 5,
+      "maxY": 37,
+      "maxVeinSize": 32,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+
+#Tweak and change the various block animations.
+#Only cosmetic stuff in here so to leave default if not interested.
+#Remember to delete this and server configs and let it refresh every once in a while since I might have tweaked it
+[blocks]
+
+	[blocks.clock_block]
+		#Display 24h time format. False for 12h format
+		24h_format = true
+
+	[blocks.pedestal]
+		#Enable displayed item spin
+		spin = true
+		#Spin speed
+		#Range: 0.0 ~ 100.0
+		speed = 2.0
+		#Enable special display types for items like swords, tridents or end crystals
+		fancy_renderers = true
+
+	[blocks.wall_lantern]
+		#Makes wall lantern use a simple block model instead of the animated tile entity renderer. This will make them render much faster but will also remove the animation. Needs texture pack reload
+		fast_lanterns = false
+
+	[blocks.captured_mobs]
+		#Here you can customize how mobs are displayed in jars and cages.
+		#Following will have to be a list with the format below:
+		#[[<id>,<height>,<width>,<light_level>,<animation_type>],[<id>,...],...]
+		#With the following description:
+		# - <id> being the mob id (ie: minecraft:bee)
+		# - <height>,<width>: these are the added height and width that will be added to the actual mob hitbox to determine its scale inside a cage or jar 
+		#   You can increase them so this 'adjusted hitbox' will match the actual mob shape
+		#   In other words increase the to make the mob smaller
+		# - <light_level> determines if and how much light should the mob emit (currently broken)
+		# - <animation_type> is used to associate each mob an animation.
+		#It can be set to the following values:
+		# - 'air' to make it stand in mid air like a flying animal (note that such mobs are set to this value by default)
+		# - 'land' to force it to stand on the ground even if it is a flying animal
+		# - 'floating' to to make it stand in mid air and wobble up and down
+		# - any number > 0 to make it render as a 2d fish whose index matches the 'fishies' texture sheet
+		# - 0 or any other values will be ignored and treated as default
+		#Note that only the first 3 parameters are needed, the others are optional
+		rendering_parameters = [["minecraft:bee", "0.3125", "0.0"], ["minecraft:vex", "0.0", "0.125", "0", "FLOATING"], ["minecraft:silverfish", "0.0", "0.25"], ["minecraft:chicken", "0.25", "0.3125"], ["minecraft:endermite", "0.0", "0.0", "5"], ["supplementaries:firefly", "0.0", "0.0", "9", "FLOATING"], ["druidcraft:lunar_moth", "0.375", "0.1375", "10", "FLOATING"], ["iceandfire:pixie", "0.0", "0.0", "10"], ["minecraft:fish", "0.0", "0.125", "0", "1"], ["minecraft:tropical_fish", "0.0", "0.125", "0", "2"], ["minecraft:salmon", "0.0", "0.125", "0", "3"], ["minecraft:cod", "0.0", "0.125", "0", "4"], ["minecraft:pufferfish", "0.0", "0.125", "0", "5"], ["minecraft:axolotl", "0.0", "0.125", "0", "6"], ["fins:pea_wee", "0.0", "0.125", "0", "7"], ["fins:wee_wee", "0.0", "0.125", "0", "8"], ["fins:vibra_wee", "0.0", "0.125", "0", "9"], ["fins:blu_wee", "0.0", "0.125", "0", "10"], ["fins:ornate_bugfish", "0.0", "0.125", "0", "11"], ["fins:spindly_gem_crab", "0.0", "0.125", "0", "12"], ["fins:phantom_nudibranch", "0.0", "0.125", "0", "13"], ["fins:high_finned_blue", "0.0", "0.125", "0", "14"], ["fins:teal_arrowfish", "0.0", "0.125", "0", "15"], ["fins:midnight_squid", "0.0", "0.125", "0", "16"], ["fins:banded_redback_shrimp", "0.0", "0.125", "0", "17"], ["fins:flatback_sucker", "0.0", "0.125", "0", "18"], ["fins:swamp_mucker", "0.0", "0.125", "0", "19"], ["upgrade_aquatic:lionfish", "0.0", "0.125", "0", "20"], ["upgrade_aquatic:nautilus", "0.0", "0.125", "0", "21"], ["upgrade_aquatic:pike", "0.0", "0.125", "0", "22"], ["alexsmobs:stradpole", "0.0", "0.125", "0", "23"], ["alexsmobs:blobfish", "0.0", "0.125", "0", "24"], ["unnamedanimalmod:flashlight_fish", "0.0", "0.125", "0", "25"], ["unnamedanimalmod:elephantnose_fish", "0.0", "0.125", "0", "26"], ["unnamedanimalmod:black_diamond_stingray", "0.0", "0.125", "0", "27"], ["unnamedanimalmod:humphead_parrotfish", "0.0", "0.125", "0", "28"], ["unnamedanimalmod:tomato_frog", "0.0", "0.125", "0", "29"], ["unnamedanimalmod:pacman_frog", "0.0", "0.125", "0", "30"], ["bettas:betta_fish", "0.0", "0.125", "0", "31"], ["pogfish:pogfish", "0.0", "0.125", "0", "32"], ["undergarden:gwibling", "0.0", "0.125", "0", "33"], ["environmental:koi", "0.0", "0.125", "0", "34"], ["betterendforge:end_fish", "0.0", "0.125", "0", "35"], ["betteranimalsplus:flying_fish", "0.0", "0.125", "0", "36"], ["betteranimalsplus:nautilus", "0.0", "0.125", "0", "37"], ["betteranimalsplus:eel_freshwater", "0.0", "0.125", "0", "38"], ["betteranimalsplus:eel_saltwater", "0.0", "0.125", "0", "39"], ["betteranimalsplus:lamprey", "0.0", "0.125", "0", "40"], ["betteranimalsplus:piranha", "0.0", "0.125", "0", "41"], ["betteranimalsplus:barracuda", "0.0", "0.125", "0", "42"], ["rediscovered:fish", "0.0", "0.125", "0", "1"]]
+		#A list of mobs that can be ticked on client side when inside jars. Mainly used for stuff that has particles. Can cause issues and side effects so use with care
+		tickable_inside_jars = ["iceandfire:pixie", "druidcraft:lunar_moth"]
+
+	[blocks.firefly_jar]
+		#Particle in firefly jars spawn as explained below:
+		#Every <spawn_period> ticks a particle has a chance to spawn determined by <spawn_chance>x100 %.
+		#Range: 1 ~ 20
+		spawn_period = 8
+		#Spawn chance every period
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.3
+
+	[blocks.globe]
+		#Enable a random globe texture for each world
+		random_world = true
+		#Here you can put custom colors that will be assigned to each globe depending on the dimension where its placed:
+		#To do so you'll have to make a list for one entry for every dimension you want to recolor as follows:
+		#[[<id>,<c1>,...,<c12>],[<id>,<c1>,...,<c12>],...]
+		#With the following description:
+		# - <id> being the dimension id (ie: minecraft:the_nether)
+		# - <c1> to <c12> will have to be 12 hex colors (without the #) that will represent each of the 17 globe own 'virtual biome'
+		#Following are the virtual biomes that each index is associated with:
+		# - 1: water light
+		# - 2: water medium
+		# - 3: water dark
+		# - 4: coast/taiga
+		# - 5: forest
+		# - 6: plains
+		# - 7: savanna
+		# - 8: desert
+		# - 9: snow
+		# - 10: ice
+		# - 11: iceberg/island
+		# - 12: mushroom island
+		globe_colors = [["minecraft:overworld", "23658d", "25527d", "1d396d", "2d8a5c", "34a03a", "6ea14b", "89a83d", "b5ba65", "ccd7d5", "83b4c6", "2f83a2", "826e71"], ["minecraft:the_nether", "941818", "7b0000", "6a0400", "16615b", "941818", "ca4e06", "e66410", "f48522", "5a0000", "32333d", "118066", "100c1c"], ["minecraft:the_end", "061914", "000000", "2a0d2a", "000000", "d5da94", "cdc68b", "061914", "2a0d2a", "cdc68b", "000000", "eef6b4", "b286b2"]]
+
+	[blocks.flag]
+		#How tall the wave lobes will be. (Wave amplitude)
+		#Range: 0.0 ~ 100.0
+		intensity = 1.0
+		#How wavy the animation will be in pixels. (Wavelength)
+		#Range: 0.001 ~ 100.0
+		wavyness = 6.0
+		#How slow a flag will oscillate. (Period of oscillation)
+		#Lower value = faster oscillation
+		#Range: 0 ~ 10000
+		slowness = 100
+		#At which graphic settings flags will have a fancy renderer: 0=fast, 1=fancy, 2=fabulous
+		#Allowed Values: FAST, FANCY, FABULOUS
+		fanciness = "FABULOUS"
+		#How much the wave amplitude increases each pixel. (Amplitude increment per pixel)
+		#Range: 0.0 ~ 10.0
+		intensity_increment = 0.3
+
+	[blocks.wind_vane]
+		#This should be kept period_1/3 for a symmetric animation
+		#Range: 0.0 ~ 2000.0
+		period_2 = 150.0
+		#Wind vane animation swings according to this equation: 
+		#angle(time) = max_angle_1*sin(2pi*time*pow/period_1) + <max_angle_2>*sin(2pi*time*pow/<period_2>)
+		#where:
+		# - pow = max(1,redstone_power*<power_scaling>)
+		# - time = time in ticks
+		# - redstone_power = block redstone power
+		#<power_scaling> = how much frequency changes depending on power. 2 means it spins twice as fast each power level (2* for rain, 4* for thunder)
+		#increase to have more distinct indication when weather changes
+		#Range: 1.0 ~ 100.0
+		power_scaling = 3.0
+		#Range: 0.0 ~ 360.0
+		max_angle_2 = 10.0
+		#Amplitude (maximum angle) of first sine wave
+		#Range: 0.0 ~ 360.0
+		max_angle_1 = 30.0
+		#Base period in ticks at 0 power of first sine wave
+		#Range: 0.0 ~ 2000.0
+		period_1 = 450.0
+
+	[blocks.item_shelf]
+		#Translate down displayed 3d blocks so that they are touching the shelf.
+		#Note that they will not be centered vertically this way
+		supported_blocks = true
+
+	[blocks.bamboo_spikes]
+		#Populate the creative inventory with all tipped spikes variations
+		populate_creative_tab = true
+
+#Particle parameters
+[particles]
+
+	#Firefly jar particle
+	[particles.firefly_glow]
+		#Maximum age in ticks. Note that actual max age with be this + a random number between 0 and 10
+		#Range: 1 ~ 256
+		max_age = 40
+		#Scale
+		#Range: 0.0 ~ 1.0
+		scale = 0.075
+
+#Entities parameters
+[entities]
+
+	[entities.firefly]
+		#Firefly glow animation uses following equation:
+		#scale = {max[(1-<intensity>)*sin(time*2pi/<period>)+<intensity>, 0]}^<exponent>
+		#Where:
+		# - scale = entity transparency & entity scale
+		# - period = period of the animation. This variable is located in common configs<intensity> affects how long the pulse last, not how frequently it occurs.
+		#Use 0.5 for normal sin wave. Higher and it won't turn off completely
+		#
+		#Range: -100.0 ~ 1.0
+		intensity = 0.2
+		#Affects the shape of the wave. Stay under 0.5 for sharper transitions
+		#Range: 0.0 ~ 10.0
+		exponent = 0.5
+
+#General settings
+[general]
+	#Tries to detect when the mod hasn't been downloaded from Curseforge.Set to false if you have manually changed the mod jar name
+	anti_reposting_warning = true
+	#ignore this
+	#Range: -10.0 ~ 10.0
+	test2 = 0.0
+	#ignore this
+	#Range: -10.0 ~ 10.0
+	test3 = 0.0
+	#Enable Quark style config button on main menu. Needs Configured installed to work
+	config_button = false
+	#Show some tooltip hints to guide players through the mod
+	tooltip_hints = true
+	#ignore this
+	#Range: -10.0 ~ 10.0
+	test1 = 0.0
+
+#Game tweaks
+[tweaks]
+	#Colors the brewing stand potion texture depending on the potions it's brewing.
+	#If using a resource pack add tint index from 0 to 3 to the 3 potion layers
+	brewing_stand_colors = true
+	#Allow to right click with a clock to display current time in numerical form
+	clock_right_click = true
+	#Makes tipped arrows show their colors when loaded with a crossbow
+	crossbows_colors = true
+	#Renders an enchantment glint on placeable enchanted books
+	placeable_books_glint = false
+
+#Items
+[items]
+
+	[items.slingshot]
+		#Adds an overlay to slingshots in gui displaying currently selected block
+		overlay = true
+		#Render the block outline for distant blocks that are reachable with a slingshot enchanted with Stasis
+		stasis_block_outline = true
+		#An RGBA color for the block outline in hex format, for example 0x00000066 for vanilla outline colors
+		block_outline_color = "ffffff66"
+		#How big should a slingshot projectile look
+		#Range: 0.0 ~ 1.0
+		projectile_scale = 0.5
+

@@ -1,0 +1,56 @@
+// You can add custom loot entries by using xml-like tags. The relevant data needs to be surrounded by <...> and </...>
+// Looking at the default table will give you some examples
+// Adding a new entry requires at least the <strainer> and <item> tag (surrounded by <add>). Use <chance> to set item rarity (higher chance = more likely to drop)
+// To copy the current loot table to another strainer use the <parent> and <child> tag (surrounded by <copy>)
+
+<configversion>1</configversion>
+
+// Sediment filter
+<add><strainer>strainer_survivalist</strainer> <chance>20</chance> <item>minecraft:sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>15</chance> <item>biomesoplenty:white_sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>15</chance> <item>biomesoplenty:orange_sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>5</chance> <item>minecraft:clay_ball</item></add>
+
+// Unused
+// <add><strainer>strainer_survivalist_solid</strainer> <chance>20</chance> <item>minecraft:flint</item></add>
+
+// Unused
+// <add><strainer>strainer_survivalist_reinforced</strainer> <chance>99</chance> <item>appliedenergistics2:ender_dust</item></add>
+
+// Fishing Net
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:cod</item> <subchance>60</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:salmon</item> <subchance>25</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:pufferfish</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:tropical_fish</item> <subchance>2</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:stick</item> <subchance>22</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:string</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:leather</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:rotten_flesh</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:bone</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:glass_bottle</item> <subchance>12</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:lily_pad</item> <subchance>7</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:vine</item> <subchance>7</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <chance>69</chance> <item>$BLANK$</item></add>
+
+// Unused
+// <add><strainer>strainer_fisherman_solid</strainer> <chance>100</chance> <item>minecraft:sponge</item></add>
+
+// Specialty Fishing Net
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:rainbow_trout</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:atlantic_cod</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:smallmouth_bass</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:box_turtle</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:red_grouper</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:jellyfish</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:catfish</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>aquaculture:tuna</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>minecraft:cod</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>40</chance> <item>minecraft:salmon</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>30</chance> <item>minecraft:bamboo</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>20</chance> <item>thermal:diamond_dust</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>20</chance> <item>thermal:gold_dust</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>20</chance> <item>thermal:silver_coin</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>20</chance> <item>minecraft:redstone</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>20</chance> <item>minecraft:prismarine_shard</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>30</chance> <item>minecraft:kelp</item></add>
+<add><strainer>strainer_fisherman_reinforced</strainer> <chance>30</chance> <item>minecraft:seagrass</item></add>

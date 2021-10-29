@@ -1,0 +1,11 @@
+##    Ore Tweaker - Information   ##
+
+Add Ore Configs to the data folder to tweak the world generation
+By default the mod and its files mimics vanilla world generation settings.
+Check out more info on the wiki at https://github.com/EwyBoy/OreTweaker/wiki
+
+Bugs can be reported here at https://github.com/EwyBoy/OreTweaker/issues
+
+Enjoy and have fun!
+
+-Ewy

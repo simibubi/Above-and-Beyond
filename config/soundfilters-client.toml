@@ -1,0 +1,133 @@
+
+#Low Pass Filter Settings
+[lowPass]
+	################################################################################
+	#Set to false to disable low pass filter in water and lava.
+	useLowPass = true
+
+#Low Pass Filter Settings - Water
+[lowPassWater]
+	################################################################################
+	#The multiplier for volume when you are in water. Lower is quieter.
+	#Range: 0.0 ~ 1.0
+	waterLowPassVolume = 1.0
+	################################################################################
+	#The multiplier for volume when you are in water for high frequencies.
+	#Lower is less high frequency sound.
+	#Range: 0.0 ~ 1.0
+	waterLowPassHighFrequencyVolume = 0.4
+
+#Low Pass Filter Settings - Lava
+[lowPassLava]
+	################################################################################
+	#The multiplier for volume when you are in lava. Lower is quieter.
+	#Range: 0.0 ~ 1.0
+	lavaLowPassVolume = 0.6
+	################################################################################
+	#The multiplier for volume when you are in lava for high frequencies.
+	#Lower is less high frequency sound.
+	#Range: 0.0 ~ 1.0
+	lavaLowPassHighFrequencyVolume = 0.2
+
+#Occlusion Filter Settings
+[occlusion]
+	################################################################################
+	#Set to false to disable low pass filter for sounds behind solid walls.
+	#If you are getting lag, disabling this might help.
+	useOcclusion = true
+	################################################################################
+	#The multiplier per block for occlusion. You can lower this if you
+	#find the occlusion to be too much or raise it for a more noticeable
+	#effect.
+	#Range: 0.0 ~ 1.0
+	occlusionMultiplier = 0.1
+	################################################################################
+	#The maximum percent sound can be occluded behind a wall.
+	#Range: 0.0 ~ 1.0
+	occlusionMaximum = 0.98
+	################################################################################
+	#Add new entries separated by commas in the format
+	#"<reverb double> <block>"
+	#where <block> can be either a block tag or id the format
+	#<block id>[<state (optional)>]{<nbt tag (optional>}
+	#to customize how much sound the block should absorb when it is between you and the
+	#sound source. It should be in the same format as in the setblock command. The
+	#amount is a double, with 0.0 absorbing no sound (like air), and 1.0 being the
+	#normal amount, and 2.0 being twice the normal amount. By default, wool and sponge
+	#have 2.0 which is twice the normal sound absorption.
+	blockSpecificOcclusion = ["2.0 #minecraft:wool", "2.0 minecraft:sponge", "2.0 minecraft:wet_sponge"]
+
+#Reverb Filter Settings
+[reverb]
+	################################################################################
+	#Set to false to disable reverb.
+	useReverb = true
+	################################################################################
+	#The percentage of reverb you can get. You can lower this if you find
+	#the reverb to be too much (or raise it if you really want an echo).
+	#Range: 0.0 ~ 2.0
+	reverbPercent = 1.0
+	################################################################################
+	#If this is true, when you're in an area that can see the sky, then
+	#there will be less reverb. This is for aboveground areas with
+	#lots of stone like extreme hills biomes. There still might
+	#be some reverb, but less then when the sky isn't visible.
+	doSkyChecks = true
+	################################################################################
+	#If you are getting lag, set this number lower. The higher it is,
+	#the more realistic the reverb will be.
+	#Range: > 0
+	numberOfBlocksReverbWillCheckThrough = 1024
+	################################################################################
+	#Add new entries separated by commas in the format
+	#"<reverb amount> <block>"
+	#where <block> can be either a block tag or id the format
+	#<block id>[<state (optional)>]{<nbt tag (optional>}to customize how specific blocks absorb or create reverb.
+	#By default things like wool, snow, carpets, and plants absorb reverb
+	#(value 0.0), things like wood and dirt are neutral (value 1.0),
+	#and things like stone, metal, ice, and glass create reverb (value 2.0).
+	#The state and tag are optional. It should be in the same format as in
+	#the setblock command. For instance, making snowy grass increase reverb
+	#would be '2.0 grass_block[snowy=true]'.
+	blockSpecificReverb = [""]
+	################################################################################
+	#Add new entries separated by commas in the format
+	#"<reverb percent> <dimension id>"
+	#to customize how much ambient reverb a specific dimension has.
+	#The reverb percent should be between 0.0 and 1.0. By default the
+	#nether has 1.0, meaning full reverb without any special blocks.
+	dimensionSpecificReverb = ["1.0 minecraft:the_nether"]
+
+#Advanced Reverb Filter Settings - You can edit these if you know what you are
+#doing. You can even edit them if you don't know what you are doing, and just
+#want to experiment. =)
+#For more info about what all these things are, look starting at the bottom of page
+#101 on https://kcat.strangesoft.net/misc-downloads/Effects%20Extension%20Guide.pdf
+[reverbAdvanced]
+	#Range: 0.0 ~ 1.0
+	density = 0.2
+	#Range: 0.0 ~ 1.0
+	diffusion = 0.6
+	#Range: 0.0 ~ 1.0
+	gain = 0.15
+	#Range: 0.0 ~ 1.0
+	gainHF = 0.8
+	#Range: 0.1 ~ 20.0
+	decayTimeMinimum = 0.1
+	#Range: 0.1 ~ 20.0
+	decayHFRatio = 0.7
+	#Range: 0.892 ~ 1.0
+	airAbsorptionGainHF = 0.99
+	#Range: 0.0 ~ 1.58
+	reflectionsGainBase = 0.05
+	#Range: 0.0 ~ 1.58
+	reflectionsGainMultiplier = 0.05
+	#Range: 0.0 ~ 0.3
+	reflectionsDelayMultiplier = 0.025
+	#Range: 0.0 ~ 5.0
+	lateReverbGainBase = 1.26
+	#Range: 0.0 ~ 5.0
+	lateReverbGainMultiplier = 0.1
+	#Range: 0.0 ~ 0.1
+	lateReverbDelayMultiplier = 0.01
+

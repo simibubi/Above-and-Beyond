@@ -1,0 +1,14 @@
+
+#Ore Tweaker - Settings File
+[SETTINGS]
+	#Enables debug mode
+	debug = false
+
+[TEMPLATES]
+	#Attempts to regenerate template files if not present
+	generate_templates = false
+
+[DATA]
+	#Attempts to regenerate default data files if not present
+	generate_default_settings = false
+

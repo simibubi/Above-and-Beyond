@@ -1,0 +1,52 @@
+
+[general]
+	#Defines how many Dimensions can be generated at the same time, this is due to thread limitations mcs worldgen has. 0 => Single Dimension, 1 => Up to 3 dimensions (Ensures each dimension has at least 2 threads), 2 => Up to 5 Dimensions (Dimensions will fight over CPU Threads due to limitations)
+	#Range: 0 ~ 2
+	"Threading Rule" = 2
+	#Changes the World Generator to process Multiple chunks at the same time (Multithreading) to use more resources if present, may cause crashes with mods
+	Multithread-Hack = false
+	#Defines if the Improved Command Arguments should be used on Command Creation. If enabled mod is required on client
+	"Advanced Command Arguments" = true
+	#Defines if the SyncChunkWrite config should be not forcefully set to false. Note: SyncChunkWrite "May" Prevent data corruption. Though this was only enabled since 1.16 before it was always disabled. Downside of this is that HDDs/SSDs during pregen are at 100% usage ALL the time instead of less then 5%. This can lead to hardware failure much much much much more quickly. This is why the override is enabled by default
+	"Disable ChunkSyncOverride" = false
+	#Defines how many Players have to be online for the Processor to Auto Pause, -1 = Disabled. It is Inclusive 2 = Allows 1 Player
+	#Range: > -1
+	"Player Limit" = -1
+	#Defines how many milliseconds the Chunk Deleter gets per tick
+	#Range: 1 ~ 1000
+	"Deletion Time" = 10
+	#Defines if the pregenerator should automatically restart on server start. Automatically set to true when a task is running, and automatically set to false if no task is running
+	auto-restart = false
+	#Defines if the Profiler should run in the background or not
+	enable-profiler = false
+
+[client]
+
+	[client.pregen-overlay]
+		#Defines if the Pregen Overlay should be enabled
+		pregen-overlay = true
+		#Defines the Horizontal Alignment of the UI, left to right
+		#Allowed Values: START, CENTER, END
+		horizontal-alignment = "START"
+		#Defines the Vertical Alignment of the UI, top to bottom
+		#Allowed Values: START, CENTER, END
+		vertical-alignment = "START"
+		#Defines the Scale of the Overlay
+		#Range: 0.1 ~ 10.0
+		scale = 1.0
+
+	[client.profiler-overlay]
+		#Defines if the Profiler Overlay should be enabled
+		profiler-overlay = true
+		#Defines the Horizontal Alignment of the UI, left to right
+		#Allowed Values: START, CENTER, END
+		horizontal-alignment = "START"
+		#Defines the Vertical Alignment of the UI, top to bottom
+		#Allowed Values: START, CENTER, END
+		vertical-alignment = "START"
+		#Defines the Scale of the Overlay
+		#Range: 0.1 ~ 10.0
+		scale = 1.0
+		#Reference to save which dimension is currently detailed
+		detailed-dimension = "minecraft:overworld"
+

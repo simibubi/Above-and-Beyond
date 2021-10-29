@@ -1,0 +1,12 @@
+{
+	"block.thermal.machine_press": "Trade Station",
+	"block.thermal.machine_sawmill": "Reagent Extractor",
+	"block.thermal.machine_frame": "Invar Machine",
+	"info.thermal.machine_press.0": "Automatically exchanges items for coin and vice-versa.",
+	"info.thermal.machine_press.1": "Requires a trade card from the Questing Interface.",
+	"info.thermal.machine_press.2": "Thank you for your purchase!",
+	"info.thermal.machine_sawmill.0": "Automatically removes Reagents from their glass.",
+	"info.thermal.machine_sawmill.1": "",
+	"info.thermal.machine_sawmill.2": "",
+	"msg.fuelingStation.link": "Now linking from Position"
+}

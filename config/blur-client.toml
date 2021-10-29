@@ -1,0 +1,13 @@
+#A list of classes to be excluded from the blur shader.
+guiExclusions = ["net.minecraft.client.gui.screen.ChatScreen", "net.minecraft.client.gui.screen.SleepInMultiplayerScreen"]
+#The time it takes for the blur to fade in, in ms.
+#Range: 0 ~ 10000
+fadeTime = 200
+#The radius of the blur effect. This controls how "strong" the blur is.
+#Range: 1 ~ 100
+radius = 12
+#The start color of the background gradient. Given in ARGB hex.
+gradientStartColor = "75000000"
+#The end color of the background gradient. Given in ARGB hex.
+gradientEndColor = "75000000"
+

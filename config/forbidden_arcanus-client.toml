@@ -1,0 +1,13 @@
+
+[rendering]
+
+	[rendering.orb_of_temporary_flight]
+		#Should the Orb of Temporary Flight Overlay be rendered? [default: true]
+		render = true
+		#X-Position of the Orb of Temporary Flight Overlay (if enabled) [default: 1]
+		#Range: 0 ~ 500
+		x_position = 1
+		#Y-Position of the Orb of Temporary Flight Overlay (if enabled) [default: 1]
+		#Range: 0 ~ 500
+		y_position = 1
+

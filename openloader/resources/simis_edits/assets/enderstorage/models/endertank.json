@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "enderstorage:enderchest",
+		"particle": "enderstorage:enderchest"
+	},
+	"elements": [
+		{
+			"name": "Valve",
+			"from": [11, 22, 13],
+			"to": [17, 24, 19],
+			"faces": {
+				"north": {"uv": [0.25, 4.25, 1.75, 4.75], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0.25, 4.25, 1.75, 4.75], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [0.25, 4.25, 1.75, 4.75], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [0.25, 4.25, 1.75, 4.75], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [8, 5.75, 9.5, 7.25], "texture": "#0"},
+				"down": {"uv": [8, 5.75, 9.5, 7.25], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 10, 8],
+			"to": [20, 22, 10],
+			"faces": {
+				"north": {"uv": [3.75, 0.25, 6.75, 3.25], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0.25, 4.25, 3.25, 4.75], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [3.75, 0.25, 6.75, 3.25], "texture": "#0"},
+				"west": {"uv": [0.25, 4.25, 3.25, 4.75], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [5.5, 3.75, 8.5, 4.25], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0.25, 4.25, 3.25, 4.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 10, 22],
+			"to": [20, 22, 24],
+			"faces": {
+				"north": {"uv": [3.75, 0.25, 6.75, 3.25], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [3.75, 3.5, 6.75, 4], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [3.75, 0.25, 6.75, 3.25], "texture": "#0"},
+				"west": {"uv": [3.75, 3.5, 6.75, 4], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [5.5, 4, 8.5, 4.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [3.75, 3.5, 6.75, 4], "texture": "#0"}
+			}
+		}
+	]
+}

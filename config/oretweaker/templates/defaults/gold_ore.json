@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:gold_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 32,
+      "maxVeinSize": 8,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

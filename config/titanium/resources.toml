@@ -1,0 +1,6 @@
+
+[modules]
+
+	[modules.resources]
+		enabled = true
+

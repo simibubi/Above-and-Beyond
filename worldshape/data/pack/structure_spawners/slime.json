@@ -1,0 +1,32 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "pack:slime/any"
+    },
+
+    "averageSpacing": 25,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "minY": 50,
+        "maxY": 100,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#taiga",
+        "#extreme_hills",
+        "#jungle",
+        "#plains",
+        "#forest",
+        "#swamp",
+        "#mushroom"
+    ]
+
+}

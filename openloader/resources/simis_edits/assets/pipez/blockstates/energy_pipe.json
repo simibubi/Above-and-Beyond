@@ -1,0 +1,518 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "down": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "pipez:block/end",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "false"
+      },
+      "apply": {
+        "model": "pipez:block/window",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "down": "true",
+        "west": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "x": 180,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "up": "true",
+        "west": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "west": "false",
+        "east": "false",
+        "south": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true",
+        "west": "false",
+        "east": "false",
+        "north": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "true",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "west": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/open_end",
+        "uvlock": true,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "east": "true",
+            "west": "true",
+            "north": "true"
+          },
+          {
+            "east": "true",
+            "west": "true",
+            "south": "true"
+          },
+          {
+            "east": "true",
+            "west": "true",
+            "up": "true"
+          },
+          {
+            "east": "true",
+            "west": "true",
+            "down": "true"
+          },
+          {
+            "east": "true",
+            "north": "true",
+            "south": "true"
+          },
+          {
+            "east": "true",
+            "north": "true",
+            "up": "true"
+          },
+          {
+            "east": "true",
+            "north": "true",
+            "down": "true"
+          },
+          {
+            "east": "true",
+            "south": "true",
+            "up": "true"
+          },
+          {
+            "east": "true",
+            "south": "true",
+            "down": "true"
+          },
+          {
+            "east": "true",
+            "up": "true",
+            "down": "true"
+          },
+          {
+            "west": "true",
+            "north": "true",
+            "south": "true"
+          },
+          {
+            "west": "true",
+            "north": "true",
+            "up": "true"
+          },
+          {
+            "west": "true",
+            "north": "true",
+            "down": "true"
+          },
+          {
+            "west": "true",
+            "south": "true",
+            "up": "true"
+          },
+          {
+            "west": "true",
+            "south": "true",
+            "down": "true"
+          },
+          {
+            "west": "true",
+            "up": "true",
+            "down": "true"
+          },
+          {
+            "north": "true",
+            "south": "true",
+            "up": "true"
+          },
+          {
+            "north": "true",
+            "south": "true",
+            "down": "true"
+          },
+          {
+            "north": "true",
+            "up": "true",
+            "down": "true"
+          },
+          {
+            "south": "true",
+            "up": "true",
+            "down": "true"
+          }
+        ]
+      },
+      "apply": {
+        "model": "pipez:block/cover"
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "west": "false",
+        "north": "true",
+        "south": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/bottom_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "west": "false",
+        "south": "true",
+        "north": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/bottom_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "west": "true",
+        "south": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/bottom_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "east": "true",
+        "south": "false",
+        "up": "true",
+        "down": "false"
+      },
+      "apply": {
+        "model": "pipez:block/bottom_corner",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "west": "false",
+        "north": "true",
+        "south": "false",
+        "down": "true",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/top_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "west": "false",
+        "south": "true",
+        "north": "false",
+        "down": "true",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/top_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "west": "true",
+        "south": "false",
+        "down": "true",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/top_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "east": "true",
+        "south": "false",
+        "down": "true",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/top_corner",
+        "y": 90
+      }
+    },
+
+
+    {
+      "when": {
+        "east": "false",
+        "west": "true",
+        "north": "true",
+        "south": "false",
+        "down": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/side_corner",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "true",
+        "west": "false",
+        "south": "false",
+        "north": "true",
+        "down": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/side_corner",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "west": "true",
+        "south": "true",
+        "down": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/side_corner",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "east": "true",
+        "south": "true",
+        "down": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/side_corner",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "west": "false",
+        "east": "false",
+        "south": "false",
+        "down": "false",
+        "up": "false"
+      },
+      "apply": {
+        "model": "pipez:block/single"
+      }
+    }
+  ]
+}

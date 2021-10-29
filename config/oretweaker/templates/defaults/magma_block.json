@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "minecraft:magma_block",
+      "filler": "minecraft:netherrack",
+      "minY": 26,
+      "maxY": 36,
+      "maxVeinSize": 10,
+      "spawnRate": 15.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

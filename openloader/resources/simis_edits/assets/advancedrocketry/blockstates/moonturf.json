@@ -1,0 +1,31 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "advancedrocketry:block/moon_turf"
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf",
+                "y": 90
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf_1"
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf_2"
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf_2",
+                "y": 90
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf_2",
+                "y": 180
+            },
+            {
+                "model": "advancedrocketry:block/moon_turf_2",
+                "y": 270
+            }
+        ]
+    }
+}

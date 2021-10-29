@@ -1,0 +1,25 @@
+{
+    "template": {
+        "type": "single",
+        "id": "pack:crashed_rocket"
+    },
+
+    "averageSpacing": 28,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -2,
+        "terraform": 2,
+        "minY": 60,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "custommoon:moon"
+    ],
+
+    "biomes": [
+        "advancedrocketry:moonold"
+    ]
+
+}

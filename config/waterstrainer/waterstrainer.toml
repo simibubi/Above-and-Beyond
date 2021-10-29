@@ -1,0 +1,44 @@
+
+[IdleTime]
+	#Adds a deviation to the idle time to make it more random. [Default: 5]
+	#Range: 0 ~ 107374182
+	idle_time_deviation = 5
+	#Time (in seconds) until a strainer catches an item. [Default: 30]
+	#Range: 0 ~ 107374182
+	idle_time = 30
+
+#Set the max durability (uses) for each strainer type.
+#Use 0 for infinite durability.
+#Default:
+#- Normal: 120
+#- Solid: 720
+#- Reinforced: 8640
+[Durability]
+	#Range: > 0
+	durability_strainer_fisherman_reinforced = 50
+	#Range: > 0
+	durability_strainer_survivalist = 300
+	#Range: > 0
+	durability_strainer_fisherman = 100
+	#Range: > 0
+	durability_strainer_survivalist_solid = 1
+	#Range: > 0
+	durability_strainer_survivalist_reinforced = 400
+	#Range: > 0
+	durability_strainer_fisherman_solid = 1
+
+[Bonus]
+	#Bonus efficiency (in %) for Reinforced Strainers. Use 0 to disable bonus efficiency. [Default: 25]
+	#Range: > 0
+	bonus_reinforced_efficiency = 1
+	#Bonus efficiency (in %) for Solid Strainers. Use 0 to disable bonus efficiency. [Default: 10]
+	#Range: > 0
+	bonus_solid_efficiency = 1
+
+[Misc]
+	#Reinforced Strainers (Tier 3) can be enchanted. [Default: true]
+	misc_enable_enchanting = true
+	#Strainers are more or less efficient based on their placement (liquid height, biome, adjacent strainers).
+	#Bonus efficiency from strainer type and enchantments still apply. [Default: true]
+	misc_enable_efficiency = true
+

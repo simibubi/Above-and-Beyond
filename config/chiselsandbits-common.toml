@@ -1,0 +1,28 @@
+
+[common]
+
+	#Configuration entries related to the help system.
+	[common.help]
+
+		[common.help.common]
+
+			[common.help.common.help]
+				#Common configuration entries related to the help system and which features are enabled or not during displayment.
+				enabled = true
+
+	[common.common]
+
+		#Configuration entries related to performance.
+		[common.common.performance]
+
+			[common.common.performance.common]
+
+				[common.common.performance.common.performance]
+
+					[common.common.performance.common.performance.collisions]
+
+						[common.common.performance.common.performance.collisions.cache]
+							#common.performance.collisions.cache.size
+							#Range: -9223372036854775808 ~ 9223372036854775807
+							size = 10000
+

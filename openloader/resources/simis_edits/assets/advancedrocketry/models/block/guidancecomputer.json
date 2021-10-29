@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "advancedrocketry:blocks/machine_end",
+        "front": "advancedrocketry:blocks/guidancecomputer",
+        "side": "advancedrocketry:blocks/machine"
+    }
+}

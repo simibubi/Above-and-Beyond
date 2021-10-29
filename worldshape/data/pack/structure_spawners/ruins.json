@@ -1,0 +1,34 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "pack:ruins/any",
+        "maxDepth": 7
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "minY": 70,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#taiga",
+        "#extreme_hills",
+        "#jungle",
+        "#plains",
+        "#savanna",
+        "#forest",
+        "#swamp",
+        "#mushroom"
+    ]
+
+}

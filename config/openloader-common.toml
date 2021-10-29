@@ -1,0 +1,8 @@
+
+#This file is NOT used to add new data/resource packs. Just put them in the folder!
+[advanced-settings]
+	#Should OpenLoader try to load data packs?
+	load-data-packs = true
+	#Should OpenLoader try to load resource packs?
+	load-resource-packs = true
+

@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "thermal:niter_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 30,
+      "maxVeinSize": 6,
+      "spawnRate": 2.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": []
+    }
+  ]
+}

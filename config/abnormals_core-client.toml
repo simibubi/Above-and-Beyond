@@ -1,0 +1,23 @@
+
+#Client only settings for Abnormals Core.
+[client]
+	#If sky color transition should be smooth; Default: True
+	smoothSkyColor = true
+	#Scale for screen shake effects; Default: 1.0
+	#Range: 0.0 ~ 1.0
+	screenShakeScale = 1.0
+	#Max amount of sources that can contribute to screen shaking, adjustable for performance and preference reasons. 0 will disable the addition of shake sources; Default: 256
+	#Range: > 0
+	maxScreenShakers = 256
+
+	#Slabfish patron hat settings.
+	[client.slabfishSettings]
+		#If the slabfish hat's custom type should be enabled. If false, the default swamp slabfish appears; Default: True
+		typeEnabled = true
+		#If the slabfish hat's backpack should be enabled; Default: True
+		backpackEnabled = true
+		#If the slabfish hat's sweater should be enabled; Default: True
+		sweaterEnabled = true
+		#If the slabfish hat should be enabled; Default: True
+		enabled = true
+

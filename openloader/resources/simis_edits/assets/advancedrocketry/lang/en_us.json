@@ -1,0 +1,10 @@
+{
+	"block.advancedrocketry.seat": "Rocket Seat",
+	"block.advancedrocketry.fuelingstation": "Rocket Fueling Station",
+	"block.advancedrocketry.rocketmotor": "Rocket Thruster",
+	"block.advancedrocketry.guidancecomputer": "Rocket Guidance Computer",
+	"block.advancedrocketry.fueltank": "Rocket Fuel Tank",
+	"block.advancedrocketry.launchpad": "Rocketry Launch Pad",
+	"block.advancedrocketry.structuretower": "Rocketry Launch Tower",
+	"msg.modules": ""
+}

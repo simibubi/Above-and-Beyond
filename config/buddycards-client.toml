@@ -1,0 +1,170 @@
+
+[mobDrops]
+	#
+	#Odds of baby villager dropping base set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	villagerChance = 0.05
+	#
+	#Odds of baby piglin dropping nether set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	piglinChance = 0.05
+	#
+	#Odds of ender dragons dropping end set packs, 0 for 0%, 1 for 100%, default is 100%
+	#Range: 0.0 ~ 1.0
+	dragonChance = 1.0
+	#
+	#Odds of enderlings dropping end set packs, 0 for 0%, 1 for 100%, default is 10%
+	#Range: 0.0 ~ 1.0
+	enderlingChance = 0.1
+	#
+	#Maximum amount of packs dropped when a dragon drops packs, default is 4
+	#Range: 1 ~ 16
+	dragonMaxPacks = 4
+	#
+	#Odds of withers dropping nether set packs, 0 for 0%, 1 for 100%, default is 50%
+	#Range: 0.0 ~ 1.0
+	witherChance = 0.5
+	#
+	#Odds of baby zombie villager dropping base set packs, 0 for 0%, 1 for 100%, default is 10%
+	#Range: 0.0 ~ 1.0
+	zombieVillagerChance = 0.1
+	#
+	#Maximum amount of packs dropped when a wither drops packs, default is 3
+	#Range: 1 ~ 16
+	witherMaxPacks = 3
+	#
+	#Odds of baby zombie dropping base set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	zombieChance = 0.05
+	#
+	#Odds of baby zombie piglin dropping nether set , 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	zombiePiglinChance = 0.05
+	#
+	#Odds of shulkers dropping end set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	shulkerChance = 0.05
+
+[integration]
+	#
+	#Odds of fishing up an Aquaculture set card or pack while using a buddycard hook, 0-1, default is .075
+	#Range: 0.0 ~ 1.0
+	aquacultureFishingChance = 0.05
+
+[challenge]
+	#
+	#Multiplier for challenge points from base set, 0-10, default is 1
+	#Range: 0.0 ~ 10.0
+	set1Multiplier = 1.0
+	#
+	#Multiplier for challenge points with grade B, 0-10, default is 1.8
+	#Range: 0.0 ~ 10.0
+	grade3Multiplier = 1.7999999523162842
+	#
+	#Multiplier for challenge points with grade C, 0-10, default is 1.4
+	#Range: 0.0 ~ 10.0
+	grade2Multiplier = 1.399999976158142
+	#
+	#Base challenge points for rare cards, 1-100, default is 4
+	#Range: 1 ~ 100
+	pointsRare = 4
+	#
+	#Multiplier for challenge points from nether set, 0-10, default is 1.2
+	#Range: 0.0 ~ 10.0
+	set2Multiplier = 1.2000000476837158
+	#
+	#Enable Challenge mode, assigning cards point values, and giving each player a challenge binder, default is false
+	doChallengeMode = false
+	#
+	#Base challenge points for uncommon cards, 1-100, default is 2
+	#Range: 1 ~ 100
+	pointsUncommon = 2
+	#
+	#Multiplier for challenge points with grade D, 0-10, default is 1
+	#Range: 0.0 ~ 10.0
+	grade1Multiplier = 1.0
+	#
+	#Multiplier for challenge points from end set, 0-10, default is 2
+	#Range: 0.0 ~ 10.0
+	set3Multiplier = 2.0
+	#
+	#Multiplier for challenge points from byg set, 0-10, default is 2
+	#Range: 0.0 ~ 10.0
+	set4Multiplier = 2.0
+	#
+	#Base challenge points for common cards, 1-100, default is 1
+	#Range: 1 ~ 100
+	pointsCommon = 1
+	#
+	#Multiplier for challenge points on shiny cards, 0-10, default is 1.5
+	#Range: 0.0 ~ 10.0
+	shinyMultiplier = 1.5
+	#
+	#Multiplier for challenge points from create set, 0-10, default is 1
+	#Range: 0.0 ~ 10.0
+	set5Multiplier = 1.0
+	#
+	#Base challenge points for epic cards, 1-100, default is 8
+	#Range: 1 ~ 100
+	pointsEpic = 8
+	#
+	#Multiplier for challenge points with grade S, 0-10, default is 10
+	#Range: 0.0 ~ 10.0
+	grade5Multiplier = 10.0
+	#
+	#Multiplier for challenge points from fd set, 0-10, default is 1
+	#Range: 0.0 ~ 10.0
+	set7Multiplier = 1.0
+	#
+	#Multiplier for challenge points from aquaculture set, 0-10, default is 0.9
+	#Range: 0.0 ~ 10.0
+	set6Multiplier = 0.8999999761581421
+	#
+	#Multiplier for challenge points with grade A, 0-10, default is 2.5
+	#Range: 0.0 ~ 10.0
+	grade4Multiplier = 2.5
+
+[luminis]
+	#
+	#Amount of veins of Luminis generated per chunk, 1-24, default is 1
+	#Range: 0 ~ 36
+	perChunk = 1
+	#
+	#Odds of deep Luminis crystals being dropped by Luminis ore, note this can be doubled with certain gear, 0 for 0%, 1 for 100%, default is 3.5%
+	#Range: 0.0 ~ 1.0
+	deepLuminisOdds = 0.035
+	#
+	#Maximum Y value for Luminis to generate, 1-120, default is 24
+	#Range: 1 ~ 120
+	maxY = 24
+	#
+	#Size of Luminis veins, 1-36, default is 8
+	#Range: 1 ~ 36
+	veinSize = 8
+	#
+	#Odds of a random shiny non-epic card being dropped by Luminis ore when using the Luminis Medal, 0 for 0%, 1 for 100%, default is 2%
+	#Range: 0.0 ~ 1.0
+	cardLuminisOdds = 0.02
+
+[enderling]
+	#
+	#Odds for an Enderling to spawn with an Enderman in the Nether, 0-1, default is 0.5%
+	#Range: 0.0 ~ 1.0
+	netherOdds = 0.005
+	#
+	#Odds for an Enderling to spawn with an Enderman in the End, 0-1, default is 0.5%
+	#Range: 0.0 ~ 1.0
+	endOdds = 0.005
+	#
+	#Odds for an Enderling to spawn with an Enderman in the Overworld, 0-1, default is 1.5%
+	#Range: 0.0 ~ 1.0
+	overOdds = 0.015
+
+[misc]
+	#
+	#Mystery packs can be used to find any card in the mod, loaded or not, default is false
+	boringMysteryPacks = false
+	#
+	#Enables medal effects, default is true
+	doMedalEffects = true
+

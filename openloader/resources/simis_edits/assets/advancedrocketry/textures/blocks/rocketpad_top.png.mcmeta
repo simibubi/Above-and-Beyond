@@ -1,0 +1,12 @@
+{
+	"ctm": {
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": [ "advancedrocketry:blocks/rocketpad_top_ctm" ],
+		"extra": {
+			"connect_to": [
+			    { "block": "advancedrocketry:launchpad" }
+			]
+        }
+	}
+}

@@ -1,0 +1,28 @@
+{
+    "template": {
+        "type": "single",
+        "id": "pack:log_cabin"
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 1,
+        "terraform": 0,
+        "minY": 60,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#taiga",
+        "#extreme_hills",
+        "#forest"
+    ]
+
+}

@@ -1,0 +1,449 @@
+{
+	id: "1F9517DCFB1DB297"
+	group: "331B6409EF6A7840"
+	order_index: 0
+	filename: "overview"
+	title: " Overview"
+	icon: "minecraft:oak_sapling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Andesite Machinery"
+			disable_toast: true
+			x: -10.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Milestone"
+			description: [
+				"With Kinetic Mechanisms automated, many new possibilities unfold. Most of Create's machinery can now be crafted without much hassle. The early game just got a bit less early!"
+				""
+				"You can now continue, or choose to spend some time in the bonus section of Chapter 1. After all, a stronger supply of Copper Machines will come to be quite useful, too!"
+			]
+			dependencies: [
+				"61147823CC87F711"
+				"675C395B2074C24C"
+			]
+			hide_text_until_complete: true
+			id: "0E98B4D2BBF55308"
+			tasks: [{
+				id: "36F8C3CAF6FC3FB2"
+				type: "stat"
+				title: "Complete Chapter 1"
+				icon: "kubejs:kinetic_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Brass Machinery"
+			disable_toast: true
+			x: -7.0d
+			y: 0.0d
+			subtitle: "Milestone"
+			description: [
+				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
+				""
+				"It also opens the gate leading towards the Invar Age- potentially after a quick stop by the bonus section.."
+			]
+			dependencies: [
+				"1E263994D4883A08"
+				"19715EBCBBA1B4AD"
+			]
+			id: "69275ECFC147E15B"
+			tasks: [{
+				id: "0FF38BBE3B19D9C2"
+				type: "stat"
+				title: "Complete Chapter 2"
+				icon: "create:precision_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Invar Machinery"
+			disable_toast: true
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Milestone"
+			description: [
+				"A completely different age of Technology. Some machines are suddenly powered by some hardly observable magical energy."
+				""
+				"The Launch feels very close now. While there still lie challenges ahead, the solution footprint will shrink again thanks to the new Appliances."
+			]
+			dependencies: [
+				"780E8AE86250C73D"
+				"6CBA3D97CAD5DB63"
+			]
+			id: "400CDC316DCDFE88"
+			tasks: [{
+				id: "7FEEF6BED2C3F31B"
+				type: "stat"
+				title: "Complete Chapter 3"
+				icon: "kubejs:inductive_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Fluix Machinery"
+			disable_toast: true
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Milestone"
+			description: [
+				"With Calculation Mechanisms, the Factory enters the Digital Age. Instant Material-Energy conversion (ME) revolutionises item and fluid logistics for both the assembly lines and personal use."
+				""
+				"At this point, all of the tools necessary to facilitate space travel have become accessible. Might as well start a countdown."
+			]
+			min_required_dependencies: 3
+			dependencies: [
+				"6824055533465010"
+				"3934AD57122B6FFE"
+				"26173D4777F439B1"
+				"1BF8F3CC8BEBB620"
+			]
+			hide: false
+			id: "08716DBF9C882623"
+			tasks: [{
+				id: "79AB928A6C8E21DA"
+				type: "stat"
+				title: "Complete Chapter 4"
+				icon: "kubejs:calculation_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Copper Machinery"
+			disable_toast: true
+			x: -8.0d
+			y: 2.5d
+			subtitle: "Utility"
+			description: [
+				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
+				""
+				"Note that Sealed Mechanisms are an ingredient to nothing else. The main assembly line will continue with Kinetic Mechanisms."
+			]
+			dependencies: [
+				"7D872F933F45809B"
+				"6545C3F427B12106"
+			]
+			id: "342BB6EF80EBFDCA"
+			tasks: [{
+				id: "27B07858A6018539"
+				type: "stat"
+				title: "Complete Bonus 1A"
+				icon: "kubejs:sealed_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Zinc Machinery"
+			disable_toast: true
+			x: -5.0d
+			y: -2.5d
+			subtitle: "Utility"
+			description: [
+				"Zinc Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
+				""
+				"Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms."
+			]
+			dependencies: [
+				"7888F9129E9FE517"
+				"3C50B4556375178E"
+			]
+			id: "2DC3AA8A89005C42"
+			tasks: [{
+				id: "12CFC84D3F01F49F"
+				type: "stat"
+				title: "Complete Bonus 2A"
+				icon: "kubejs:infernal_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "Ender Machinery"
+			disable_toast: true
+			x: -2.0d
+			y: 2.5d
+			subtitle: "Utility"
+			description: ["Ender Machines provide not only access to instant Teleportation, but also to the most powerful upgrades for your machines."]
+			dependencies: [
+				"2BB2C7B95E3C89AE"
+				"6DBEF7A11890ADF8"
+			]
+			id: "2F50046724A0DF9C"
+			tasks: [{
+				id: "4BC5C43C7B23CA16"
+				type: "stat"
+				title: "Complete Bonus 3A"
+				icon: "kubejs:abstruse_mechanism"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
+		}
+		{
+			title: "From a Tree Puncher..."
+			icon: "minecraft:grass_block"
+			x: -13.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Welcome to the Overview. You can always come back here to catch up on your current position in the Progression of Technology. If you look closely, your Journey to the Moon completes the final step of the way on the right side."]
+			size: 2.0d
+			id: "75FB28B253B14876"
+			tasks: [{
+				id: "7F88BABEC9889C76"
+				type: "item"
+				title: "Any Logs"
+				icon: "minecraft:oak_log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				consume_items: false
+			}]
+			rewards: [{
+				id: "619E1006A9C31AE1"
+				type: "item"
+				item: "farmersdelight:apple_cider"
+			}]
+		}
+		{
+			title: "..to a Spacefarer"
+			icon: "advancedrocketry:moonturf"
+			x: 2.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"The Dream of walking the Moon's surface finally came to fruition."
+				""
+				"With that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!"
+			]
+			dependencies: [
+				"5E62059675895213"
+				"47965C310D9847DC"
+			]
+			size: 2.0d
+			id: "4F7A70041B67A348"
+			tasks: [
+				{
+					id: "058AEB3EF218C7D2"
+					type: "stat"
+					title: "Complete Chapter 5"
+					icon: "advancedrocketry:guidancecomputer"
+					disable_toast: true
+					stat: "minecraft:play_one_minute"
+					value: 1
+				}
+				{
+					id: "68543E92A6B517DC"
+					type: "item"
+					item: "advancedrocketry:moonturf"
+					consume_items: false
+				}
+			]
+		}
+		{
+			title: "High Aspirations"
+			icon: "create:andesite_alloy"
+			x: -11.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Chapter 1"
+			description: [
+				"The earliest inventions reveal ones resourcefulness with low level equipment: Auto-Crafting? None. Filtering? Not cheap! Item Transport? May the Belt Spaghetti mesh in your favour."
+				""
+				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: ["75FB28B253B14876"]
+			id: "61147823CC87F711"
+			tasks: [{
+				id: "5A8DF2D8553904BF"
+				type: "checkmark"
+				title: "Unlock Chapter 1"
+			}]
+		}
+		{
+			title: "Alluring Expedience"
+			icon: "create:electron_tube"
+			x: -8.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Chapter 2"
+			description: [
+				"The chicken and egg problem remains: in order to automate precision mechanisms for brass equipment more conveniently, having more brass equipment would be really useful!"
+				""
+				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: ["0E98B4D2BBF55308"]
+			id: "1E263994D4883A08"
+			tasks: [{
+				id: "28C41C062843C2CA"
+				type: "checkmark"
+				title: "Unlock Chapter 2"
+			}]
+		}
+		{
+			title: "The Catharsis"
+			icon: "kubejs:radiant_coil"
+			x: -5.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Chapter 3"
+			description: [
+				"The Groundwork has been laid with all that has been created so far. The pace should really pick up from here."
+				""
+				"Producing components for inductive technology relies on very peculiar techniques. Though with all the new equipment ready, automating even the more convoluted interactions should become a cakewalk."
+				""
+				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: ["69275ECFC147E15B"]
+			id: "780E8AE86250C73D"
+			tasks: [{
+				id: "2F6FEDBB1BDCB36C"
+				type: "checkmark"
+				title: "Unlock Chapter 3"
+			}]
+		}
+		{
+			title: "Into the Box"
+			icon: "kubejs:silicon_compound"
+			x: -2.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Chapter 4"
+			description: [
+				"A new Energy Unit joins the ranks: the production facility for silicon will involve an interplay of thermal induction machinery and the familiar kinetic components. "
+				""
+				"Between Flux and Stress, a peculiar innovation in Laser technology will be required to produce some of the ingredients involved."
+				""
+				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: ["400CDC316DCDFE88"]
+			id: "26173D4777F439B1"
+			tasks: [{
+				id: "74CFD83C501C4952"
+				type: "checkmark"
+				title: "Unlock Chapter 4"
+			}]
+		}
+		{
+			title: "Divide by Digital"
+			icon: "kubejs:divide"
+			x: 0.5d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "Finale"
+			description: [
+				"The entire factory is started back up for one final sprint. With a steady supply of Calculation Mechanisms, the Digital Infrastucture performs the necessary operations to put together an ideal Trajectory."
+				""
+				"While this Data Center visibly crunches the numbers, the designated Astronaut starts getting themselves and the spaceship prepared for launch."
+			]
+			dependencies: ["08716DBF9C882623"]
+			id: "5E62059675895213"
+			tasks: [{
+				id: "251A91F6C21AEAFB"
+				type: "checkmark"
+				title: "Unlock the Final Chapter"
+			}]
+		}
+		{
+			title: "Rubber Tycoon"
+			icon: "thermal:cured_rubber"
+			x: -9.5d
+			y: 1.5d
+			shape: "circle"
+			subtitle: "Bonus 1A"
+			description: [
+				""
+				"While Copper Machines will definitely be required going forward; full automation of their ingredients is completely optional."
+				""
+				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+			]
+			dependencies: ["0E98B4D2BBF55308"]
+			id: "7D872F933F45809B"
+			tasks: [{
+				id: "681DACF11F193771"
+				type: "checkmark"
+				title: "Unlock Bonus 1A"
+			}]
+		}
+		{
+			title: "Magmatic Exploits"
+			icon: "minecraft:lava_bucket"
+			x: -6.5d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "Bonus 2A"
+			description: [
+				"We need to go Deeper!"
+				"Access to Zinc Machines will require for some engineering in another dimension. Even if it's literally Hell, a change of scene will always bring forth new ideas and inspiration."
+				""
+				"After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed."
+			]
+			dependencies: ["69275ECFC147E15B"]
+			id: "7888F9129E9FE517"
+			tasks: [{
+				id: "21753CBB528EAADF"
+				type: "checkmark"
+				title: "Unlock Bonus 2A"
+			}]
+		}
+		{
+			title: "Melting the Funds"
+			icon: "thermal:enderium_ingot"
+			x: -3.5d
+			y: 1.5d
+			shape: "circle"
+			subtitle: "Bonus 3A"
+			description: [
+				"The Prospect of Teleportation alone might be reason enough to explore that mysterious End Dimension."
+				"In researching the required technologies, you will find that your hard earned silver suddenly finds a second use.."
+				""
+				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
+			]
+			dependencies: ["400CDC316DCDFE88"]
+			id: "2BB2C7B95E3C89AE"
+			tasks: [{
+				id: "722CA19434E722FB"
+				type: "checkmark"
+				title: "Unlock Bonus 3A"
+			}]
+		}
+		{
+			title: "Chaotic Alchemy"
+			icon: "kubejs:substrate_chaos"
+			x: -2.5d
+			y: -1.25d
+			shape: "circle"
+			subtitle: "Alternative Path"
+			description: [
+				"You'll find that the newly discovered Laser setup has other interesting capabilities."
+				""
+				"Behind a bit of science and experimentation lies a way to transmute seemingly unrelated materials between another. The demanded Silicon element is one of them, but which is its counterpart?"
+				""
+				"After hitting the Checkmark above, the alternative fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar. It will still be possible to return to the other chapter."
+			]
+			dependencies: ["400CDC316DCDFE88"]
+			id: "3934AD57122B6FFE"
+			tasks: [{
+				id: "5DF206B1738D08A0"
+				type: "checkmark"
+				title: "Unlock Chapter 4a"
+			}]
+		}
+	]
+}

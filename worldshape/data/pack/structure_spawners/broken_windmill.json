@@ -1,0 +1,33 @@
+{
+    "template": {
+        "type": "single",
+        "id": "pack:broken_windmill"
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -7,
+        "terraform": 7,
+        "minY": 70,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#taiga",
+        "#extreme_hills",
+        "#jungle",
+        "#plains",
+        "#savanna",
+        "#forest",
+        "#swamp",
+        "#mushroom"
+    ]
+
+}

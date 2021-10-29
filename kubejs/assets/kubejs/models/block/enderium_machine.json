@@ -1,0 +1,13 @@
+{
+  "parent": "thermal:block/frame_base",
+  "textures": {
+    "particle": "kubejs:block/enderium_machine_top",
+    "down": "kubejs:block/enderium_machine_bottom",
+    "up": "kubejs:block/enderium_machine_top",
+    "north": "kubejs:block/enderium_machine_side",
+    "east": "kubejs:block/enderium_machine_side",
+    "south": "kubejs:block/enderium_machine_side",
+    "west": "kubejs:block/enderium_machine_side",
+    "inner": "kubejs:block/enderium_machine_inner"
+  }
+}

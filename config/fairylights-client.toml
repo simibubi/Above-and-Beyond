@@ -1,0 +1,7 @@
+
+[tutorial]
+	#The hanging lights tutorial progress, once any light item enters the inventory a
+	# toast appears prompting to craft hanging lights. A finished tutorial progress
+	# value is 'complete' and an unstarted tutorial is 'none'.
+	progress = "none"
+

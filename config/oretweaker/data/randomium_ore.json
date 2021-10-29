@@ -1,0 +1,14 @@
+{
+  "oreConfig": [
+    {
+      "ore": "randomium:randomium_ore",
+      "filler": "minecraft:stone",
+      "minY": 1,
+      "maxY": 60,
+      "maxVeinSize": 7,
+      "spawnRate": 4.0,
+      "biomeBlacklist": [],
+      "biomeWhitelist": ["advancedrocketry:moonold"]
+    }
+  ]
+}

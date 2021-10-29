@@ -1,0 +1,16 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "pipez:block/pipe_end_inner",
+		"particle": "pipez:block/pipe_end_inner"
+	},
+	"elements": [
+		{
+			"from": [5, 10, 5],
+			"to": [11, 11, 11],
+			"faces": {
+				"up": {"uv": [5, 5, 11, 11], "texture": "#0"}
+			}
+		}
+	]
+}
