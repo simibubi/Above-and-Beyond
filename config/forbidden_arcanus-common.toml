@@ -1,78 +1,11 @@
 
 [world_gen]
 
-	[world_gen.arcane_crystal]
-		#Generate Arcane Crystal Ore? [default: true]
-		generate = true
-		#Maximum size of Arcane Crystal Ore veins [default: 6]
-		#Range: 0 ~ 100
-		max_vein_size = 5
-		#Maximum Arcane Crystal Ore veins per chunk [default: 3]
-		#Range: 1 ~ 100
-		count = 3
-		#Maximum height for Arcane Crystal Ore to generate [default: 25]
-		#Range: 1 ~ 256
-		max_height = 25
-
-	[world_gen.runestone]
-		#Generate Runestone? [default: true]
-		generate = true
-		#Maximum size of Runestone veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Runestone veins per chunk [default: 2]
-		#Range: 1 ~ 100
-		count = 2
-		#Maximum height for the Runestone to generate [default: 20]
-		#Range: 1 ~ 256
-		max_height = 20
-
-	[world_gen.darkstone]
-		#Generate Darkstone? [default: true]
-		generate = true
-		#Maximum size of Darkstone veins [default: 20]
-		#Range: 0 ~ 100
-		max_vein_size = 20
-		#Maximum Darkstone veins per chunk [default: 20]
-		#Range: 1 ~ 100
-		count = 20
-		#Maximum height for Darkstone to generate [default: 8]
-		#Range: 1 ~ 256
-		max_height = 8
-
-	[world_gen.arcane_gilded_darkstone]
-		#Generate Arcane Gilded Darkstone? [default: true]
-		generate = true
-		#Maximum size of Arcane Gilded Darkstone veins [default: 4]
-		#Range: 0 ~ 100
-		max_vein_size = 4
-		#Maximum Arcane Gilded Darkstone veins per chunk [default: 4]
-		#Range: 1 ~ 100
-		count = 4
-		#Maximum height for Arcane Gilded Darkstone to generate [default: 8]
-		#Range: 1 ~ 256
-		max_height = 8
-
-	[world_gen.dark_runestone]
-		#Generate Dark Runestone? [default: true]
-		generate = true
-		#Maximum size of Dark Runestone veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Dark Runestone veins per chunk [default: 2]
-		#Range: 1 ~ 100
-		count = 2
-		#Maximum height for Dark Runestone to generate [default: 8]
-		#Range: 1 ~ 256
-		max_height = 8
-
-	[world_gen.xpetrified_ore]
-		#Generate Xpetrified Ore? [default: true]
+	[world_gen.mysterywood_tree]
+		#Generate Mysterywood Trees? [default: true]
 		generate = true
 
 	[world_gen.stella_arcanum]
-		#Generate Should Stella Arcanum? [default: true]
-		generate = true
 		#Maximum size of Stella Arcanum veins [default: 3]
 		#Range: 0 ~ 100
 		max_vein_size = 3
@@ -82,57 +15,134 @@
 		#Maximum height for Stella Arcanum to generate [default: 50]
 		#Range: 1 ~ 256
 		max_height = 50
-
-	[world_gen.cherrywood_tree]
-		#Generate Cherrywood Trees? [default: true]
-		generate = true
-
-	[world_gen.mysterywood_tree]
-		#Generate Mysterywood Trees? [default: true]
-		generate = true
-
-	[world_gen.edelwood_tree]
-		#Generate Edelwood Trees? [default: true]
+		#Generate Should Stella Arcanum? [default: true]
 		generate = true
 
 	[world_gen.yellow_orchid]
 		#Generate Yellow Orchids? [default: true]
 		generate = true
 
+	[world_gen.arcane_gilded_darkstone]
+		#Maximum size of Arcane Gilded Darkstone veins [default: 4]
+		#Range: 0 ~ 100
+		max_vein_size = 4
+		#Maximum Arcane Gilded Darkstone veins per chunk [default: 4]
+		#Range: 1 ~ 100
+		count = 4
+		#Maximum height for Arcane Gilded Darkstone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+		#Generate Arcane Gilded Darkstone? [default: true]
+		generate = true
+
+	[world_gen.edelwood_tree]
+		#Generate Edelwood Trees? [default: true]
+		generate = true
+
 	[world_gen.petrified_root]
 		#Generate Petrified Roots? [default: true]
 		generate = false
 
+	[world_gen.dark_runestone]
+		#Maximum size of Dark Runestone veins [default: 3]
+		#Range: 0 ~ 100
+		max_vein_size = 3
+		#Maximum Dark Runestone veins per chunk [default: 2]
+		#Range: 1 ~ 100
+		count = 2
+		#Maximum height for Dark Runestone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+		#Generate Dark Runestone? [default: true]
+		generate = true
+
+	[world_gen.arcane_crystal]
+		#Maximum size of Arcane Crystal Ore veins [default: 6]
+		#Range: 0 ~ 100
+		max_vein_size = 5
+		#Maximum Arcane Crystal Ore veins per chunk [default: 3]
+		#Range: 1 ~ 100
+		count = 3
+		#Maximum height for Arcane Crystal Ore to generate [default: 25]
+		#Range: 1 ~ 256
+		max_height = 25
+		#Generate Arcane Crystal Ore? [default: true]
+		generate = true
+
+	[world_gen.xpetrified_ore]
+		#Generate Xpetrified Ore? [default: true]
+		generate = true
+
+	[world_gen.darkstone]
+		#Maximum size of Darkstone veins [default: 20]
+		#Range: 0 ~ 100
+		max_vein_size = 20
+		#Maximum Darkstone veins per chunk [default: 20]
+		#Range: 1 ~ 100
+		count = 20
+		#Maximum height for Darkstone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+		#Generate Darkstone? [default: true]
+		generate = true
+
+	[world_gen.cherrywood_tree]
+		#Generate Cherrywood Trees? [default: true]
+		generate = true
+
+	[world_gen.runestone]
+		#Maximum size of Runestone veins [default: 3]
+		#Range: 0 ~ 100
+		max_vein_size = 3
+		#Maximum Runestone veins per chunk [default: 2]
+		#Range: 1 ~ 100
+		count = 2
+		#Maximum height for the Runestone to generate [default: 20]
+		#Range: 1 ~ 256
+		max_height = 20
+		#Generate Runestone? [default: true]
+		generate = true
+
 	[world_gen.nipa]
-		#Generate Nipas? [default: true]
-		generate = false
 		#Nipa Structure Spacing [default: 35]
 		#Range: > 0
 		spacing = 35
 		#Nipa Structure Separation [default: 8]
 		#Range: > 0
 		separation = 8
+		#Generate Nipas? [default: true]
+		generate = false
 
 [items]
+
+	[items.xpetrified_orb]
+		#Experience Points the Orb grants on use [default: 91]
+		#Range: 1 ~ 120000
+		experience_points = 91
+
+	[items.eternal_stella]
+		#How many times the Eternal Stella can be used before breaking [default: 3]
+		#Range: 1 ~ 100
+		uses = 3
+
+	[items.edelwood_bucket]
+		#How much Milk the Edelwood Bucket can store [default: 4]
+		#Range: 1 ~ 10
+		milk_capacity = 4
+		#How many Water Blocks the Edelwood Bucket can store [default: 4]
+		#Range: 1 ~ 10
+		water_capacity = 4
+		#How many Soups/Stews the Edelwood Bucket can store [default: 8]
+		#Range: 1 ~ 10
+		soup_capacity = 8
+		#How many Lava Blocks the Edelwood Bucket can store [default: 3]
+		#Range: 1 ~ 10
+		lava_capacity = 3
 
 	[items.orb_of_temporary_flight]
 		#Flight Time the Orb grants (in ticks) [default: 6000]
 		#Range: 20 ~ 120000
 		time = 6000
-
-	[items.edelwood_bucket]
-		#How many Water Blocks the Edelwood Bucket can store [default: 4]
-		#Range: 1 ~ 10
-		water_capacity = 4
-		#How many Lava Blocks the Edelwood Bucket can store [default: 3]
-		#Range: 1 ~ 10
-		lava_capacity = 3
-		#How much Milk the Edelwood Bucket can store [default: 4]
-		#Range: 1 ~ 10
-		milk_capacity = 4
-		#How many Soups/Stews the Edelwood Bucket can store [default: 8]
-		#Range: 1 ~ 10
-		soup_capacity = 8
 
 	[items.boom_arrow]
 		#Should Boom Arrow explosions deal Block Damage [default: false]
@@ -145,25 +155,15 @@
 		#Should right-clicking a Creeper with Mundabitur Dust charge the Creeper [default: true]
 		charge_creeper = true
 
-	[items.xpetrified_orb]
-		#Experience Points the Orb grants on use [default: 91]
-		#Range: 1 ~ 120000
-		experience_points = 91
-
-	[items.eternal_stella]
-		#How many times the Eternal Stella can be used before breaking [default: 3]
-		#Range: 1 ~ 100
-		uses = 3
-
 [blocks]
 
 	[blocks.stella_arcanum]
 		#Should Stella Arcanum explode when mined [default: true]
 		explode = true
-		#Should Stella Arcanum only explode when mined with a wrong tool (if explosions enabled) [default: false]
-		only_explode_wrong_tool = false
 		#Should Stella Arcanum explosions deal Block Damage (if explosions enabled) [default: true]
 		block_damage = true
+		#Should Stella Arcanum only explode when mined with a wrong tool (if explosions enabled) [default: false]
+		only_explode_wrong_tool = false
 		#Radius of Stella Arcanum explosions (if explosions enabled) [default: 3]
 		#Range: 1 ~ 10
 		explosion_radius = 3
@@ -185,25 +185,25 @@
 	aureal_entity_chance = 0.25
 
 	[aureal.corruption]
-		#Do you want to completely disable corruption consequences? [default: false]
-		disable_consequences = false
-		#How much Corruption should killing a normal Entity give [default: 1]
-		#Range: 0 ~ 100
-		entity_death_increasement_amount = 1
-		#How much Corruption should killing an Aureal Entity give [default: 3]
-		#Range: 0 ~ 100
-		aureal_entity_death_increasement_amount = 3
-		#Chance that killing a normal Entity increases your Corruption [default: 0.35]
-		#Range: 0.0 ~ 1.0
-		entity_death_increasement_chance = 0.35
+		#Time before the players Corruption value is reduced by one (in ticks) [default: 6000]
+		#Range: > 0
+		natural_decreasement_time = 6000
 		#Chance that killing an Aureal Entity increases your Corruption [default: 0.42]
 		#Range: 0.0 ~ 1.0
 		aureal_entity_death_increasement_chance = 0.42
 		#Should the players Corruption value decrease after a certain amount of time [default: true]
 		natural_decreasement = true
-		#Time before the players Corruption value is reduced by one (in ticks) [default: 6000]
-		#Range: > 0
-		natural_decreasement_time = 6000
+		#How much Corruption should killing an Aureal Entity give [default: 3]
+		#Range: 0 ~ 100
+		aureal_entity_death_increasement_amount = 3
+		#Do you want to completely disable corruption consequences? [default: false]
+		disable_consequences = false
+		#How much Corruption should killing a normal Entity give [default: 1]
+		#Range: 0 ~ 100
+		entity_death_increasement_amount = 1
+		#Chance that killing a normal Entity increases your Corruption [default: 0.35]
+		#Range: 0.0 ~ 1.0
+		entity_death_increasement_chance = 0.35
 		#Chance that breeding animals decreases your Corruption [default: 0.45]
 		#Range: 0.0 ~ 1.0
 		breeding_decreasement_chance = 0.45

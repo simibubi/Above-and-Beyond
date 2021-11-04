@@ -854,6 +854,10 @@
 								id: "minecraft:music_disc_strad"
 								Count: 1b
 							}
+							{
+								id: "minecraft:music_disc_13"
+								Count: 1b
+							}
 						]
 					}
 				}

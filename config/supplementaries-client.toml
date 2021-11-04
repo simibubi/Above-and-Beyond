@@ -94,6 +94,10 @@
 		#Range: 0.0 ~ 10.0
 		intensity_increment = 0.3
 
+	[blocks.bamboo_spikes]
+		#Populate the creative inventory with all tipped spikes variations
+		populate_creative_tab = true
+
 	[blocks.wind_vane]
 		#This should be kept period_1/3 for a symmetric animation
 		#Range: 0.0 ~ 2000.0
@@ -121,10 +125,6 @@
 		#Translate down displayed 3d blocks so that they are touching the shelf.
 		#Note that they will not be centered vertically this way
 		supported_blocks = true
-
-	[blocks.bamboo_spikes]
-		#Populate the creative inventory with all tipped spikes variations
-		populate_creative_tab = true
 
 #Particle parameters
 [particles]
@@ -189,13 +189,13 @@
 [items]
 
 	[items.slingshot]
-		#Adds an overlay to slingshots in gui displaying currently selected block
-		overlay = true
-		#Render the block outline for distant blocks that are reachable with a slingshot enchanted with Stasis
-		stasis_block_outline = true
-		#An RGBA color for the block outline in hex format, for example 0x00000066 for vanilla outline colors
-		block_outline_color = "ffffff66"
 		#How big should a slingshot projectile look
 		#Range: 0.0 ~ 1.0
 		projectile_scale = 0.5
+		#Adds an overlay to slingshots in gui displaying currently selected block
+		overlay = true
+		#An RGBA color for the block outline in hex format, for example 0x00000066 for vanilla outline colors
+		block_outline_color = "ffffff66"
+		#Render the block outline for distant blocks that are reachable with a slingshot enchanted with Stasis
+		stasis_block_outline = true
 

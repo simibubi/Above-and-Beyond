@@ -46,6 +46,7 @@
 				id: "4F4219EDA9C5F9F7"
 				type: "item"
 				item: "minecraft:sand"
+				consume_items: false
 			}]
 		}
 		{
@@ -116,6 +117,7 @@
 					id: "68D808533C34AB5C"
 					type: "item"
 					item: "appliedenergistics2:purified_certus_quartz_crystal"
+					consume_items: false
 				}
 				{
 					id: "5143762A67B81B7E"
@@ -166,6 +168,7 @@
 					id: "69C6513B25BB6ABA"
 					type: "item"
 					item: "appliedenergistics2:sky_dust"
+					consume_items: false
 				}
 				{
 					id: "3C8D449468C6DD27"
@@ -191,6 +194,7 @@
 					id: "36E36D584FCBC358"
 					type: "item"
 					item: "tconstruct:molten_obsidian_bucket"
+					consume_items: false
 				}
 				{
 					id: "1CB43671DBA7EBB6"
@@ -198,12 +202,6 @@
 					title: "Automated"
 				}
 			]
-			rewards: [{
-				id: "70796ABD6F2065CD"
-				type: "item"
-				auto: "no_toast"
-				item: "minecraft:bucket"
-			}]
 		}
 		{
 			title: "Charged Mixer"
@@ -227,6 +225,7 @@
 					id: "5F47790124641B2D"
 					type: "item"
 					item: "thermal:redstone_bucket"
+					consume_items: false
 				}
 				{
 					id: "4B98217B670ECA57"
@@ -234,12 +233,6 @@
 					title: "Automated"
 				}
 			]
-			rewards: [{
-				id: "09D61FA4D68F1347"
-				type: "item"
-				auto: "no_toast"
-				item: "minecraft:bucket"
-			}]
 		}
 		{
 			title: "Get Melted"
@@ -268,6 +261,7 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "75C982848F2CEA85"
@@ -275,12 +269,6 @@
 					title: "Automated"
 				}
 			]
-			rewards: [{
-				id: "7F3CE339246C64BF"
-				type: "item"
-				auto: "no_toast"
-				item: "tconstruct:copper_can"
-			}]
 		}
 		{
 			title: "Second Coating Layer"
@@ -299,6 +287,7 @@
 					id: "163B1579092E6BD3"
 					type: "item"
 					item: "create:electron_tube"
+					consume_items: false
 				}
 				{
 					id: "1D7C84803766FD04"
@@ -309,6 +298,7 @@
 		}
 		{
 			title: "The (Re-)Charger"
+			icon: "appliedenergistics2:charged_certus_quartz_crystal"
 			x: 1.0d
 			y: 6.0d
 			subtitle: "Contraption 14"
@@ -320,17 +310,19 @@
 			hide_dependency_lines: true
 			dependencies: ["1256352748B93449"]
 			id: "24FFFE0FC9EAEF8D"
-			tasks: [{
-				id: "23DAE14596F025DF"
-				type: "item"
-				item: "appliedenergistics2:charged_certus_quartz_crystal"
-			}]
-			rewards: [{
-				id: "420BBF7901E22946"
-				type: "item"
-				auto: "no_toast"
-				item: "appliedenergistics2:certus_quartz_crystal"
-			}]
+			tasks: [
+				{
+					id: "23DAE14596F025DF"
+					type: "item"
+					item: "appliedenergistics2:charged_certus_quartz_crystal"
+					consume_items: false
+				}
+				{
+					id: "56F78EAD35D1046E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 		{
 			title: "Iron for Days"
@@ -351,6 +343,7 @@
 					id: "7E68B8C4958FB0B5"
 					type: "item"
 					item: "minecraft:cobblestone"
+					consume_items: false
 				}
 				{
 					id: "5E676D2CC5975AEA"
@@ -376,6 +369,7 @@
 					id: "4DF52040884AB28D"
 					type: "item"
 					item: "create:precision_mechanism"
+					consume_items: false
 				}
 				{
 					id: "002032AE65148DBD"
@@ -438,6 +432,7 @@
 					id: "517441AE19EF30E2"
 					type: "item"
 					item: "minecraft:gravel"
+					consume_items: false
 				}
 				{
 					id: "63F3877902E01590"
@@ -460,6 +455,7 @@
 					id: "591D709D1E4EE97A"
 					type: "item"
 					item: "minecraft:iron_nugget"
+					consume_items: false
 				}
 				{
 					id: "64B405696E96FFCD"
@@ -488,6 +484,7 @@
 					id: "0AD0021818A0BB33"
 					type: "item"
 					item: "create:polished_rose_quartz"
+					consume_items: false
 				}
 				{
 					id: "0F6DB8FCC5C16A94"
@@ -517,6 +514,7 @@
 				id: "24070D354D67A3DF"
 				type: "item"
 				item: "kubejs:infernal_mechanism"
+				consume_items: false
 			}]
 		}
 		{
@@ -541,6 +539,7 @@
 					id: "4A9BF979E823D4CB"
 					type: "item"
 					item: "minecraft:lava_bucket"
+					consume_items: false
 				}
 				{
 					id: "73BF4F3B488FBC83"
@@ -548,12 +547,6 @@
 					title: "Automated"
 				}
 			]
-			rewards: [{
-				id: "2400CBA6FFCCD0BE"
-				type: "item"
-				auto: "no_toast"
-				item: "minecraft:bucket"
-			}]
 		}
 		{
 			title: "Soul Distillery"
@@ -573,6 +566,7 @@
 					id: "7BBC2AAED0A77FDC"
 					type: "item"
 					item: "tconstruct:liquid_soul_bucket"
+					consume_items: false
 				}
 				{
 					id: "21C241D2335C67E4"
@@ -580,12 +574,6 @@
 					title: "Automated"
 				}
 			]
-			rewards: [{
-				id: "3FE250C9727B3C9B"
-				type: "item"
-				auto: "no_toast"
-				item: "minecraft:bucket"
-			}]
 		}
 		{
 			title: "The Double Decker I"
@@ -610,6 +598,7 @@
 					id: "70EA8B8349BC13D1"
 					type: "item"
 					item: "minecraft:twisting_vines"
+					consume_items: false
 				}
 				{
 					id: "6F7A49C7C377ABF1"
@@ -641,6 +630,7 @@
 					id: "57EC8E4703FADF5E"
 					type: "item"
 					item: "minecraft:weeping_vines"
+					consume_items: false
 				}
 				{
 					id: "6149AB838FC42C17"

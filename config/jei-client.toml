@@ -6,7 +6,7 @@
 	#Debug mode enabled
 	DebugMode = false
 	#Display search bar in the center
-	CenterSearch = true
+	CenterSearch = false
 	#Max. recipe gui height
 	#Range: > 175
 	RecipeGuiHeight = 350
@@ -14,7 +14,7 @@
 	LowMemorySlowSearchEnabled = false
 	#Max number of columns shown
 	#Range: 4 ~ 100
-	MaxColumns = 9
+	MaxColumns = 18
 
 [colors]
 	#Color values to search for
@@ -51,5 +51,5 @@
 	#Use these formatting keys:
 	#black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, white
 	#obfuscated, bold, strikethrough, underline, italic
-	ModNameFormat = "blue"
+	ModNameFormat = "blue italic"
 

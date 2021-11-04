@@ -9,12 +9,12 @@
 	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
 	#Forge tags are supported
 	[general.lists]
+		#Basalt gen
+		block_list_basalt = ["minecraft:basalt|100"]
 		#Cobble gen
 		block_list_cobble = ["minecraft:cobblestone|100"]
 		#Stone gen
 		block_list_stone = ["minecraft:stone|100"]
-		#Basalt gen
-		block_list_basalt = ["minecraft:basalt|100"]
 
 		#Custom settings
 		[general.lists.custom]

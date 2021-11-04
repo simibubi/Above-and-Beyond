@@ -10,6 +10,14 @@ backpackRenameLevelCost = 3
 
 [pockets]
 
+	[pockets.large]
+		#Max count of this pocket per one backpack
+		#Range: > 0
+		maxCount = 2
+		#Number of slots that one pocket adds to backpack
+		#Range: > 1
+		addSlotsCount = 9
+
 	[pockets.tiny]
 		#Max count of this pocket per one backpack
 		#Range: > 0
@@ -25,12 +33,4 @@ backpackRenameLevelCost = 3
 		#Number of slots that one pocket adds to backpack
 		#Range: > 1
 		addSlotsCount = 6
-
-	[pockets.large]
-		#Max count of this pocket per one backpack
-		#Range: > 0
-		maxCount = 2
-		#Number of slots that one pocket adds to backpack
-		#Range: > 1
-		addSlotsCount = 9
 

@@ -137,6 +137,7 @@
 							]
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "32E697E9386ABF17"
@@ -161,6 +162,7 @@
 				id: "26CA0A31856D4445"
 				type: "item"
 				item: "appliedenergistics2:red_paint_ball"
+				consume_items: false
 			}]
 		}
 		{
@@ -182,6 +184,7 @@
 				id: "629CDAD0644963F4"
 				type: "item"
 				item: "appliedenergistics2:yellow_paint_ball"
+				consume_items: false
 			}]
 		}
 		{
@@ -199,6 +202,7 @@
 				id: "4BBF150A1DD3A0AF"
 				type: "item"
 				item: "appliedenergistics2:green_paint_ball"
+				consume_items: false
 			}]
 		}
 		{
@@ -216,6 +220,7 @@
 				id: "16C40B4F7D56B9C9"
 				type: "item"
 				item: "appliedenergistics2:blue_paint_ball"
+				consume_items: false
 			}]
 		}
 		{
@@ -235,6 +240,7 @@
 					id: "5DF1A84700EB5D15"
 					type: "item"
 					item: "appliedenergistics2:magenta_paint_ball"
+					consume_items: false
 				}
 				{
 					id: "27D5CBB137116AB1"
@@ -265,6 +271,7 @@
 						Count: 1b
 						tag: { }
 					}
+					consume_items: false
 				}
 				{
 					id: "27A8B7785CAB07C8"
@@ -298,6 +305,7 @@
 					id: "7EF8C778FDE54DC1"
 					type: "item"
 					item: "create:refined_radiance"
+					consume_items: false
 				}
 				{
 					id: "2DC30322D81D9999"
@@ -320,6 +328,7 @@
 					id: "3AF0E2934C047AA3"
 					type: "item"
 					item: "kubejs:radiant_coil"
+					consume_items: false
 				}
 				{
 					id: "27C737E08A9027A5"
@@ -350,6 +359,7 @@
 							value: "forge:cobblestone"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "36BD580312C8177B"
@@ -375,6 +385,7 @@
 					id: "153D599D82983310"
 					type: "item"
 					item: "kubejs:inductive_mechanism"
+					consume_items: false
 				}
 				{
 					id: "057A05C13C55ABC4"
@@ -437,6 +448,7 @@
 					id: "5BF8BF7A24029B57"
 					type: "item"
 					item: "appliedenergistics2:singularity"
+					consume_items: false
 				}
 				{
 					id: "09AAD9853B976D69"
@@ -469,6 +481,7 @@
 					id: "63C5611154B9B124"
 					type: "item"
 					item: "appliedenergistics2:quantum_entangled_singularity"
+					consume_items: false
 				}
 				{
 					id: "3A68EA184DE4D9B4"
@@ -494,6 +507,7 @@
 					id: "39C8F3F28C7A271C"
 					type: "item"
 					item: "minecraft:tnt"
+					consume_items: false
 				}
 				{
 					id: "2AD912C0E25F5D65"
@@ -524,6 +538,7 @@
 					id: "65AD93315DC72371"
 					type: "item"
 					item: "minecraft:gunpowder"
+					consume_items: false
 				}
 				{
 					id: "34EFEE60A6755C01"
@@ -547,6 +562,7 @@
 					id: "1127E4C296ED5A31"
 					type: "item"
 					item: "minecraft:sand"
+					consume_items: false
 				}
 				{
 					id: "2A3EAC60765E5C7A"
@@ -577,6 +593,7 @@
 					id: "74E8DBEBD9AA5D72"
 					type: "item"
 					item: "appliedenergistics2:ender_dust"
+					consume_items: false
 				}
 				{
 					id: "37A6393C0AD6E861"
@@ -602,6 +619,7 @@
 					id: "1A034719E3B94207"
 					type: "item"
 					item: "kubejs:dye_entangled_singularity"
+					consume_items: false
 				}
 				{
 					id: "4B4BDAA9DFB0518A"
@@ -746,6 +764,7 @@
 				id: "3B8AF2614A9EE681"
 				type: "item"
 				item: "thermal:silver_coin"
+				consume_items: false
 			}]
 		}
 		{
@@ -767,13 +786,6 @@
 						fluid: "tconstruct:molten_silver"
 					}
 				}
-				consume_items: true
-			}]
-			rewards: [{
-				id: "23AF3585C7500459"
-				type: "item"
-				auto: "no_toast"
-				item: "tconstruct:copper_can"
 			}]
 		}
 		{
@@ -839,6 +851,7 @@
 					id: "293DC3FF985B575B"
 					type: "item"
 					item: "minecraft:stick"
+					consume_items: false
 				}
 				{
 					id: "435C3E443BCC9176"
@@ -868,6 +881,7 @@
 					id: "716CDC854FF1E8C2"
 					type: "item"
 					item: "create:crushing_wheel"
+					consume_items: false
 				}
 				{
 					id: "764E76A93ED07203"
@@ -912,6 +926,7 @@
 					id: "0B625314B34801AA"
 					type: "item"
 					item: "minecraft:bone_meal"
+					consume_items: false
 				}
 				{
 					id: "4002627D52C3A616"
@@ -934,16 +949,19 @@
 					id: "3EB8C2219D74126B"
 					type: "item"
 					item: "kubejs:ender_slime_fern_paste"
+					consume_items: false
 				}
 				{
 					id: "4CB87BE063DACC5F"
 					type: "item"
 					item: "kubejs:earth_slime_fern_paste"
+					consume_items: false
 				}
 				{
 					id: "1F0B0F9D72A6F611"
 					type: "item"
 					item: "kubejs:sky_slime_fern_paste"
+					consume_items: false
 				}
 				{
 					id: "65864C0AE5B28091"
@@ -974,16 +992,19 @@
 					id: "135871C95B811F71"
 					type: "item"
 					item: "kubejs:sky_slimy_fern_leaf"
+					consume_items: false
 				}
 				{
 					id: "315328866377A0DC"
 					type: "item"
 					item: "kubejs:ender_slimy_fern_leaf"
+					consume_items: false
 				}
 				{
 					id: "65D5A32F475D78B6"
 					type: "item"
 					item: "kubejs:earth_slimy_fern_leaf"
+					consume_items: false
 				}
 				{
 					id: "40B23393B8A6D2E8"
@@ -1010,6 +1031,7 @@
 					id: "0B3A86351C4C94D9"
 					type: "item"
 					item: "kubejs:radiant_sheet"
+					consume_items: false
 				}
 				{
 					id: "37BF06FF4255C1B1"

@@ -26,11 +26,11 @@
 		#How many slots should a sack have
 		#Range: 1 ~ 27
 		slots = 9
+		#Penalize the player with slowness effect when carrying too many sacks
+		sack_penalty = true
 		#Maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
 		#Range: 0 ~ 50
 		sack_increment = 2
-		#Penalize the player with slowness effect when carrying too many sacks
-		sack_penalty = true
 
 	[blocks.flag]
 		#Maximum allowed pole length
@@ -134,16 +134,16 @@
 		simple_safes = false
 
 	[blocks.jar]
+		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
+		jar_auto_detect = false
 		#Allow right click to instantly eat or drink food or potions inside a placed jar.
 		#Disable if you think this ability is op (honey for example). Cookies are excluded
 		drink_from_jar = true
+		#Allows the player to directly drink from jar items
+		drink_from_jar_item = false
 		#Jar liquid capacity: leave at 12 for pixel accuracy
 		#Range: 0 ~ 1024
 		capacity = 12
-		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
-		jar_auto_detect = false
-		#Allows the player to directly drink from jar items
-		drink_from_jar_item = false
 
 	[blocks.item_shelf]
 		#Makes item shelves climbable
@@ -170,6 +170,9 @@
 
 	[spawns.structures]
 
+		[spawns.structures.wild_flax]
+			enabled = true
+
 		[spawns.structures.way_sign]
 			#Average distance apart in chunks between spawn attempts
 			#Range: 0 ~ 1001
@@ -181,9 +184,6 @@
 			#Minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
 			#Range: 0 ~ 1001
 			minimum_distance = 10
-
-		[spawns.structures.wild_flax]
-			enabled = true
 
 #entities parameters
 [entities]
@@ -216,14 +216,20 @@
 		#Amount of rotten flesh needed
 		#Range: 1 ~ 1000
 		rotten_flesh = 64
-		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
-		zombie_horse_conversion = true
 		#Allows zombie horses to be ridden underwater
 		rideable_underwater = true
+		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
+		zombie_horse_conversion = true
 
-	[tweaks.throwable_bricks]
-		#Throw bricks at your foes! Might break glass blocks
+	[tweaks.placeable_gunpowder]
+		#Allow placeable gunpowder
 		enabled = true
+		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
+		#Range: 0 ~ 20
+		speed = 2
+		#Age at which it spread to the next gunpowder block. Also affects speed
+		#Range: 0 ~ 8
+		spread_age = 2
 
 	[tweaks.hanging_flower_pots]
 		#allows you to place hanging flower pots. Works with any modded pot too
@@ -234,16 +240,6 @@
 		sticks = true
 		#Allow placeable blaze rods
 		blaze_rods = true
-
-	[tweaks.raked_gravel]
-		#allow gravel to be raked with a hoe
-		enabled = true
-
-	[tweaks.cake_tweaks]
-		#Allows you to place a cake on top of another
-		double_cake = true
-		#Replaces normal cake placement with a directional one
-		directional_cake = true
 
 	[tweaks.bottle_xp]
 		#bottling health cost
@@ -262,6 +258,32 @@
 	[tweaks.ceiling_banners]
 		#Allow banners to be placed on ceilings
 		enabled = true
+
+	[tweaks.throwable_bricks]
+		#Throw bricks at your foes! Might break glass blocks
+		enabled = true
+
+	[tweaks.raked_gravel]
+		#allow gravel to be raked with a hoe
+		enabled = true
+
+	[tweaks.cake_tweaks]
+		#Allows you to place a cake on top of another
+		double_cake = true
+		#Replaces normal cake placement with a directional one
+		directional_cake = true
+
+	[tweaks.placeable_books]
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		enchanted_book_power = 1.334
+		#Allow all books to be placed both vertically and horizontally
+		mixed_books = false
+		#Allow books and enchanted books to be placed on the ground
+		enabled = true
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		book_power = 1.0
 
 	[tweaks.map_tweaks]
 		#In this section you can add custom structure maps to cartographers
@@ -285,28 +307,6 @@
 		#Best kept disabled if you are adding custom adventurer maps with its config
 		random_adventurer_maps = true
 
-	[tweaks.placeable_gunpowder]
-		#Allow placeable gunpowder
-		enabled = true
-		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
-		#Range: 0 ~ 20
-		speed = 2
-		#Age at which it spread to the next gunpowder block. Also affects speed
-		#Range: 0 ~ 8
-		spread_age = 2
-
-	[tweaks.placeable_books]
-		#Allow books and enchanted books to be placed on the ground
-		enabled = true
-		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
-		#Range: 0.0 ~ 5.0
-		book_power = 1.0
-		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
-		#Range: 0.0 ~ 5.0
-		enchanted_book_power = 1.334
-		#Allow all books to be placed both vertically and horizontally
-		mixed_books = false
-
 [items]
 
 	[items.flute]
@@ -316,6 +316,27 @@
 		#radius in which an unbound flute will search pets
 		#Range: 0 ~ 500
 		unbound_radius = 64
+
+	[items.slingshot]
+		#Deceleration for the stasis projectile
+		#Range: 0.1 ~ 1.0
+		stasis_deceleration = 0.9624999761581421
+		#Slingshot range multiplier. Affect the initial projectile speed
+		#Range: 0.0 ~ 5.0
+		range_multiplier = 1.0
+		#Allow enderman to intercept any slingshot projectile
+		unrestricted_enderman_intercept = true
+		#Time in ticks to fully charge a slingshot
+		#Range: 0 ~ 100
+		charge_time = 20
+
+	[items.blue_bomb]
+		#Do bombs break blocks like tnt?
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 5.15
 
 	[items.bomb]
 		#Do bombs break blocks like tnt?
@@ -331,27 +352,6 @@
 		#Max number of robe items allowed to be stored inside a rope arrow
 		#Range: 1 ~ 256
 		capacity = 24
-
-	[items.slingshot]
-		#Slingshot range multiplier. Affect the initial projectile speed
-		#Range: 0.0 ~ 5.0
-		range_multiplier = 1.0
-		#Time in ticks to fully charge a slingshot
-		#Range: 0 ~ 100
-		charge_time = 20
-		#Allow enderman to intercept any slingshot projectile
-		unrestricted_enderman_intercept = true
-		#Deceleration for the stasis projectile
-		#Range: 0.1 ~ 1.0
-		stasis_deceleration = 0.9624999761581421
-
-	[items.blue_bomb]
-		#Bomb explosion radius (damage depends on this)
-		#Range: 0.1 ~ 10.0
-		explosion_radius = 5.15
-		#Do bombs break blocks like tnt?
-		#Allowed Values: ALL, WEAK, NONE
-		break_blocks = "WEAK"
 
 #General settings
 [general]

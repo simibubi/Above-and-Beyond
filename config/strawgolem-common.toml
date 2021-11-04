@@ -4,12 +4,12 @@
 	enableReplant = true
 	#Allow the straw golem to deliver a crop (requires replantEnabled = true)
 	enableDelivery = true
-	#Horizontal search range for crops and chests
-	#Range: 8 ~ 32
-	searchRangeHorizontal = 12
 	#Vertical search range for crops and chests
 	#Range: 2 ~ 8
 	searchRangeVertical = 3
+	#Horizontal search range for crops and chests
+	#Range: 8 ~ 32
+	searchRangeHorizontal = 12
 
 [Filtration]
 	#Sets the method for applying harvest filters.  Note that only the most specific match will be taken into consideration.
@@ -19,41 +19,41 @@
 	#"whitelist": will deny crops from being harvested unless the most specific match is in the whitelist.
 	#"blacklist": will allows crops to be harvested unless the most specific match is in the blacklist.
 	filterMode = "none"
-	#Whitelist Filter
-	whitelist = []
 	#Blacklist Filter
 	blacklist = []
+	#Whitelist Filter
+	whitelist = []
 
 [Lifespan]
 	#Set the lifespan, in tick, of new created straw golems. Set -1 for infinite.
 	#Range: > -2
-	lifespan = 168000
-	#Enable lifespan penalty for carrying a heavy item
-	penaltyHeavy = true
+	lifespan = -1
 	#Enable lifespan penalty for being in the rain
-	penaltyRain = true
+	penaltyRain = false
 	#Enable lifespan penalty for being in the water
-	penaltyWater = true
+	penaltyWater = false
+	#Enable lifespan penalty for carrying a heavy item
+	penaltyHeavy = false
 
 [Tether]
-	#Anchor golems to a spot so they don't wander very far.
-	tetherEnabled = true
-	#Tempting golems with an apple updates their tether location if pulled too far
-	temptResetsTether = false
-	#Range that golems will consider within their tether location
-	#Range: 1 ~ 16
-	tetherMinRange = 4
 	#Range from tether that will cause golems to turn and run back
 	#Range: 1 ~ 48
 	tetherMaxRange = 24
+	#Anchor golems to a spot so they don't wander very far.
+	tetherEnabled = true
+	#Range that golems will consider within their tether location
+	#Range: 1 ~ 16
+	tetherMinRange = 4
+	#Tempting golems with an apple updates their tether location if pulled too far
+	temptResetsTether = false
 
 [Miscellaneous]
+	#Enable iron golems picking up straw golems occasionally
+	golemInteract = true
 	#Enable/disable golem sounds
 	soundsEnabled = true
 	#Enable/disable golem shivering in cold
 	shiverEnabled = true
-	#Enable iron golems picking up straw golems occasionally
-	golemInteract = true
 	#Enable HWYLA compatibility
 	enableHwyla = true
 

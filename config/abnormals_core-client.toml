@@ -1,11 +1,11 @@
 
 #Client only settings for Abnormals Core.
 [client]
-	#If sky color transition should be smooth; Default: True
-	smoothSkyColor = true
 	#Scale for screen shake effects; Default: 1.0
 	#Range: 0.0 ~ 1.0
 	screenShakeScale = 1.0
+	#If sky color transition should be smooth; Default: True
+	smoothSkyColor = true
 	#Max amount of sources that can contribute to screen shaking, adjustable for performance and preference reasons. 0 will disable the addition of shake sources; Default: 256
 	#Range: > 0
 	maxScreenShakers = 256

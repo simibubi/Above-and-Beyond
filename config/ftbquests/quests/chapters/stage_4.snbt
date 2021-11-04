@@ -50,6 +50,7 @@
 					id: "34B7E632F7FD83DB"
 					type: "item"
 					item: "kubejs:calculation_mechanism"
+					consume_items: false
 				}
 				{
 					id: "48B114D2C0F51F6D"
@@ -113,6 +114,7 @@
 					id: "54D2F2F87424AB45"
 					type: "item"
 					item: "minecraft:sand"
+					consume_items: false
 				}
 				{
 					id: "58353DEAB0670141"
@@ -139,6 +141,7 @@
 					id: "05FFE255DDB4E66F"
 					type: "item"
 					item: "kubejs:sand_ball"
+					consume_items: false
 				}
 				{
 					id: "36183F0BBDAA8DB8"
@@ -175,6 +178,7 @@
 					id: "006110328A2D022F"
 					type: "item"
 					item: "kubejs:rough_sand"
+					consume_items: false
 				}
 				{
 					id: "589AB5A61CD95E2F"
@@ -200,6 +204,7 @@
 					id: "76715E399222E329"
 					type: "item"
 					item: "kubejs:purified_sand"
+					consume_items: false
 				}
 				{
 					id: "2BE9DD7F346679E2"
@@ -222,6 +227,7 @@
 					id: "700F644CCBEBCA5A"
 					type: "item"
 					item: "minecraft:charcoal"
+					consume_items: false
 				}
 				{
 					id: "760709B05A0FEF11"
@@ -243,6 +249,7 @@
 					id: "7AFFEF4014CE671C"
 					type: "item"
 					item: "thermal:coal_coke"
+					consume_items: false
 				}
 				{
 					id: "4960B920CCF3C186"
@@ -265,6 +272,7 @@
 					id: "36A367A143AD6175"
 					type: "item"
 					item: "kubejs:coke_chunk"
+					consume_items: false
 				}
 				{
 					id: "44D36B403AA26E97"
@@ -291,6 +299,7 @@
 					id: "7824435744C12C18"
 					type: "item"
 					item: "kubejs:silicon_compound"
+					consume_items: false
 				}
 				{
 					id: "2F239D4D9BB9B47A"
@@ -313,6 +322,7 @@
 					id: "2C3C495C9B18005A"
 					type: "item"
 					item: "thermal:earth_charge"
+					consume_items: false
 				}
 				{
 					id: "21545C0F55D9D8C8"
@@ -335,6 +345,7 @@
 					id: "54F29099D9D81837"
 					type: "item"
 					item: "thermal:basalz_powder"
+					consume_items: false
 				}
 				{
 					id: "05969082F437FCA9"
@@ -361,6 +372,7 @@
 					id: "712E7C4EEB4BCF55"
 					type: "item"
 					item: "thermal:basalz_rod"
+					consume_items: false
 				}
 				{
 					id: "7DF47F688E5C795C"
@@ -384,6 +396,7 @@
 					id: "4649973A51C977D9"
 					type: "item"
 					item: "minecraft:basalt"
+					consume_items: false
 				}
 				{
 					id: "738E569981496B56"
@@ -442,6 +455,7 @@
 					id: "56F4F1F21FE5FB17"
 					type: "item"
 					item: "minecraft:snowball"
+					consume_items: false
 				}
 				{
 					id: "193D8F8FEC7F864B"
@@ -503,6 +517,7 @@
 					id: "11B1248ECFCD2F26"
 					type: "item"
 					item: "thermal:blizz_rod"
+					consume_items: false
 				}
 				{
 					id: "518D5675C9D1757D"
@@ -525,6 +540,7 @@
 					id: "7EA6D73F7A49EBAF"
 					type: "item"
 					item: "thermal:blizz_powder"
+					consume_items: false
 				}
 				{
 					id: "5CA556BB4614DD06"
@@ -547,6 +563,7 @@
 					id: "3DFF735C19CE82A5"
 					type: "item"
 					item: "thermal:ice_charge"
+					consume_items: false
 				}
 				{
 					id: "220B89A9B897FA67"
@@ -572,6 +589,7 @@
 					id: "263459FBEC9F9868"
 					type: "item"
 					item: "appliedenergistics2:silicon"
+					consume_items: false
 				}
 				{
 					id: "57D267DD10A22D32"
@@ -598,6 +616,7 @@
 					id: "12C1BB8D09D664B4"
 					type: "item"
 					item: "appliedenergistics2:printed_silicon"
+					consume_items: false
 				}
 				{
 					id: "20B36555F58C4DB1"
@@ -689,6 +708,7 @@
 							value: "minecraft:logs"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "72BA1D3BD545CBE6"
@@ -736,6 +756,7 @@
 					id: "6FCB9E7E2CC10348"
 					type: "item"
 					item: "appliedenergistics2:silicon"
+					consume_items: false
 				}
 				{
 					id: "0A4B691EF3CDC7A0"

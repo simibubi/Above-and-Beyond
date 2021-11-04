@@ -16,6 +16,7 @@ onEvent('jei.add.items', event => {
 	event.add('thermal:ruby')
 	event.add('thermal:ruby_dust')
 	event.add('thermal:ruby_ore')
+	event.add('thermal:apatite_ore')
 	event.add('thermal:sapphire')
 	event.add('thermal:sapphire_dust')
 	event.add('thermal:sapphire_ore')
@@ -37,6 +38,33 @@ onEvent('item.tooltip', tooltip => {
 	let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "4" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Bonus Assembly: §6Chapter ${stage}`])
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
+	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7Y level §6${y1} §7to §6${y2}`])
+
+	tooltip.add("minecraft:redstone_ore", [`§7Does not generate, crush Cinnabar to obtain Redstone.`]);
+
+	ore("forbidden_arcanus:arcane_crystal_ore", 1, 9)
+	ore("appliedenergistics2:charged_quartz_ore", 1, 30)
+	ore("forbidden_arcanus:xpetrified_ore", 1, 30)
+	ore("appliedenergistics2:quartz_ore", 1, 30)
+	ore("thermal:apatite_ore", 1, 30)
+	ore("thermal:cinnabar_ore", 1, 30)
+	ore("thermal:niter_ore", 1, 30)
+	ore("thermal:nickel_ore", 1, 40)
+	ore("thermal:ruby_ore", 1, 30)
+	ore("thermal:sapphire_ore", 1, 30)
+	ore("thermal:lead_ore", 1, 20)
+	ore("minecraft:emerald_ore", 1, 30)
+	ore("thermal:sulfur_ore", 12, 36)
+	ore("create:zinc_ore", 15, 70)
+	ore("create:copper_ore", 40, 85)
+
+	ore("minecraft:coal_ore", 1, 128)
+	ore("minecraft:iron_ore", 1, 64)
+	ore("minecraft:lapis_ore", 1, 32)
+	ore("minecraft:gold_ore", 1, 32)
+	ore("minecraft:diamond_ore", 1, 16)
+
+	tooltip.add("advancedrocketry:planet_id_chip", [`§3How to Use:`, `1. §7Use the Survival Mode recipes to obtain these`, `2. §7Open the UI of your Rocket`, `3. §7Click on the displayed Guidance Computer item`, `4. §7Insert chip into the empty slot`, "§8§o(Using the Planet Selection menu crashes the game)"]);
 
 	holds('copper', 5 * 9)
 	holds('iron', 6 * 9)

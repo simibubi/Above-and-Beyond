@@ -37,6 +37,7 @@
 							value: "minecraft:logs"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "0842082756DA73FE"
@@ -64,6 +65,7 @@
 					id: "247A58659E47A4D8"
 					type: "item"
 					item: "minecraft:kelp"
+					consume_items: false
 				}
 				{
 					id: "0631FA27CEE5D67D"
@@ -108,6 +110,7 @@
 							]
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "4208FAAC229CACA6"
@@ -136,6 +139,7 @@
 					id: "5E14AA73F8E1AFE4"
 					type: "item"
 					item: "create:andesite_cobblestone"
+					consume_items: false
 				}
 				{
 					id: "29B78BB983BE39FC"
@@ -174,6 +178,7 @@
 					id: "714FE76FE8D62EBF"
 					type: "item"
 					item: "minecraft:clay_ball"
+					consume_items: false
 				}
 				{
 					id: "02EE2F24FDF534BC"
@@ -199,6 +204,7 @@
 					id: "1CE8BFE460CB41E0"
 					type: "item"
 					item: "architects_palette:algal_blend"
+					consume_items: false
 				}
 				{
 					id: "63EA7BF746BF3254"
@@ -223,12 +229,118 @@
 					title: "Any Stripped Log"
 					icon: "minecraft:stripped_oak_log"
 					item: {
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							value: "minecraft:logs"
+							items: [
+								{
+									id: "minecraft:stripped_oak_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_spruce_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_birch_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_acacia_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_dark_oak_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_crimson_stem"
+									Count: 1b
+								}
+								{
+									id: "minecraft:stripped_warped_stem"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_willow_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_palm_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_jacaranda_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_mahogany_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_cherry_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_redwood_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_fir_log"
+									Count: 1b
+								}
+								{
+									id: "architects_palette:stripped_twisted_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_dead_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_magic_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_umbran_log"
+									Count: 1b
+								}
+								{
+									id: "biomesoplenty:stripped_hellbark_log"
+									Count: 1b
+								}
+								{
+									id: "endergetic:stripped_poise_stem"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:stripped_greenheart_log"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:stripped_skyroot_log"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:stripped_bloodshroom_log"
+									Count: 1b
+								}
+								{
+									id: "darkerdepths:stripped_petrified_log"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:stripped_mysterywood_log"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:stripped_cherrywood_log"
+									Count: 1b
+								}
+							]
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "7B60357D06FE3ADC"
@@ -259,6 +371,7 @@
 							value: "minecraft:planks"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "175767726FBCAA8D"
@@ -293,6 +406,7 @@
 							value: "minecraft:wooden_slabs"
 						}
 					}
+					consume_items: false
 				}
 				{
 					id: "59B260F52722A1FE"
@@ -318,6 +432,7 @@
 					id: "4F50D847118D6E62"
 					type: "item"
 					item: "create:andesite_alloy"
+					consume_items: false
 				}
 				{
 					id: "6AA98FC4680D6521"
@@ -340,6 +455,7 @@
 					id: "706BA4E65686CA1B"
 					type: "item"
 					item: "architects_palette:algal_brick"
+					consume_items: false
 				}
 				{
 					id: "1484A9A6DB85EA6D"
@@ -366,6 +482,7 @@
 					id: "68B67FDC410885B3"
 					type: "item"
 					item: "kubejs:kinetic_mechanism"
+					consume_items: false
 				}
 				{
 					id: "34C54664AB22ECFD"
@@ -417,9 +534,9 @@
 			y: -1.0d
 			shape: "hexagon"
 			description: [
-				"Before you start making your way down the quest line:"
+				"Welcome to the Factory Guide!"
 				""
-				"These Quests are an Automation Guide. Always view them as recommendations on what you should have a passive supply of. The flowgraph roughly depicts the connections between relevant recipes/processing."
+				"These Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing."
 				""
 				"Happy engineering!"
 			]
@@ -521,6 +638,7 @@
 					id: "0F98BACE3B940BC9"
 					type: "item"
 					item: "thermal:rubber"
+					consume_items: false
 				}
 				{
 					id: "5BBF2E1143CD356E"
@@ -548,6 +666,7 @@
 					id: "7D328EB34500FE28"
 					type: "item"
 					item: "thermal:cured_rubber"
+					consume_items: false
 				}
 				{
 					id: "17286271B0667AAA"
@@ -568,6 +687,7 @@
 				id: "2C94C22FBED69EE4"
 				type: "item"
 				item: "kubejs:sealed_mechanism"
+				consume_items: false
 			}]
 		}
 		{
@@ -613,9 +733,9 @@
 			y: -1.0d
 			shape: "circle"
 			description: [
-				"The rigid flowgraph of this automation guide may suggest that items aren't accessible until they have been automated."
+				"The rigid flowgraph of this guide may suggest that items aren't accessible until they have been automated."
 				""
-				"Be reassured that if a convenience of later ages, such as filtering, would be helpful early on, you may have access to it already- albeit with a bit of extra work."
+				"Be reassured that you already have access to tools from later ages, such as filtering- though not without a bit of manual effort."
 			]
 			dependencies: ["5799D55BB26BA52C"]
 			id: "6892AE55581393C6"

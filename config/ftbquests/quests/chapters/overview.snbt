@@ -445,5 +445,56 @@
 				title: "Unlock Chapter 4a"
 			}]
 		}
+		{
+			title: "Preparations"
+			icon: "minecraft:cobblestone_stairs"
+			x: -12.5d
+			y: -1.5d
+			shape: "circle"
+			description: [
+				"Careful! Before you are ready to embark on the journey of automation, it can help to set up a basic workshop first."
+				""
+				"Here are some recommendations for a successful start."
+			]
+			dependencies: ["75FB28B253B14876"]
+			id: "7D6BC99CCCB29924"
+			tasks: [
+				{
+					id: "57A71A62204AE230"
+					type: "item"
+					item: "create:mechanical_press"
+					consume_items: false
+				}
+				{
+					id: "0EEFF99A7BD064E4"
+					type: "item"
+					item: "create:mechanical_saw"
+					consume_items: false
+				}
+				{
+					id: "4A5B209B42D89DFF"
+					type: "item"
+					item: "create:encased_fan"
+					consume_items: false
+				}
+				{
+					id: "32214700E91A67D3"
+					type: "item"
+					item: "create:wrench"
+					consume_items: false
+				}
+				{
+					id: "6530AB7AA277197D"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+			]
+			rewards: [{
+				id: "24DFC6E24F62D97A"
+				type: "item"
+				item: "create:crafting_blueprint"
+				count: 3
+			}]
+		}
 	]
 }

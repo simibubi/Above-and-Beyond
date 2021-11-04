@@ -299,6 +299,7 @@
 					id: "343E4ED28EA67219"
 					type: "item"
 					item: "kubejs:three"
+					consume_items: false
 				}
 				{
 					id: "61DEC75D20A61088"
@@ -324,6 +325,7 @@
 					id: "18BB7C8E32701CB6"
 					type: "item"
 					item: "kubejs:eight"
+					consume_items: false
 				}
 				{
 					id: "4DAD021C66AB2A27"
@@ -349,6 +351,7 @@
 					id: "6FF94B3F20E69F43"
 					type: "item"
 					item: "kubejs:zero"
+					consume_items: false
 				}
 				{
 					id: "3413FA802F33F4BF"
@@ -374,6 +377,7 @@
 					id: "61A3EF7882F2A31E"
 					type: "item"
 					item: "kubejs:one"
+					consume_items: false
 				}
 				{
 					id: "402FD7973EC66AEA"
@@ -399,6 +403,7 @@
 					id: "2AD655BD7E1A0EBF"
 					type: "item"
 					item: "kubejs:two"
+					consume_items: false
 				}
 				{
 					id: "14D9C52366D6AF27"
@@ -424,6 +429,7 @@
 					id: "54FEAD9C942788CF"
 					type: "item"
 					item: "kubejs:four"
+					consume_items: false
 				}
 				{
 					id: "3662CA8BEE33E02D"
@@ -449,6 +455,7 @@
 					id: "0B94D4B1C2A131DA"
 					type: "item"
 					item: "kubejs:five"
+					consume_items: false
 				}
 				{
 					id: "4963498277C8A578"
@@ -474,6 +481,7 @@
 					id: "0127797E6B5249A2"
 					type: "item"
 					item: "kubejs:six"
+					consume_items: false
 				}
 				{
 					id: "3E69BC01E47532D1"
@@ -499,6 +507,7 @@
 					id: "7FA25AD87CBD6B62"
 					type: "item"
 					item: "kubejs:seven"
+					consume_items: false
 				}
 				{
 					id: "44A10C4B490D3C62"
@@ -524,6 +533,7 @@
 					id: "2F81E83410906BB5"
 					type: "item"
 					item: "kubejs:nine"
+					consume_items: false
 				}
 				{
 					id: "5521427D5BAF2771"
@@ -551,6 +561,7 @@
 					id: "245415CFAEFCA7ED"
 					type: "item"
 					item: "appliedenergistics2:matter_ball"
+					consume_items: false
 				}
 				{
 					id: "0811C927283EE155"
@@ -607,12 +618,7 @@
 						]
 					}
 				}
-			}]
-			rewards: [{
-				id: "011D547256008C1F"
-				type: "item"
-				auto: "no_toast"
-				item: "minecraft:bucket"
+				consume_items: false
 			}]
 		}
 		{
@@ -860,21 +866,25 @@
 					id: "69462AA912169E3B"
 					type: "item"
 					item: "kubejs:plus"
+					consume_items: false
 				}
 				{
 					id: "56E1C75AD6DF3119"
 					type: "item"
 					item: "kubejs:minus"
+					consume_items: false
 				}
 				{
 					id: "3BF3D9E9B3782EA3"
 					type: "item"
 					item: "kubejs:multiply"
+					consume_items: false
 				}
 				{
 					id: "5914CB0D1D6E839E"
 					type: "item"
 					item: "kubejs:divide"
+					consume_items: false
 				}
 				{
 					id: "26517C9D1C3D8269"

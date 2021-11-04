@@ -6,5 +6,6 @@
 	"block.advancedrocketry.fueltank": "Rocket Fuel Tank",
 	"block.advancedrocketry.launchpad": "Rocketry Launch Pad",
 	"block.advancedrocketry.structuretower": "Rocketry Launch Tower",
+	"msg.entity.rocket.seldst": "Crash game",
 	"msg.modules": ""
 }
