@@ -439,6 +439,15 @@ function tweaks(event) {
 		M: "computercraft:turtle_normal",
 		S: MC('gold_ingot')
 	})
+	event.shaped("computercraft:wired_modem", [
+		'SSS',
+		'SRS',
+		'SIS'
+	], {
+		R: MC('redstone'),
+		S: MC('stone'),
+		I: MC('iron_ingot')
+	})
 
 	event.shaped("forbidden_arcanus:eternal_stella", [
 		'PEP',
