@@ -1,5 +1,11 @@
 
 [cosmetics]
-	#The active Valhelsia Cape
-	valhelsia_cape = ""
+	#The active cosmetic for the category: special
+	active_cosmetic_special = ""
+	#The active cosmetic for the category: back
+	active_cosmetic_back = ""
+	#The active cosmetic for the category: hat
+	active_cosmetic_hat = ""
+	#The active cosmetic for the category: hand
+	active_cosmetic_hand = ""
 

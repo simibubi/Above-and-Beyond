@@ -64,7 +64,7 @@
 	[energy_pipe.amount]
 		#The amount of FE transferred each tick
 		#Range: > 1
-		no_upgrade = 1024
+		no_upgrade = 10000
 		#The amount of FE transferred each tick
 		#Range: > 1
 		basic = 1024

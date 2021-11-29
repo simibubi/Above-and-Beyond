@@ -740,76 +740,12 @@
 				id: "0F82D1FCCA10EFBC"
 				type: "item"
 				title: "Any Dice"
+				icon: "dice:white_d6"
 				item: {
-					id: "itemfilters:or"
+					id: "itemfilters:mod"
 					Count: 1b
 					tag: {
-						items: [
-							{
-								id: "dice:black_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:red_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:green_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:brown_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:purple_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:blue_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:cyan_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:light_gray_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:gray_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:pink_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:lime_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:yellow_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:light_blue_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:magenta_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:orange_dice"
-								Count: 1b
-							}
-							{
-								id: "dice:white_dice"
-								Count: 1b
-							}
-						]
+						value: "dice"
 					}
 				}
 				consume_items: false
@@ -818,6 +754,34 @@
 				id: "3D69B03DFCB41179"
 				type: "item"
 				item: "randomium:randomium_ore"
+			}]
+		}
+		{
+			title: "The other Gamemode"
+			icon: "magicfeather:magicfeather"
+			x: 3.0d
+			y: 3.0d
+			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
+			id: "0F4B0608CBF966E6"
+			tasks: [
+				{
+					id: "18A86C2CE288A35A"
+					type: "item"
+					item: "magicfeather:magicfeather"
+					consume_items: false
+				}
+				{
+					id: "6D2E7DBD75292896"
+					type: "item"
+					item: "minecraft:beacon"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "3E31A943AAC038E9"
+				type: "item"
+				item: "minecraft:iron_block"
+				count: 9
 			}]
 		}
 	]

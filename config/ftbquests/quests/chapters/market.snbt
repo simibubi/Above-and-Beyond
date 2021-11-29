@@ -94,6 +94,7 @@
 				{
 					id: "3EE8736C08EF80F4"
 					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 5b }
 					item: "thermal:gold_coin"
 					count: 5L
 				}
@@ -113,6 +114,7 @@
 							id: "minecraft:unbreaking"
 						}]
 						display: {
+							Lore: ["{\"text\":\"Do not use in manual crafting\"}"]
 							Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
 						}
 						Damage: 0
@@ -135,7 +137,7 @@
 			}
 			x: -7.0d
 			y: -6.5d
-			subtitle: "7 Gold"
+			subtitle: "5 Gold"
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
 			id: "72CACE8F0E4701B1"
 			tasks: [
@@ -153,8 +155,9 @@
 				{
 					id: "74585BB7E80CF010"
 					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 5b }
 					item: "thermal:gold_coin"
-					count: 7L
+					count: 5L
 				}
 			]
 			rewards: [{
@@ -193,7 +196,7 @@
 			}
 			x: -5.0d
 			y: -6.5d
-			subtitle: "9 Gold"
+			subtitle: "7 Gold"
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Inductive Mechanisms&r."]
 			id: "43FC566E833BE834"
 			tasks: [
@@ -211,8 +214,9 @@
 				{
 					id: "5B31A98B9EFCCFAB"
 					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 7b }
 					item: "thermal:gold_coin"
-					count: 9L
+					count: 7L
 				}
 			]
 			rewards: [{
@@ -681,7 +685,7 @@
 			}
 			x: -3.5d
 			y: -6.5d
-			subtitle: "11 Gold"
+			subtitle: "7 Gold"
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Calculation Mechanisms&r."]
 			id: "00D6DD6AE8E3C014"
 			tasks: [
@@ -701,7 +705,7 @@
 					type: "item"
 					icon: { id: "thermal:gold_coin", Count: 11b }
 					item: "thermal:gold_coin"
-					count: 11L
+					count: 7L
 				}
 			]
 			rewards: [{
@@ -730,92 +734,22 @@
 			icon: "appliedenergistics2:silicon_press"
 			x: -1.0d
 			y: 2.0d
-			subtitle: "2 Gold"
-			description: ["In case you are struggling to find all the right Circuit Casts, we will sell you additional dice rolls!"]
+			subtitle: "6 Gold"
+			description: ["True IT experts tend to avoid going outside much. Thankfully the necessary computer parts can now be delivered directly to their inventory!"]
 			id: "4BAC95CCC72369AD"
 			tasks: [{
 				id: "3D328A6D69E64EDA"
 				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 3b }
+				icon: { id: "thermal:gold_coin", Count: 12b }
 				item: "thermal:gold_coin"
-				count: 2L
+				count: 6L
 			}]
-			rewards: [
-				{
-					id: "6F0FBFF6BA7C765A"
-					type: "item"
-					auto: "enabled"
-					item: {
-						id: "appliedenergistics2:sky_stone_chest"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								inv: {
-									item0: {
-										id: "appliedenergistics2:engineering_processor_press"
-										Count: 1b
-									}
-									item2: {
-										id: "minecraft:gold_nugget"
-										Count: 8b
-									}
-									item1: {
-										id: "appliedenergistics2:calculation_processor_press"
-										Count: 1b
-									}
-									item19: { }
-									item18: { }
-									item17: { }
-									item16: { }
-									item15: { }
-									item14: { }
-									item13: { }
-									item35: { }
-									item12: { }
-									item34: { }
-									item11: { }
-									item33: { }
-									item10: { }
-									item32: { }
-									item31: { }
-									item30: { }
-									item29: { }
-									item28: { }
-									item27: { }
-									item26: { }
-									item25: { }
-									item24: { }
-									item23: { }
-									item22: { }
-									item21: { }
-									item20: { }
-									item8: { }
-									item7: { }
-									item9: { }
-									item4: { }
-									item3: { }
-									item6: { }
-									item5: { }
-								}
-								id: "appliedenergistics2:sky_chest"
-								up: "UP"
-								forward: "NORTH"
-							}
-							display: {
-								Lore: ["{\"text\":\"Contains Loot\",\"color\":\"gray\",\"italic\":\"false\"}"]
-							}
-						}
-					}
-				}
-				{
-					id: "264D6C3DDCB53B20"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
+			rewards: [{
+				id: "51ABA96DE3477D3B"
+				type: "item"
+				item: "kubejs:circuit_scrap"
+				count: 4
+			}]
 		}
 		{
 			title: "Adopt a Duck"
@@ -861,15 +795,15 @@
 			icon: "buddycards:mystery_pack"
 			x: 0.5d
 			y: 1.5d
-			subtitle: "4 Gold"
+			subtitle: "2 Gold"
 			description: ["Ah the joy of gambling."]
 			id: "093FB7B7FEC6B886"
 			tasks: [{
 				id: "30B16CC21946FE8E"
 				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 8b }
+				icon: { id: "thermal:gold_coin", Count: 2b }
 				item: "thermal:gold_coin"
-				count: 4L
+				count: 2L
 			}]
 			rewards: [
 				{
@@ -1090,27 +1024,6 @@
 			]
 		}
 		{
-			title: "Handle with Care"
-			icon: "minecraft:bedrock"
-			x: -1.0d
-			y: -2.0d
-			subtitle: "32 Gold"
-			description: ["Bedrock? How is this possible?"]
-			id: "4E3CA739584CF5A3"
-			tasks: [{
-				id: "4090D8BF82115765"
-				type: "item"
-				icon: { id: "thermal:gold_coin", Count: 32b }
-				item: "thermal:gold_coin"
-				count: 32L
-			}]
-			rewards: [{
-				id: "0BCFC6C5ED72C57C"
-				type: "item"
-				item: "minecraft:bedrock"
-			}]
-		}
-		{
 			title: "Pet Owner's Starter Pack"
 			icon: "minecraft:tropical_fish"
 			x: -13.0d
@@ -1207,6 +1120,59 @@
 					type: "item"
 					item: "minecraft:spruce_fence"
 					count: 16
+				}
+			]
+		}
+		{
+			title: "No, not the bees!"
+			icon: "minecraft:bee_nest"
+			x: -1.0d
+			y: -2.0d
+			subtitle: "48 Silver"
+			id: "003E0D1CE60B166A"
+			tasks: [
+				{
+					id: "6837BEE1075CC785"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 48b }
+					item: "thermal:silver_coin"
+					count: 48L
+				}
+				{
+					id: "3CCE09D1715B54C7"
+					type: "item"
+					title: "Any Flower"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+					count: 10L
+				}
+			]
+			rewards: [
+				{
+					id: "773C4F5E97BD82B8"
+					type: "item"
+					auto: "enabled"
+					item: "minecraft:bee_nest"
+				}
+				{
+					id: "0C8C369DEF6B0FD4"
+					type: "item"
+					auto: "no_toast"
+					item: "minecraft:bee_spawn_egg"
+					count: 2
+				}
+				{
+					id: "6D5E00890DAB64DB"
+					type: "custom"
+					title: "Repeatable"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					auto: "no_toast"
 				}
 			]
 		}

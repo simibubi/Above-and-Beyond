@@ -17,13 +17,13 @@
 	#Chance for horizontal move action to be picked
 	#Range: 0 ~ 100
 	move_chance = 40
-	#Chance for the block to try to move when it receives a block update, picking one of the following actions
+	#Chance for the block to try to move when it receives a block update, picking one of the following actions. You might want to disable this as it could break flying machines that run into it since it might teleport into them when they touch it
 	#Range: 0 ~ 100
 	excite_chance_on_block_update = 25
 	#Chance for fly up action to be picked
 	#Range: 0 ~ 100
 	fly_chance = 2
-	#Action multiplier if silk touch is used on the block. The lower the value the less likely it will be to more
+	#Excitement multiplier if silk touch is used on the block. The lower the value the less likely it will move
 	#Range: 0.0 ~ 1.0
 	silk_touch_multiplier = 0.5
 	#Chance for fall action to be picked
@@ -33,13 +33,13 @@
 [drops]
 	#Multiplier applied to each luck level the player has
 	#Range: 0.0 ~ 20.0
-	luck_multiplier = 1.0
+	luck_multiplier = 0.0
 	#Multiplier applied to each fortune level the player has
 	#Range: 0.0 ~ 20.0
-	fortune_multiplier = 0.2
-	#Base randomium drop chance. Final chance will be [base_chance + luck*luck_multiplier + fortune*fortune_multiplier]
+	fortune_multiplier = 0.0
+	#Base randomium drop chance (in percentage, so out of 100). Final chance will be [base_chance + luck*luck_multiplier + fortune*fortune_multiplier]
 	#Range: 0.0 ~ 100.0
-	base_drop_chance = 0.5
+	base_drop_chance = 0.0
 	#Allow the block to be silk touched
 	allow_silk_touch = true
 	#Loot mode: decides if it can drop everything except blacklist or only stuff on the whitelist

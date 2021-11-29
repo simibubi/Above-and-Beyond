@@ -823,7 +823,7 @@
 			y: 5.0d
 			shape: "circle"
 			description: [
-				"Glowstone or Redstone Accellerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code."
+				"Glowstone or Redstone Accelerator can optionally be placed in the fifth slot of the Hopper Minecart when entering a catalyst code."
 				""
 				"This may reveal additional information about the correct combination as described in their tooltip."
 			]

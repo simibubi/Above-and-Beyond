@@ -2,7 +2,7 @@
 #Everything to do with gameplay
 [gameplay]
 	#If true, anvils will show all metal variants. If false, only the first variant in the tag will show (typically tinkers bronze)
-	showAllAnvilVariants = false
+	showAllAnvilVariants = true
 	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
 	showAllTableVariants = false
 	#Set this to false to disable new players spawning with the Tinkers' Book.

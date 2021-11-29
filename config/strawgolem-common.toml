@@ -27,7 +27,7 @@
 [Lifespan]
 	#Set the lifespan, in tick, of new created straw golems. Set -1 for infinite.
 	#Range: > -2
-	lifespan = -1
+	lifespan = 2000000000
 	#Enable lifespan penalty for being in the rain
 	penaltyRain = false
 	#Enable lifespan penalty for being in the water

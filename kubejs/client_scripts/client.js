@@ -3,6 +3,7 @@
 onEvent('jei.hide.items', event => {
 	event.hide('appliedenergistics2:facade')
 	event.hide(`#buddycards:cards`)
+	event.hide(`#buddycards:gummy_cards`)
 })
 
 onEvent('jei.subtypes', event => {
@@ -99,6 +100,12 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("structurescompass:structures_compass", [`§7Right-Click to Activate`]);
 
+	tooltip.add("magicfeather:magicfeather", [`§6Grants Creative Flight`]);
+
+	tooltip.add("xreliquary:alkahestry_tome", [`§6Cannot be used in Mechanical Crafting`]);
+
+	tooltip.add("pipez:energy_pipe", [`§7Connections may have to be`, `§7marked as §fInputs §7by sneak-clicking`, `§7the connection with a §fWrench`]);
+
 	tooltip.add("kubejs:accellerator_redstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
 		"  §6in §eincorrect §6slots will not be consumed"]);
 	tooltip.add("kubejs:accellerator_glowstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
@@ -132,7 +139,7 @@ onEvent('jei.information', event => {
 			`§82.§0 Run the §5Alchemical Laser§0 on the contents and find either the §9${me ? me : name + " §9Catalyst"}§0, or a §9Hint§0 towards the Correct Combination`, " ",
 			"§8Note:§0 The Correct Combination may contain §9Duplicates§0",
 			"§8Note:§0 The Correct Combination §9Differs from World to World§0",
-			"§8Optional:§0 Place §9Redstone Accellerator§0 or §9Glowstone Accellerator§0 in the fifth slot for §9Additional Hints§0",
+			"§8Optional:§0 Place §9Redstone Accelerator§0 or §9Glowstone Accelerator§0 in the fifth slot for §9Additional Hints§0",
 		]
 
 	event.add('kubejs:substrate_igneous', catalyst("Igneous"))

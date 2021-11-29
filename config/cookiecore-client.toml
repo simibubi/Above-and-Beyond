@@ -1,0 +1,5 @@
+#Set to empty to disable trans bees. Separate names with a space
+transBeeNames = ["zoe"]
+#Enable the CookieRealm Flat world preset
+enableTerracottaWorldPreset = true
+

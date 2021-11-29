@@ -66,7 +66,7 @@ onEvent('item.registry', event => {
 		{ in: FD('onion_crate'), out: S(1) },
 		{ in: FD('rice_bag'), out: S(1) },
 		{ in: FD('canvas', 32), out: S(1) },
-		{ in: MC('apple', 32), out: S(1) },
+		{ in: TE('apple_block'), out: S(1) },
 		{ in: MC('sweet_berries', 8), out: S(1) },
 		{ in: MC('cocoa_beans', 16), out: S(1) },
 		{ in: MC('honey_bottle', 8), out: S(1) },
@@ -79,9 +79,9 @@ onEvent('item.registry', event => {
 		{ in: MC('red_mushroom', 8), out: S(1) },
 		{ in: BOP('toadstool', 8), out: S(1) },
 		{ in: MC('kelp', 64), out: S(1) },
-		{ in: MC('pumpkin', 4), out: S(1) },
+		{ in: MC('pumpkin', 9), out: S(1) },
 		{ in: MC('#wool', 16), out: S(1) },
-		{ in: MC('melon', 2), out: S(1) }
+		{ in: MC('melon', 3), out: S(1) }
 	])
 
 	profession("Carpentry", 0xD0AF84, 0x966C3B, [
@@ -128,7 +128,8 @@ onEvent('item.registry', event => {
 		{ in: TE('sapphire', 1), out: S(10) },
 		{ in: TE('ruby', 1), out: S(10) },
 		{ in: MC('diamond', 1), out: S(14) },
-		{ in: MC('coal', 16), out: S(2) }
+		{ in: MC('coal', 16), out: S(2) },
+		{ in: "16x advancedrocketry:moonturf", out: S(2) }
 	])
 
 	profession("Masonry", 0x5E6F64, 0xBA7967, [
@@ -164,14 +165,14 @@ onEvent('item.registry', event => {
 		{ in: RQ('chelicerae'), out: S(5) },
 		{ in: RQ('bat_wing'), out: S(10) },
 		{ in: RQ('frozen_core'), out: S(4) },
-		{ in: RQ('nebulous_heart'), out: S(7) },
-		{ in: RQ('molten_core'), out: S(6) },
+		{ in: RQ('nebulous_heart'), out: S(5) },
+		{ in: RQ('molten_core'), out: S(5) },
 		{ in: RQ('eye_of_the_storm'), out: S(12) },
 		{ in: MC('phantom_membrane'), out: S(8) },
 		{ in: MC('rabbit_foot'), out: S(8) },
 		{ in: MC('nether_star'), out: G(1) },
 		{ in: MC('dragon_breath'), out: S(1) },
-		{ in: MC('ghast_tear'), out: S(18) },
+		{ in: MC('ghast_tear'), out: S(10) },
 		{ in: MC('dragon_egg'), out: G(2) },
 		{ in: RQ('guardian_spike'), out: S(6) }
 	])
@@ -206,12 +207,12 @@ onEvent('item.registry', event => {
 		{ in: FD('chicken_soup', 16), out: S(9) },
 		{ in: MC('rabbit_stew', 16), out: S(10) },
 		{ in: MC('beetroot_soup', 16), out: S(7) },
-		{ in: MC('pumpkin_pie', 16), out: S(3) },
+		{ in: MC('pumpkin_pie', 16), out: S(6) },
 		{ in: FD('vegetable_soup', 16), out: S(9) },
 		{ in: SP('pancake', 32), out: S(4) },
 		{ in: FD('fish_stew', 16), out: S(9) },
 		{ in: FD('fried_rice', 16), out: S(8) },
-		{ in: FD('pumpkin_soup', 16), out: S(8) },
+		{ in: FD('pumpkin_soup', 16), out: S(12) },
 		{ in: FD('baked_cod_stew', 16), out: S(9) },
 		{ in: FD('noodle_soup', 16), out: S(9) },
 		{ in: FD('pasta_with_meatballs', 16), out: S(10) },
@@ -222,7 +223,7 @@ onEvent('item.registry', event => {
 		{ in: FD('ratatouille', 16), out: S(9) },
 		{ in: FD('squid_ink_pasta', 16), out: S(11) },
 		{ in: FD('roast_chicken', 16), out: S(7) },
-		{ in: FD('stuffed_pumpkin', 16), out: S(7) },
+		{ in: FD('stuffed_pumpkin', 16), out: S(9) },
 		{ in: FD('honey_glazed_ham', 16), out: S(7) },
 		{ in: FD('shepherds_pie', 16), out: S(7) },
 		{ in: AC('sushi', 16), out: S(3) },
@@ -421,17 +422,18 @@ onEvent('item.registry', event => {
 		simple("Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
 		
 		simple("Andesite Alloy", CR('andesite_alloy', 16), 8, S, 0x505050, 0x878787)
+		simple("Silica Steel", "8x moreminecarts:silica_steel", 16, S, 0x3E4644, 0xB8DAC8)
 		simple("Brass Ingot", CR('brass_ingot', 8), 48, S, 0x6F3C2D, 0xFCF085)
-		simple("Invar Ingot", TE('invar_ingot', 8), 64, S, 0x406D6C, 0xC3CAC1)
+		simple("Invar Ingot", TE('invar_ingot', 4), 64, S, 0x406D6C, 0xC3CAC1)
 		
 		entry_cost = 10
 		simple("Coal", MC('coal', 16), 4, S, 0x1C1C1E, 0x383D45)
 		simple("Flint", MC('flint', 16), 4, S, 0x3C3B3B, 0xA6A6A6)
 		simple("Cinnabar", TE('cinnabar', 4), 16, S, 0xFC7781, 0xFCCED0)
 		simple("Redstone Dust", MC('redstone', 16), 8, S, 0xA80F01, 0xFC7781)
-		simple("Diamond", MC('diamond', 1), 2, G, 0x20C3B3, 0xD2FCF3)
+		simple("Diamond", MC('diamond', 1), 1, G, 0x20C3B3, 0xD2FCF3)
 		simple("Lapis Lazuli", MC('lapis_lazuli', 8), 32, S, 0x335DC1, 0x7395E7)
-		simple("Emerald", MC('emerald', 1), 64, S, 0x00A82B, 0xADFACB)
+		simple("Emerald", MC('emerald', 1), 1, G, 0x00A82B, 0xADFACB)
 		simple("Sulfur", TE('sulfur', 4), 8, S, 0xC7A94A, 0xEEF071)
 		simple("Apatite", TE('apatite', 4), 8, S, 0x27A9BB, 0x2CC7C9)
 		simple("Niter", TE('niter', 4), 8, S, 0x735A65, 0xB8AFAF)
@@ -473,9 +475,11 @@ onEvent('item.registry', event => {
 		next_group()
 		entry_cost = 10
 		simple("Daub", SP('daub', 16), 5, S, 0xBFBAAA, 0xCBC8B6)
-		simple("Clear Glass", TC('clear_glass', 16), 8, S, 0xA9C3CF, 0xE8E8E8)
+		simple("Clear Glass", TC('clear_glass', 16), 4, S, 0xA9C3CF, 0xE8E8E8)
+		simple("Factory Block", "16x chisel:factory/dots", 2, S, 0x211C10, 0x604B43)
+		simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, S, 0x71706E, 0x9D9A98)
 		simple("Copper Shingles", CR('copper_shingles', 16), 3, S, 0xB5654B, 0xE4BB79)
-		simple("Algal Bricks", AP('algal_bricks', 32), 8, S, 0x292926, 0x3D4D48)
+		simple("Algal Bricks", AP('algal_bricks', 32), 6, S, 0x292926, 0x3D4D48)
 		simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, S, 0x3A3C2E, 0x57553E)
 		simple("Architect's Limestone", AP('limestone', 32), 8, S, 0x756958, 0x7F7360)
 		simple("Sunmetal", AP('sunmetal_block', 32), 8, S, 0x603E38, 0xB48764)
@@ -509,7 +513,7 @@ onEvent('item.registry', event => {
 		simple("Prismarine Crystals", MC('prismarine_crystals', 4), 24, S, 0x71A296, 0xDCE6D9)
 		
 		entry_cost = 10
-		simple("Witch Hat", RQ('witch_hat', 1), 2, G, 0x424242, 0x568125)
+		simple("Witch Hat", RQ('witch_hat', 1), 1, G, 0x424242, 0x568125)
 		simple("Zombie heart", RQ('zombie_heart', 1), 32, S, 0x532B38, 0x8D584A)
 		simple("Squid Beak", RQ('squid_beak', 1), 32, S, 0x00613B, 0x5BCDA1)
 		simple("Rib Bone", RQ('rib_bone', 1), 32, S, 0xDFDDCE, 0xFAF9E9)
@@ -521,8 +525,8 @@ onEvent('item.registry', event => {
 		simple("Molten Core", RQ('molten_core', 1), 48, S, 0xED7102, 0xFAFC58)
 		simple("Eye of the Storm", RQ('eye_of_the_storm', 1), 2, G, 0xFCD607, 0x96FC52)
 		simple("Frozen Core", RQ('frozen_core', 1), 48, S, 0x008DC2, 0x7571FB)
-		simple("Nebulous Heart", RQ('nebulous_heart', 1), 3, G, 0x6200A0, 0xE500C3)
-		simple("Guardian Spike", RQ('guardian_spike', 1), 2, G, 0x7F4215, 0xE29964)
+		simple("Nebulous Heart", RQ('nebulous_heart', 1), 1, G, 0x6200A0, 0xE500C3)
+		simple("Guardian Spike", RQ('guardian_spike', 1), 1, G, 0x7F4215, 0xE29964)
 		simple("Phantom Membrane", MC('phantom_membrane', 1), 48, S, 0x6E506B, 0xC1B79F)
 		simple("Blaze Cake", CR('blaze_cake', 1), 16, S, 0x834141, 0xFCE083)
 		next_group()

@@ -797,18 +797,16 @@
 			description: ["The Secrets to Teleportation lie behind the dimensional gate to the End."]
 			hide_dependency_lines: true
 			dependencies: [
-				"2BB2C7B95E3C89AE"
 				"6CBA3D97CAD5DB63"
+				"2BB2C7B95E3C89AE"
 			]
 			hide: true
 			id: "05C7E580ED88B556"
 			tasks: [{
-				id: "10B1BA69B6FAF00F"
-				type: "dimension"
-				title: "Visit The End"
-				icon: "minecraft:end_portal_frame"
-				disable_toast: true
-				dimension: "minecraft:the_end"
+				id: "4E429C9E118BA2C7"
+				type: "item"
+				item: "minecraft:end_stone"
+				consume_items: false
 			}]
 		}
 		{

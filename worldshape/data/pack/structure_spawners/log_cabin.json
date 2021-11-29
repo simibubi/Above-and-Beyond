@@ -1,10 +1,10 @@
 {
     "template": {
-        "type": "single",
-        "id": "pack:log_cabin"
+        "type": "pool",
+        "id": "pack:surface_build"
     },
 
-    "averageSpacing": 20,
+    "averageSpacing": 18,
     "avoidOthers": true,
     
     "placement": {
@@ -22,7 +22,12 @@
     "biomes": [
         "#taiga",
         "#extreme_hills",
-        "#forest"
+        "#jungle",
+        "#plains",
+        "#savanna",
+        "#icy",
+        "#forest",
+        "#swamp"
     ]
 
 }

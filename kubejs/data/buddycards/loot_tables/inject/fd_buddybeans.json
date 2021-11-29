@@ -1,0 +1,15 @@
+{
+    "pools": [
+        {
+            "name": "buddycards",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 60,
+                    "name": "buddycards:buddybeans"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+
+{
+	"pools": [
+		{
+			"name": "other_loot",
+			"rolls": {
+				"min": 1.0,
+				"max": 2.0,
+				"type": "minecraft:uniform"
+			},
+			"entries": [
+				{
+				"type": "minecraft:item",
+				"name": "forbidden_arcanus:cloth",
+				"weight": 15,
+				"functions": [
+					{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 1.0,
+							"max": 3.0,
+							"type": "minecraft:uniform"
+						}
+					}
+				]
+			},
+			{
+				"type": "minecraft:item",
+				"name": "forbidden_arcanus:obsidian_with_iron",
+				"weight": 5,
+				"functions": [
+					{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 1.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					}
+				]
+			},
+			{
+				"type": "minecraft:item",
+				"name": "forbidden_arcanus:bat_wing",
+				"weight": 20,
+				"functions": [
+					{
+						"function": "minecraft:set_count",
+						"count": {
+							"min": 1.0,
+							"max": 2.0,
+							"type": "minecraft:uniform"
+						}
+					}
+				]
+			},
+			{
+				"type": "minecraft:empty",
+				"weight": 10
+			}
+		]
+	}]
+}

@@ -75,7 +75,8 @@ onEvent('item.registry', event => {
 	event.create('pipe_module_tier_1').texture("kubejs:item/pipe_module_tier_1").displayName('Brass Pipe Module')
 	event.create('pipe_module_tier_2').texture("kubejs:item/pipe_module_tier_2").displayName('Invar Pipe Module')
 	event.create('pipe_module_tier_3').texture("kubejs:item/pipe_module_tier_3").displayName('Enderium Pipe Module')
-
+	
+	event.create('circuit_scrap').texture("kubejs:item/circuit_scrap").displayName('Circuit Scrap')
 	event.create('charged_calculator').texture("kubejs:item/charged_calculator").displayName('Calculator').maxDamage(64)
 	event.create('missingno').texture("kubejs:item/missingno").displayName('∄')
 	event.create('zinc_dust').texture("kubejs:item/zinc_dust").displayName('Zinc Dust')
@@ -273,7 +274,7 @@ onEvent('block.registry', event => {
 		.hardness(0.1)
 		.box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
 		.model("kubejs:block/accellerator")
-		.displayName("Glowstone Accellerator")
+		.displayName("Glowstone Accelerator")
 		.renderType("cutout")
 
 	event.create(`accellerator_redstone`)
@@ -282,7 +283,7 @@ onEvent('block.registry', event => {
 		.hardness(0.1)
 		.box(.125, 0, .125, .875, 10.0 / 16.0, .875, false)
 		.model("kubejs:block/accellerator")
-		.displayName("Redstone Accellerator")
+		.displayName("Redstone Accelerator")
 		.renderType("cutout")
 
 })

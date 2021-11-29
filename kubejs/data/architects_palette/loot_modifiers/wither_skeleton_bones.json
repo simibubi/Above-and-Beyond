@@ -1,0 +1,5 @@
+{
+    "conditions": [],
+    "bone": "tconstruct:necrotic_bone",
+    "replaces": "minecraft:bone"
+}

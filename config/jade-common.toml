@@ -1,0 +1,15 @@
+
+[inventory]
+	#Range: 0 ~ 54
+	sneakShowAmount = 54
+	#Range: 0 ~ 54
+	normalShowAmount = 0
+	bypassLockedContainer = false
+	blacklist = ["refinedstorage:disk_drive"]
+	#Range: 1 ~ 18
+	showItemPreLine = 9
+
+[customContainerName]
+	blacklist = ["thermal"]
+	onlyShowVanilla = false
+
