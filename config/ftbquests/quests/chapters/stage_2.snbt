@@ -305,7 +305,7 @@
 			description: [
 				"Set up a little cycle to recharge any Certus Quartz used as a Catalyst in Contraption 13-2."
 				""
-				"The Charger from AE2 can be used here, along with the Item Trasportation of choice."
+				"The Charger from AE2 can be used here, along with the Item Transportation of choice."
 			]
 			hide_dependency_lines: true
 			dependencies: ["1256352748B93449"]
