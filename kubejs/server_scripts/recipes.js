@@ -2113,6 +2113,8 @@ function enderMachine(event) {
 	event.recipes.thermal.insolator(['endergetic:tall_poise_bush'], 'endergetic:poise_bush').water(1000)
 	event.recipes.thermal.insolator(['endergetic:poise_cluster'], 'endergetic:tall_poise_bush').water(1000)
 	event.recipes.thermal.insolator(['tconstruct:ender_slime_ball', '3x endergetic:poise_bush'], 'endergetic:poise_cluster').water(1000)
+        event.recipes.thermal.insolator(['2x farmersdelight:onion'], 'farmersdelight:onion').water(500)
+        event.recipes.thermal.insolator(['2x farmersdelight:rice_panicle'], 'farmersdelight:rice').water(1000)
 
 	// let t = KJ('incomplete_abstruse_mechanism')
 	// event.recipes.createSequencedAssembly([
