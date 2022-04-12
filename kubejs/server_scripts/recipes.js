@@ -967,6 +967,18 @@ function barrels(event) {
 	event.shapeless("metalbarrels:wood_to_iron", ["metalbarrels:iron_barrel"])
 	event.shapeless("metalbarrels:wood_to_silver", ["metalbarrels:silver_barrel"])
 	event.shapeless("metalbarrels:wood_to_gold", ["metalbarrels:gold_barrel"])
+
+	event.shapeless("metalbarrels:copper_to_iron", ["metalbarrels:wood_to_iron"])
+	event.shapeless("metalbarrels:copper_to_silver", ["metalbarrels:wood_to_silver"])
+	event.shapeless("metalbarrels:copper_to_gold", ["metalbarrels:wood_to_gold"])
+	event.shapeless("metalbarrels:iron_to_silver", ["metalbarrels:copper_to_silver"])
+	event.shapeless("metalbarrels:iron_to_gold", ["metalbarrels:copper_to_gold"])
+	event.shapeless("metalbarrels:silver_to_gold", ["metalbarrels:iron_to_gold"])
+
+	event.shapeless("metalbarrels:copper_barrel", ["metalbarrels:wood_to_copper"])
+	event.shapeless("metalbarrels:iron_barrel", ["metalbarrels:copper_to_iron"])
+	event.shapeless("metalbarrels:silver_barrel", ["metalbarrels:iron_to_silver"])
+	event.shapeless("metalbarrels:gold_barrel", ["metalbarrels:silver_to_gold"])
 }
 
 function rocketScience(event) {

@@ -7,8 +7,14 @@
     "item.metalbarrels.gold_barrel": "Cobalt Barrel",
     "block.metalbarrels.iron_barrel": "Silica Steel Barrel",
     "item.metalbarrels.iron_barrel": "Silica Steel Barrel",
-    "item.metalbarrels.wood_to_copper": "Tinker's Bronze Barrel Upgrade",
-    "item.metalbarrels.wood_to_iron": "Silica Steel Barrel Upgrade",
-    "item.metalbarrels.wood_to_silver": "Arcane Barrel Upgrade",
-    "item.metalbarrels.wood_to_gold": "Cobalt Barrel Upgrade"
+    "item.metalbarrels.wood_to_copper": "Wood to Tinker's Bronze Barrel Upgrade",
+    "item.metalbarrels.wood_to_iron": "Wood to Silica Steel Barrel Upgrade",
+    "item.metalbarrels.wood_to_silver": "Wood to Arcane Barrel Upgrade",
+    "item.metalbarrels.wood_to_gold": "Wood to Cobalt Barrel Upgrade",
+    "item.metalbarrels.copper_to_iron": "Tinker's Bronze to Silica Steel Barrel Upgrade",
+    "item.metalbarrels.copper_to_silver": "Tinker's Bronze to Arcane Barrel Upgrade",
+    "item.metalbarrels.copper_to_gold": "Tinker's Bronze to Cobalt Barrel Upgrade",
+    "item.metalbarrels.iron_to_silver": "Silica Steel to Arcane Barrel Upgrade",
+    "item.metalbarrels.iron_to_gold": "Silica Steel to Cobalt Barrel Upgrade",
+    "item.metalbarrels.silver_to_gold": "Arcane to Cobalt Barrel Upgrade"
 }
