@@ -8,6 +8,8 @@
 	tankFluidModel = false
 	#If true, the game will log all modifier textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
 	logMissingModifierTextures = false
+	#If true, modifiers will be added to the JEI ingredient list. If false, they will only be visible in the modifiers recipe tab.
+	showModifiersInJEI = true
 	#If true, the game will log all material textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
 	logMissingMaterialTextures = false
 

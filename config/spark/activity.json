@@ -5,6 +5,19 @@
       "name": "simibubi",
       "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
     },
+    "time": 1637857611921,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/yQnhh1wO0u"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "simibubi",
+      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
+    },
     "time": 1635975779690,
     "type": "Profiler",
     "data": {
@@ -23,45 +36,6 @@
     "data": {
       "type": "url",
       "value": "https://spark.lucko.me/lf07Q9tSEI"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "simibubi",
-      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
-    },
-    "time": 1634045968303,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/GbxQp2Mwjo"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "simibubi",
-      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
-    },
-    "time": 1633625624685,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/25GmTIL0Xw"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "simibubi",
-      "uniqueId": "407d3db5-79e2-4806-ab96-1ae8571c8d87"
-    },
-    "time": 1633625603476,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/bjTsRrv1Lb"
     }
   }
 ]

@@ -25,6 +25,8 @@
 	cheaperNetheriteAlloy = true
 	#Add a recipe that allows you to craft a piece of flint using 3 gravel
 	addGravelToFlintRecipe = true
+	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod
+	glassRecipeFix = true
 	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
 	#Range: 1 ~ 45
 	foundryNuggetsPerOre = 15

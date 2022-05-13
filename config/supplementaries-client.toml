@@ -52,6 +52,10 @@
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.3
 
+	[blocks.turn_table]
+		#Display visual particles when a block is rotated
+		turn_particles = true
+
 	[blocks.globe]
 		#Enable a random globe texture for each world
 		random_world = true

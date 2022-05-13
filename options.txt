@@ -117,28 +117,29 @@ key_key.rocket.desc:key.mouse.left
 key_key.slide.desc:key.keyboard.left.shift
 key_placebo.toggleWings:key.keyboard.keypad.8
 key_placebo.toggleTrails:key.keyboard.keypad.9
-key_Piston Pushcart Up:key.keyboard.space
-key_Piston Pushcart Down:key.keyboard.left.control
 key_Start composing:key.keyboard.g
 key_Tool Menu (Hold):key.keyboard.left.alt
+key_Piston Pushcart Up:key.keyboard.space
+key_Piston Pushcart Down:key.keyboard.left.control
 key_key.corpse.death_history:key.keyboard.u
 key_Open the Crash Utilities Screen:key.keyboard.u:CONTROL
 key_Copy Container Class:key.keyboard.unknown
 key_Show Slot Index Tooltips:key.keyboard.unknown
-key_Options Gui:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
+key_Options Gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.unknown
 key_key.control:key.keyboard.left.control
 key_key.inventorysorter.itemout:key.mouse.102
-key_key.inventorysorter.sort:key.mouse.middle
 key_key.inventorysorter.itemin:key.mouse.100
+key_key.inventorysorter.sort:key.mouse.middle
 key_key.toggle_focus.desc:key.keyboard.tab
 key_key.cofh.mode_change_increment:key.keyboard.v
+key_key.endergetic.booflo_vest:key.keyboard.space
+key_key.endergetic.booflo_slam:key.keyboard.x
+key_key.tconstruct.helmet_interact:key.keyboard.z
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
-key_key.endergetic.booflo_vest:key.keyboard.space
-key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.exchangers.open_gui:key.keyboard.comma
 key_key.exchangers.range_switch:key.keyboard.unknown
 key_key.exchangers.mode_switch:key.keyboard.unknown
@@ -146,6 +147,8 @@ key_key.exchangers.force_drop_items_mode_toggle:key.keyboard.unknown
 key_key.exchangers.directional_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.fuzzy_placement_mode_toggle:key.keyboard.unknown
 key_key.exchangers.void_items_mode_toggle:key.keyboard.unknown
+key_create.keyinfo.toolmenu:key.keyboard.left.alt
+key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.modded-tool.open:key.keyboard.r
 key_mod.chiselsandbits.keys.key.modded-tool.cycle.left:key.keyboard.unknown
@@ -153,8 +156,6 @@ key_mod.chiselsandbits.keys.key.modded-tool.cycle.right:key.keyboard.unknown
 key_mod.chiselsandbits.keys.key.measuring-tape.reset:key.mouse.right:SHIFT
 key_mod.chiselsandbits.keys.key.undo:key.keyboard.z:CONTROL
 key_mod.chiselsandbits.keys.key.redo:key.keyboard.y:CONTROL
-key_create.keyinfo.toolmenu:key.keyboard.left.alt
-key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_key.improvedbackpacks.open_backpack:key.keyboard.b
 key_keybind.xreliquary.fortune_coin:key.keyboard.unknown
 key_key.craftingtweaks.rotate:key.keyboard.unknown
@@ -188,7 +189,6 @@ key_key.occultism.familiar.chimera_familiar:key.keyboard.unknown
 key_key.occultism.familiar.goat_familiar:key.keyboard.unknown
 key_key.occultism.familiar.shub_niggurath_familiar:key.keyboard.unknown
 key_key.occultism.familiar.beholder_familiar:key.keyboard.unknown
-key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.togglejetpack:key.keyboard.x
 key_key.openrocketui:key.keyboard.c
 key_key.togglercs:key.keyboard.r
@@ -196,6 +196,7 @@ key_key.turnrocketright:key.keyboard.d
 key_key.turnrocketleft:key.keyboard.a
 key_key.turnrocketup:key.keyboard.z
 key_key.turnrocketdown:key.keyboard.x
+key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.toggleCheatMode:key.keyboard.unknown

@@ -194,8 +194,7 @@ onEvent('item.tags', event => {
 		.add("chiselsandbits:block_bit")
 		.add("moreminecarts:chunk_loader")
 		.add("moreminecarts:minecart_with_chunk_loader")
-		.add("chickenchunks:chunk_loader")
-		.add("chickenchunks:spot_loader")
+		.add("chunknogobyebye:loader")
 		.add("grapplemod:repeller")
 		.add(CR("handheld_worldshaper"))
 		.add("computercraft:computer_command")
@@ -487,7 +486,7 @@ function tweaks(event) {
 	event.shaped(FD('diamond_knife'), ['S ', ' M'], { M: MC("diamond"), S: F('#rods/wooden') })
 	event.shaped("buddycards:buddysteel_food_knife", ['S ', ' M'], { M: "buddycards:buddysteel_ingot", S: F('#rods/wooden') })
 
-	event.remove({id: "decorative_blocks:lattice"})
+	event.remove({ id: "decorative_blocks:lattice" })
 	event.shaped("decorative_blocks:lattice", [
 		'SS',
 		'SS'
@@ -580,8 +579,21 @@ function tweaks(event) {
 		S: MC('obsidian')
 	})
 
+	event.replaceInput({ id: "architects_palette:wither_lamp" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.replaceInput({ id: "architects_palette:withered_bone_block" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.remove({ id: "architects_palette:withered_bone" })
+
+	event.remove({ id: "extcaves:pebble_stone" })
+
+	event.remove({ id: "forbidden_arcanus:edelwood_stick" })
+	event.shaped("3x forbidden_arcanus:edelwood_stick", [
+		'S',
+		'A',
+		'S'
+	], {
+		S: 'forbidden_arcanus:edelwood_planks',
+		A: MC('stick')
+	})
 
 	event.replaceInput({ id: "computercraft:cable" }, MC('redstone'), PR_C('red_ingot'))
 	event.replaceInput({ id: "computercraft:wired_modem" }, MC('redstone'), PR_C('red_ingot'))
@@ -957,6 +969,14 @@ function barrels(event) {
 		event.smithing(r, i1, i2)
 		event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
 	}
+
+	event.remove({ id: TE("dynamo_gourmand") })
+	smithAndMechCraft(TE("dynamo_gourmand"), TE("dynamo_stirling"), [MC("golden_carrot")])
+	smithAndMechCraft(TE("dynamo_gourmand"), TE("dynamo_stirling"), [MC("golden_apple")])
+	event.remove({ id: TE("dynamo_lapidary") })
+	smithAndMechCraft(TE("dynamo_lapidary"), TE("dynamo_numismatic"), [TE("lapis_gear")])
+	event.remove({ id: TE("dynamo_disenchantment") })
+	smithAndMechCraft(TE("dynamo_disenchantment"), TE("dynamo_compression"), ["forbidden_arcanus:rune"])
 
 	smithAndMechCraft("metalbarrels:copper_barrel", MC("barrel"), TC("tinkers_bronze_ingot"))
 	smithAndMechCraft("metalbarrels:iron_barrel", MC("barrel"), "moreminecarts:silica_steel")
@@ -1476,6 +1496,37 @@ function alloys(event) {
 	event.remove({ id: TC('smeltery/alloys/molten_electrum') })
 	event.remove({ id: TC('smeltery/alloys/molten_constantan') })
 	event.remove({ id: TC('smeltery/alloys/molten_rose_gold') })
+	event.remove({ id: TC('smeltery/alloys/molten_enderium') })
+	event.remove({ id: TC('smeltery/alloys/molten_lumium') })
+	event.remove({ id: TC('smeltery/alloys/molten_signalum') })
+
+	event.custom({
+		"type": "tconstruct:alloy",
+		"inputs": [
+			{ "name": "tconstruct:molten_silver", "amount": 144 },
+			{ "name": "tconstruct:molten_copper", "amount": 144 },
+			{ "name": "thermal:redstone", "amount": 1000 }
+		],
+		"result": {
+			"fluid": "tconstruct:molten_signalum",
+			"amount": 144
+		},
+		"temperature": 1000
+	})
+
+	event.custom({
+		"type": "tconstruct:alloy",
+		"inputs": [
+			{ "name": "tconstruct:molten_silver", "amount": 144 },
+			{ "name": "tconstruct:molten_copper", "amount": 144 },
+			{ "name": "thermal:glowstone", "amount": 1000 }
+		],
+		"result": {
+			"fluid": "tconstruct:molten_lumium",
+			"amount": 144
+		},
+		"temperature": 1000
+	})
 
 	event.remove({ type: MC("crafting_shapeless"), output: TE('constantan_dust') })
 	event.remove({ type: MC("crafting_shapeless"), output: TE('electrum_dust') })
@@ -2152,7 +2203,6 @@ function enderMachine(event) {
 	ender_machine("enderstorage:ender_tank", 1, CR('fluid_tank'))
 	ender_machine("portality:controller", 1, MC('diamond'))
 	ender_machine(TE("upgrade_augment_3"), 1, MC('redstone'))
-	ender_machine(TE("dynamo_lapidary"), 1, TE('rf_coil'))
 	ender_machine(AE2("quantum_ring"), 1, AE2('energy_cell'))
 	ender_machine(AE2("quantum_link"), 1, AE2('fluix_pearl'))
 	ender_machine('kubejs:pipe_module_tier_3', 4)

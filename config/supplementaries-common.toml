@@ -18,6 +18,8 @@
 		light_level = 12
 
 	[blocks.speaker_block]
+		#Enable/disable speaker block narrator mode
+		narrator_enabled = true
 		#Maximum block range
 		#Range: 0 ~ 100000000
 		range = 64
