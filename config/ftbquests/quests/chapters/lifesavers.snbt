@@ -704,33 +704,6 @@
 			}]
 		}
 		{
-			title: "Friend?"
-			x: 1.0d
-			y: -5.0d
-			description: ["Placing a Carved Pumpkin on a Hay Bale creates a Straw Golem, who can take care of your crops."]
-			id: "1DBFD0B34659A8F9"
-			tasks: [
-				{
-					id: "7596BE1437EA002D"
-					type: "item"
-					item: "minecraft:hay_block"
-					consume_items: false
-				}
-				{
-					id: "7986E1E6575F2C25"
-					type: "item"
-					item: "minecraft:carved_pumpkin"
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "7BD14F5479FAB194"
-				type: "item"
-				item: "minecraft:sweet_berries"
-				random_bonus: 4
-			}]
-		}
-		{
 			title: "Roll for Intelligence"
 			x: 4.0d
 			y: -3.0d
