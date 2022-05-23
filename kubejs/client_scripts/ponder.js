@@ -355,7 +355,7 @@ onEvent("ponder.registry", event => {
                 20)
             scene.idle(15)
             scene.overlay().showText(70)
-                .text("Any fuel added to the Station will now be trasferred to the Rocket")
+                .text("Any fuel added to the Station will now be transferred to the Rocket")
                 .pointAt(util.vector().blockSurface(util.grid().at(4, 2, 0), Facing.up))
                 .colored(PonderPalette.WHITE)
                 .placeNearTarget()
