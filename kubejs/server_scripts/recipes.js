@@ -122,7 +122,7 @@ onEvent('item.tags', event => {
 		.add("extcaves:butcher_knife")
 
 	event.get("forge:circuit_press")
-		.add(AE2("name_press"))
+		//.add(AE2("name_press"))
 		.add(AE2("silicon_press"))
 		.add(AE2("logic_processor_press"))
 		.add(AE2("engineering_processor_press"))
@@ -151,6 +151,7 @@ onEvent('item.tags', event => {
 	event.get('forge:tools/wrench').add(CR('wrench'))
 	event.get('forge:ingots/steel').add("xkdeco:steel_ingot")
 	event.get('forge:storage_blocks/steel').add("xkdeco:steel_block")
+	event.get('forge:plates').add(KJ("zinc_sheet"))
 	event.get('forge:plates/zinc').add(KJ("zinc_sheet"))
 
 	event.get('thermal:crafting/dies').add('#forge:trade_cards')
@@ -359,6 +360,7 @@ function unwantedRecipes(event) {
 	event.remove({ output: '#forge:gears/silver' })
 	event.remove({ type: AE2('grinder') })
 	event.remove({ type: TE('press') })
+	event.remove({ output: '#thermal:crafting/dies' })
 	event.remove({ id: /thermal:earth_charge\/.*/ })
 	event.remove({ id: /thermal:machine\/smelter\/.*dust/ })
 	event.remove({ id: /tconstruct:smeltery\/.*\/ore/ })
@@ -444,7 +446,11 @@ function unwantedRecipes(event) {
 	event.remove({ id: 'ravencoffee:sandwich_ham' })
 	event.remove({ id: 'ravencoffee:sandwich_beef' })
 	event.remove({ id: 'ravencoffee:sandwich_chicken' })
-
+	
+	event.remove({ id: /projectred-core:(?!(.*_illumar|screwdriver|multimeter|plate)).*/ })
+	event.remove({ id: PR_T('low_load_power_wire') })
+	event.remove({ id: PR_T('low_load_framed_power_wire') })
+	
 	native_metals.forEach(e => {
 		event.remove({ type: MC("smelting"), input: F("#dusts/" + e) })
 		event.remove({ type: MC("blasting"), input: F("#dusts/" + e) })
@@ -581,6 +587,7 @@ function tweaks(event) {
 
 	event.replaceInput({ id: "architects_palette:wither_lamp" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.replaceInput({ id: "architects_palette:withered_bone_block" }, AP('withered_bone'), TC('necrotic_bone'))
+	event.replaceInput({ id: "architects_palette:glowstone_cage_lantern" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.remove({ id: "architects_palette:withered_bone" })
 
 	event.remove({ id: "extcaves:pebble_stone" })
@@ -1225,9 +1232,9 @@ function unify(event) {
 	event.replaceInput({}, '#forge:gems/sapphire', TE('sapphire'))
 	event.replaceInput({ id: "exchangers:thermal/thermal_exchanger_core_tier1" }, TE('ender_pearl_dust'), AE2('ender_dust'))
 
-	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:black_sand')
-	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:white_sand')
-	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25).toResultJson()], 'biomesoplenty:orange_sand')
+	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25)], 'biomesoplenty:black_sand')
+	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25)], 'biomesoplenty:white_sand')
+	event.recipes.createSplashing([Item.of(MC('clay_ball'), 1).withChance(0.25)], 'biomesoplenty:orange_sand')
 
 	event.replaceInput({ type: "minecraft:crafting_shaped" }, '#forge:ingots/tin', CR('zinc_ingot'))
 
@@ -1263,7 +1270,31 @@ function unify(event) {
 	woodcutting("tconstruct", "greenheart_log", "greenheart_planks", "greenheart_planks_slab")
 	woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
 	woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
-
+	
+	// add log stripping recipe from FD
+	wood_types.forEach(wood => {
+		if (!wood.startsWith("minecraft:")) {
+			event.custom({
+				type: "farmersdelight:cutting",
+				ingredients: [
+					Ingredient.of(wood + "_log").toJson()
+				],
+				tool: {
+					type: "farmersdelight:tool",
+					tool: "axe"
+				},
+				result: [
+					Ingredient.of(wood.replace(":", ":stripped_") + "_log").toJson(),
+					Ingredient.of("farmersdelight:tree_bark")
+				],
+				sound: "minecraft:item.axe.strip"
+			})
+		}
+	})
+	
+	// add missing chiller recipes
+	event.recipes.thermal.chiller(CR("zinc_ingot"), [Fluid.of("tconstruct:molten_zinc", 144), TE('chiller_ingot_cast')]).energy(5000)
+	event.recipes.thermal.chiller(CR("brass_ingot"), [Fluid.of("tconstruct:molten_brass", 144), TE('chiller_ingot_cast')]).energy(5000)
 }
 
 function trickierWindmills(event) {
@@ -2014,7 +2045,7 @@ function invarMachine(event) {
 	invar_machine('kubejs:pipe_module_tier_2', 4)
 
 	event.replaceInput({ type: "minecraft:crafting_shaped", id: /appliedenergistics2:.*/ }, F("#ingots/iron"), TE("lead_plate"))
-
+	
 	// invar_machine(TE('machine_crucible'), 1, MC('nether_bricks'))
 	// invar_machine(TE('machine_furnace'), 1, MC('bricks'))
 	// invar_machine(TE('machine_chiller'), 1, MC('packed_ice'))
@@ -2080,10 +2111,14 @@ function fluixMachine(event) {
 	event.replaceInput({ id: AE2("network/cells/storage_components_cell_1k_part") }, MC("redstone"), KJ('calculation_mechanism'))
 	event.replaceInput({ id: AE2("network/cells/storage_components_cell_1k_part") }, AE2("logic_processor"), F('#dusts/redstone'))
 	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, MC("green_dye"), KJ('calculation_mechanism'))
-	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), F('#dyes/green'))
+	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), F("#dyes/green"))
+	// event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), CR("copper_sheet"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, MC("glowstone_dust"), KJ('calculation_mechanism'))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, AE2("engineering_processor"), F('#dusts/glowstone'))
 	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, MC("glowstone_dust"), KJ('calculation_mechanism'))
+	
+	// event.replaceInput({ type: "minecraft:crafting_shaped", id: /appliedenergistics2:(?!network\/cables).*/ }, F("#dyes/green"), CR("copper_sheet"))
+	
 	event.recipes.thermal.smelter(AE2("fluix_crystal", 2), [AE2("#crystals/nether"), AE2("charged_certus_quartz_crystal"), MC("redstone")]).energy(4000)
 
 }
@@ -2538,6 +2573,10 @@ function alchemy(event) {
 
 	event.recipes.thermal.pyrolyzer([MC("charcoal", 2), Fluid.of(TE('creosote'), 50)], MC("#logs")).energy(1000)
 	event.recipes.thermal.pyrolyzer([TE("coal_coke"), Fluid.of(TE('creosote'), 50)], MC("charcoal")).energy(2000)
+	
+	// fix broken creosote oil burning recipe
+	event.recipes.thermal.compression_fuel(Fluid.of("thermal:creosote")).energy(20000)
+	
 	let t = KJ('incomplete_coke_chunk')
 	event.recipes.createSequencedAssembly([
 		KJ('coke_chunk'),
@@ -2823,6 +2862,15 @@ function trading(event) {
 	});
 }
 
+onEvent('fluid.tags', event => {
+	event.get(MC('water'))
+		.add(/kubejs:.*/)
+		.add(/tconstruct:(?!(flowing_)?(molten_(?!(obsidian|ender))|blazing_blood|magma|.*stone)).*/)
+		
+	event.get(MC('lava'))
+		.add(/tconstruct:(flowing_)?(molten_(?!(obsidian|ender))|blazing_blood|magma|.*stone).*/)
+})
+
 // Program 
 
 events.listen('player.chat', function (event) {
@@ -2847,7 +2895,3 @@ events.listen('player.chat', function (event) {
 		event.cancel()
 	}
 })
-
-
-
-
