@@ -1,0 +1,21 @@
+
+[common]
+
+	[common.worldgen]
+
+		[common.worldgen.savannah]
+			#Count of trees patch
+			count = 5
+			#The bigger the number the more likely it is to appear in the overworld. World gen tries more times to find a good spot to spawn the tree.
+			PlacementTries = 30
+			#Generation enabled for this biome
+			enabled = true
+
+		[common.worldgen.jungle]
+			#Count of trees patch
+			count = 10
+			#The bigger the number the more likely it is to appear in the overworld. World gen tries more times to find a good spot to spawn the tree.
+			PlacementTries = 25
+			#Generation enabled for this biome
+			enabled = true
+

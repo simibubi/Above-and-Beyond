@@ -1,7 +1,9 @@
 
-[worldgen]
-
-	[worldgen.experimental]
-		"Generate Underwater Caves" = false
-		"Generate Small Noise Caves" = true
+["CaveBiomeAPI Configs"]
+	#Determines if the Noise Carvers should generate. 
+	#This option will allow the generation of huge caves that are created by noise, similar to the new caves from 1.17 but a bit smaller.
+	"Generate Noise Carvers" = true
+	#Determines if the Default Cave Biome should generate. 
+	#This option will not disable all the cave biomes, it will replace any space that should be default cave with the surface cave biome, so the biome generation can be more like in 1.18.
+	"Generate Default Cave Biome" = true
 

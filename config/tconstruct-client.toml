@@ -3,6 +3,10 @@
 [client]
 	#If true tools will show additional info in their tooltips
 	extraToolTips = true
+	#Maximum number of quads to render for items in the smeltery. Most blocks are about 6 quads, items like ingots are around 26.
+	#Setting this lower will cause fewer items to be renderer (but never a partial item). Set to -1 to allow unlimited quads, and 0 to disable the item renderer.
+	#Range: -1 ~ 32767
+	maxSmelteryItemQuads = 3500
 	#Experimental. If true, renders fluids in tanks using a dynamic model, being more efficient when the tank is static
 	#If false, renders fluids in tanks using a TESR, which is more efficient when the tank contents are changing
 	tankFluidModel = false
@@ -12,4 +16,26 @@
 	showModifiersInJEI = true
 	#If true, the game will log all material textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
 	logMissingMaterialTextures = false
+
+	#Settings related to modifiers
+	[client.modifiers]
+		#If true, the shield slot legging modifier will render the next offhand item above the offhand slot.
+		renderShieldSlotItem = true
+
+		#Settings related to the frame helmet modifier
+		[client.modifiers.itemFrame]
+			#Offset in the Y direction for the frame items.
+			#Range: -32768 ~ 32767
+			yOffset = 0
+			#Offset in the X direction for the frame items.
+			#Range: -32768 ~ 32767
+			xOffset = 0
+			#Number of items to display in each row of the item frame.
+			#Range: 0 ~ 100
+			itemsPerRow = 5
+			#Location of the frame on the screen.
+			#Allowed Values: TOP_LEFT, TOP, TOP_RIGHT, LEFT, RIGHT, BOTTOM_LEFT, BOTTOM, BOTTOM_RIGHT
+			location = "TOP_LEFT"
+			#If true, the item frame modifier for helmets will render its items. Turning this to false makes the modifier useless.
+			render = true
 

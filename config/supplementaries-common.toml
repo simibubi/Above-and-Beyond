@@ -75,6 +75,9 @@
 	[blocks.cage]
 		#Allows all baby mobs to be captured by cages
 		cage_allow_all_babies = false
+		#Health percentage under which mobs will be allowed to be captured by cages and jars. Leave at 100 to accept any health level
+		#Range: 1 ~ 100
+		health_threshold = 100
 		#Allows all entities to be captured by cages and jars. Not meant for survival
 		allow_all_mobs = false
 		#Dynamically allows all small mobs inside cages depending on their hitbox size

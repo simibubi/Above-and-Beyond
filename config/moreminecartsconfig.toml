@@ -1,4 +1,19 @@
 #Changes how expensive keeping the chunk loader on is. Set to zero to prevent chunk loading completely.
-#Range: 0.0 ~ 100.0
+#Range: 0.0 ~ 9999.0
 chunk_loader_multiplier = 1.0
+#Changes the spawn rate of vitric cactus. Default cactus is 10, set to zero to disable.
+#Range: 0 ~ 100
+vitric_cactus_spawns = 2
+#Requires that vitric cactus be grown only in desert and mesa biomes.
+vitric_cactus_desert_only = true
+#Sets the max speed of various rail types. Default rails are 0.4.
+#Range: 0.1 ~ 10.0
+wood_rails_max_speed = 0.2
+#Range: 0.1 ~ 10.0
+maglev_rails_max_speed = 1.0
+#Range: 0.1 ~ 10.0
+lightspeed_rails_max_speed = 2.5
+#Sets the extra speed boost given by turbo rails. 0.06 is the default for regular powered rails.
+#Range: 0.0 ~ 1.0
+turbo_rails_max_speed = 0.2
 
