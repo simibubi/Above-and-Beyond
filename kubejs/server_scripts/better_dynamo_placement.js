@@ -67,6 +67,7 @@ onEvent('server.datapack.first', event => {
 
 })
 
+/*
 onEvent('player.tick', event => {
 
 	// Fixes advanced rocketry not applying low gravity on the moon
@@ -82,6 +83,7 @@ onEvent('player.tick', event => {
 	player.getPotionEffects().add(effects.field_76430_j, 20, 4, false, false) // jump boost
 
 })
+*/
 
 onEvent('player.tick', event => {
 
@@ -162,4 +164,65 @@ onEvent('block.place', event => {
 		});
 	}
 
+})
+
+const barrelTiers = [
+	{block: 'metalbarrels:copper_barrel', upgrade: 'metalbarrels:wood_to_copper'},
+	{block: 'metalbarrels:iron_barrel', upgrade: 'metalbarrels:wood_to_iron'},
+	{block: 'metalbarrels:silver_barrel', upgrade: 'metalbarrels:wood_to_silver'},
+	{block: 'metalbarrels:gold_barrel', upgrade: 'metalbarrels:wood_to_gold'}
+]
+
+const blockIdToBarrelTier = utils.newMap()
+const upgradeIdToBarrelTier = utils.newMap()
+barrelTiers.forEach((e, i) => {
+	blockIdToBarrelTier.put(e.block, i)
+	upgradeIdToBarrelTier.put(e.upgrade, i)
+})
+
+function convertBarrel(block, newType)
+{
+	if(block == null) return
+	
+	let nbt = block.getEntityData()
+	if(nbt == null) return
+	
+	let customName = nbt.func_74779_i("CustomName")
+	let items = block.getId().contains('metalbarrels:') ? nbt.func_74775_l("inv").func_150295_c("Items", 10) : nbt.func_150295_c("Items", 10)
+
+	block.setEntityData(utils.newMap().toNBT())
+	block.set(newType, block.getProperties())
+
+	nbt = block.getEntityData()
+	if(customName) nbt.func_74778_a("CustomName", customName)
+	nbt.func_74775_l("inv").func_218657_a("Items", items)
+	block.setEntityData(nbt)
+}
+
+onEvent('block.right_click', event => {
+	let player = event.getPlayer()
+	if(event.getItem())
+	{
+		let upgradeTier = upgradeIdToBarrelTier.get(event.getItem().getId())
+		let block = event.getBlock()
+		if(block && upgradeTier != undefined)
+		{
+			let barrelTier = blockIdToBarrelTier.get(block.getId())
+			if(barrelTier != undefined)
+			{
+				if(barrelTier < upgradeTier)
+				{
+					convertBarrel(block, barrelTiers[upgradeTier].block)
+					event.getItem().setCount(event.getItem().getCount() - 1)
+					event.cancel()
+				}
+			}
+			else if(block.getId().equals('minecraft:barrel'))
+			{
+				convertBarrel(block, barrelTiers[upgradeTier].block)
+				event.getItem().setCount(event.getItem().getCount() - 1)
+				event.cancel()
+			}
+		}
+	}
 })

@@ -164,3 +164,17 @@ onEvent('jei.information', event => {
 		" ", "§8Usage:§0", "Running the §9Chaos Catalyst§0 with any amount of one §9Reagent§0 through an §5Alchemical Laser§0 will §9transmute§0 the Reagent to another. The Transmutation Pairings are §9unique to each World§0."
 	]))
 })
+
+
+onEvent('client.tick', event => {
+	if (event.world.getDimension() != "custommoon:moon")
+		return
+	
+	let player = event.getPlayer()
+	if(!player.isOnGround() && !player.isOnLadder() && !player.isSpectator() && !player.minecraftPlayer.field_71075_bZ.field_75100_b && !client.getMinecraft().func_147113_T())
+	{
+		let dy = player.getMotionY()
+		dy += 0.06
+		player.setMotionY(dy)
+	}
+})

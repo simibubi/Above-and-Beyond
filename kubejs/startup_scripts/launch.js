@@ -109,10 +109,10 @@ onEvent('item.registry', event => {
 })
 
 onEvent('block.registry', event => {
-	event.create('enderium_casing').model('kubejs:block/enderium_casing').material('metal').hardness(4.0).displayName('Ender Casing')
-	event.create('zinc_casing').material('metal').hardness(3.0).displayName('Zinc Casing')
-	event.create('invar_casing').material('metal').hardness(3.0).displayName('Invar Casing')
-	event.create('fluix_casing').material('metal').hardness(3.0).displayName('Fluix Casing')
+	event.create('enderium_casing').model('kubejs:block/enderium_casing').material('metal').hardness(4.0).tag("create:wrench_pickup").displayName('Ender Casing')
+	event.create('zinc_casing').material('metal').hardness(3.0).tag("create:wrench_pickup").displayName('Zinc Casing')
+	event.create('invar_casing').material('metal').hardness(3.0).tag("create:wrench_pickup").displayName('Invar Casing')
+	event.create('fluix_casing').material('metal').hardness(3.0).tag("create:wrench_pickup").displayName('Fluix Casing')
 
 	event.create('ponder_laser_lamp').model('kubejs:block/ponder_laser_lamp').notSolid().renderType("translucent").displayName('Laser Lamp (For Ponder)')
 	event.create('ponder_laser_lamp_on').model('kubejs:block/ponder_laser_lamp_on').notSolid().lightLevel(15).renderType("translucent").displayName('Laser Lamp (For Ponder)')
@@ -124,6 +124,7 @@ onEvent('block.registry', event => {
 			.material('lantern')
 			.hardness(3.0)
 			.displayName(name + ' Machine')
+			.tag("create:wrench_pickup")
 			.notSolid()
 			.renderType(layer)
 	}
@@ -306,4 +307,11 @@ onEvent('item.modification', event => {
 			item.maxStackSize = 1
 		})
 	});
+})
+
+onEvent('block.modification', event => {
+	// Fix Zinc Ore using the wrong material type
+	event.modify('create:zinc_ore', block => {
+		block.material = "stone"
+	})
 })
