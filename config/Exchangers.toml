@@ -437,21 +437,21 @@
 	#Put a list of block registry names that you wish to be whitelisted from Exchangers.
 	#Separate each entry with semicolon.
 	#(e.g. "tconstruct:seared;thermal:energy_cell;minecraft:conduit")
-	blocksWhitelist = "tconstruct:seared"
+	blocksWhitelist = "tconstruct:seared_stone;tconstruct:seared_cobble;tconstruct:seared_bricks;tconstruct:seared_paver;tconstruct:seared_cracked_bricks;tconstruct:seared_fancy_bricks;tconstruct:seared_triangle_bricks;tconstruct:seared_ladder;tconstruct:seared_glass;tconstruct:scorched_stone;tconstruct:polished_scorched_stone;tconstruct:scorched_bricks;tconstruct:scorched_road;tconstruct:chiseled_scorched_bricks;tconstruct:scorched_ladder;tconstruct:scorched_glass"
 	#If true, allows the Holding Enchantment from CoFH Core to be used on Powered Exchangers
 	#Calculation formula: Base Energy + (Base Energy * Enchantment Level / 2)
 	holdingEnchantment = true
 	#If true, allows Unbreaking Enchantment to affect Powered Exchangers
-	unbreakingPoweredExchangers = true
+	unbreakingPoweredExchangers = false
 	#Put a list of block registry names that you wish to be blacklisted from Exchangers.
 	#Note: Blacklisting a block will prevent it from being selected or being exchanged.
 	#Separate each entry with semicolon.
 	#(e.g. "minecraft:grass;minecraft:cake;minecraft:dragon_egg")
-	blocksBlacklist = ""
+	blocksBlacklist = "occultism:chalk_glyph_white;occultism:chalk_glyph_gold;occultism:chalk_glyph_purple;occultism:chalk_glyph_red;create:pulley_magnet"
 	#If true, enables Silk Touch (gets the blocks itself rather than drops) on all Exchangers
 	doExchangersSilkTouch = true
 	#Set the energy unit shown on Powered Exchangers:
 	#'FE'     Forge Energy
 	#'RF'     Redstone Flux
-	energyUnit = "FE"
+	energyUnit = "RF"
 
