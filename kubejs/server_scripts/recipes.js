@@ -35,7 +35,7 @@ let OC = (id, x) => MOD("occultism", id, x)
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
 let native_metals = ['iron', 'zinc', 'lead', 'copper', 'nickel', 'gold']
-let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), AP('twisted'), EG('poise')]
+let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), EG('poise')]
 
 let donutCraft = (event, output, center, ring) => {
 	event.shaped(output, [
@@ -64,6 +64,7 @@ function ifiniDeploying(output, input, tool) {
 
 onEvent('recipes', event => {
 	log.push('Registering Recipes')
+	
 	beforeNuke(event)
 	unwantedRecipes(event)
 	tweaks(event)
@@ -90,6 +91,7 @@ onEvent('recipes', event => {
 	drawersop(event)
 	trading(event)
 	glitch(event)
+	
 	log.push('Recipes Updated')
 })
 
@@ -472,7 +474,7 @@ function tweaks(event) {
 	event.remove({ id: 'waterstrainer:strainer_fisherman_reinforced' })
 
 	event.remove({ id: TE("augments/item_filter_augment") })
-	event.shapeless(TE("item_filter_augment"), [CR("filter"), TE("lapis_gear")])
+	event.recipes.minecraftCraftingShapeless(TE("item_filter_augment"), [CR("filter"), TE("lapis_gear")])
 
 	event.stonecutting(AE2("silicon_press"), KJ("circuit_scrap"))
 	event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
@@ -506,8 +508,22 @@ function tweaks(event) {
 	event.recipes.createCrushing([Item.of(TE("bitumen")), Item.of(TE("bitumen"), 2).withChance(0.75), Item.of(TE("tar"), 1).withChance(0.75), Item.of(MC("red_sand")).withChance(0.25)], TE("oil_red_sand"))
 
 	event.remove({ id: "forbidden_arcanus:iron_chain" }) // vanilla recipe conflict. what a world we live in
-	event.shapeless(Item.of("forbidden_arcanus:iron_chain", 3), "minecraft:chain")
+	event.recipes.minecraftCraftingShapeless(Item.of("forbidden_arcanus:iron_chain", 3), "minecraft:chain")
 
+	event.remove({ id: "forbidden_arcanus:boom_arrow" })
+	event.shaped("4x forbidden_arcanus:boom_arrow", [
+		'T',
+		'S',
+		'F'
+	], {
+		T: MC('tnt'),
+		S: MC('stick'),
+		F: MC('feather')
+	})
+	
+	event.remove({ id: "forbidden_arcanus:netherite_blacksmith_gavel" })
+	event.smithing("forbidden_arcanus:netherite_blacksmith_gavel", "forbidden_arcanus:diamond_blacksmith_gavel", MC("netherite_ingot"))
+	
 	event.remove({ id: "computercraft:turtle_advanced" })
 	event.remove({ id: "computercraft:turtle_advanced_upgrade" })
 	event.remove({ id: "computercraft:turtle_normal" })
@@ -609,7 +625,7 @@ function tweaks(event) {
 
 	let tweak_casing = (name, mats, mod) => {
 		event.remove({ output: mod(name + "_casing") })
-		event.shapeless(Item.of(mod(name + "_casing"), 2), mats)
+		event.recipes.minecraftCraftingShapeless(Item.of(mod(name + "_casing"), 2), mats)
 	}
 
 	tweak_casing('andesite', [CR('andesite_alloy'), '#minecraft:logs'], CR)
@@ -990,10 +1006,10 @@ function barrels(event) {
 	smithAndMechCraft("metalbarrels:silver_barrel", MC("barrel"), "forbidden_arcanus:rune")
 	smithAndMechCraft("metalbarrels:gold_barrel", MC("barrel"), TC("cobalt_ingot"))
 
-	event.shapeless("metalbarrels:wood_to_copper", ["metalbarrels:copper_barrel"])
-	event.shapeless("metalbarrels:wood_to_iron", ["metalbarrels:iron_barrel"])
-	event.shapeless("metalbarrels:wood_to_silver", ["metalbarrels:silver_barrel"])
-	event.shapeless("metalbarrels:wood_to_gold", ["metalbarrels:gold_barrel"])
+	event.recipes.minecraftCraftingShapeless("metalbarrels:wood_to_copper", ["metalbarrels:copper_barrel"])
+	event.recipes.minecraftCraftingShapeless("metalbarrels:wood_to_iron", ["metalbarrels:iron_barrel"])
+	event.recipes.minecraftCraftingShapeless("metalbarrels:wood_to_silver", ["metalbarrels:silver_barrel"])
+	event.recipes.minecraftCraftingShapeless("metalbarrels:wood_to_gold", ["metalbarrels:gold_barrel"])
 }
 
 function rocketScience(event) {
@@ -1261,7 +1277,7 @@ function unify(event) {
 	let woodcutting = (mod, log, planks, slab) => {
 		event.recipes.createCutting([mod + ":stripped_" + log], mod + ":" + log).processingTime(50)
 		event.recipes.createCutting([Item.of(mod + ":" + planks, 6)], mod + ":stripped_" + log).processingTime(50)
-		event.recipes.createCutting([Item.of(mod + ":" + slab, 2)], mod + ":" + planks).processingTime(50)
+		event.recipes.createCutting([Item.of(mod + ":" + slab, 2)], mod + ":" + planks).processingTime(150)
 	}
 
 	woodcutting("forbidden_arcanus", "cherrywood_log", "cherrywood_planks", "cherrywood_slab")
@@ -1271,24 +1287,48 @@ function unify(event) {
 	woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
 	woodcutting("tconstruct", "bloodshroom_log", "bloodshroom_planks", "bloodshroom_planks_slab")
 	
-	// add log stripping recipe from FD
+	// implement FD compat for modded wood types
+	let stripping = (mod, log, stripped) => {
+		// FD wood stripping compat
+		event.custom({
+			type: "farmersdelight:cutting",
+			ingredients: [
+				Ingredient.of(mod + ":" + log).toJson()
+			],
+			tool: {
+				type: "farmersdelight:tool",
+				tool: "axe"
+			},
+			result: [
+				Ingredient.of(mod + ":" + (stripped ? stripped : ("stripped_" + log))).toJson(),
+				Ingredient.of("farmersdelight:tree_bark")
+			],
+			sound: "minecraft:item.axe.strip"
+		})
+	}
+	
+	stripping("forbidden_arcanus", "cherrywood_log")
+	stripping("forbidden_arcanus", "cherrywood")
+	stripping("forbidden_arcanus", "mysterywood_log")
+	stripping("forbidden_arcanus", "mysterywood")
+	stripping("architects_palette", "twisted_log")
+	stripping("architects_palette", "twisted_wood")
+	stripping("tconstruct", "greenheart_log")
+	stripping("tconstruct", "greenheart_wood")
+	stripping("tconstruct", "skyroot_log")
+	stripping("tconstruct", "skyroot_wood")
+	stripping("tconstruct", "bloodshroom_log")
+	stripping("tconstruct", "bloodshroom_wood")
+	stripping("endergetic", "poise_stem")
+	stripping("endergetic", "glowing_poise_stem", "stripped_poise_stem")
+	stripping("endergetic", "poise_wood")
+	stripping("endergetic", "glowing_poise_wood", "stripped_poise_wood")
+	
 	wood_types.forEach(wood => {
-		if (!wood.startsWith("minecraft:")) {
-			event.custom({
-				type: "farmersdelight:cutting",
-				ingredients: [
-					Ingredient.of(wood + "_log").toJson()
-				],
-				tool: {
-					type: "farmersdelight:tool",
-					tool: "axe"
-				},
-				result: [
-					Ingredient.of(wood.replace(":", ":stripped_") + "_log").toJson(),
-					Ingredient.of("farmersdelight:tree_bark")
-				],
-				sound: "minecraft:item.axe.strip"
-			})
+		let l = wood.split(":")
+		if(l[0] == "biomesoplenty") {
+			stripping(l[0], l[1] + "_log")
+			stripping(l[0], l[1] + "_wood")
 		}
 	})
 	
@@ -1300,7 +1340,7 @@ function unify(event) {
 function trickierWindmills(event) {
 	event.remove({ output: 'create:sail_frame' })
 	event.remove({ output: 'create:white_sail' })
-	event.shapeless('create:sail_frame', ['create:white_sail'])
+	event.recipes.minecraftCraftingShapeless('create:sail_frame', ['create:white_sail'])
 	event.shaped('2x create:white_sail', [
 		'SSS',
 		'NAN',
@@ -1583,7 +1623,7 @@ function electronTube(event) {
 	event.recipes.createFilling(CR("electron_tube"), [CR('polished_rose_quartz'), Fluid.of(TC('molten_iron'), 16)])
 
 	let redstone = MC('redstone')
-	event.shapeless('create:rose_quartz', [[MC('quartz'), AE2('certus_quartz_crystal'), AE2('charged_certus_quartz_crystal')], redstone, redstone, redstone, redstone])
+	event.recipes.minecraftCraftingShapeless('create:rose_quartz', [[MC('quartz'), AE2('certus_quartz_crystal'), AE2('charged_certus_quartz_crystal')], redstone, redstone, redstone, redstone])
 
 	event.recipes.createMilling([AE2('certus_quartz_dust')], '#appliedenergistics2:crystals/certus').processingTime(200)
 	event.recipes.createMilling([AE2('nether_quartz_dust')], '#appliedenergistics2:crystals/nether').processingTime(200)
@@ -1649,7 +1689,7 @@ function andesiteMachine(event) {
 		.loops(1)
 		.id('kubejs:kinetic_mechanism')
 
-	event.shapeless(KJ('kinetic_mechanism'), [F('#saws'), CR('cogwheel'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")
+	event.recipes.minecraftCraftingShapeless(KJ('kinetic_mechanism'), [F('#saws'), CR('cogwheel'), CR('andesite_alloy'), '#minecraft:logs']).id("kubejs:kinetic_mechanism_manual_only")
 
 	// Andesite
 	event.shaped(KJ('andesite_machine'), [
@@ -1934,9 +1974,9 @@ function invarMachine(event) {
 	let fern1 = KJ("ender_slimy_fern_leaf")
 	let fern2 = KJ("sky_slimy_fern_leaf")
 	let fern3 = KJ("earth_slimy_fern_leaf")
-	event.shapeless(fern1, ["forbidden_arcanus:rune", fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
-	event.shapeless(fern2, ["forbidden_arcanus:rune", fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
-	event.shapeless(fern3, ["forbidden_arcanus:rune", fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
+	event.recipes.minecraftCraftingShapeless(fern1, ["forbidden_arcanus:rune", fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
+	event.recipes.minecraftCraftingShapeless(fern2, ["forbidden_arcanus:rune", fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
+	event.recipes.minecraftCraftingShapeless(fern3, ["forbidden_arcanus:rune", fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
 
 	chop("earth", MC('gunpowder'))
 	chop("sky", MC('bone_meal'))
@@ -1944,7 +1984,7 @@ function invarMachine(event) {
 
 	event.campfireCooking(MC("torch"), MC("stick")).cookingTime(20)
 
-	event.shapeless(KJ('nickel_compound'), [TE('nickel_ingot'), TE("iron_dust"), TE("iron_dust"), TE("iron_dust"), TE("iron_dust")])
+	event.recipes.minecraftCraftingShapeless(KJ('nickel_compound'), [TE('nickel_ingot'), TE("iron_dust"), TE("iron_dust"), TE("iron_dust"), TE("iron_dust")])
 	event.blasting(KJ('invar_compound'), KJ('nickel_compound'))
 	let s = KJ('invar_compound')
 	event.recipes.createSequencedAssembly([
@@ -2279,11 +2319,11 @@ function circuits(event) {
 	event.recipes.createCompacting([PR_C('red_ingot')], [CR('copper_ingot'), Fluid.of(TE("redstone"), 250)])
 	event.recipes.createCompacting([PR_C('red_ingot')], [CR('copper_ingot'), MC("redstone"), MC("redstone"), MC("redstone"), MC("redstone")])
 	event.recipes.thermal.smelter(PR_C('red_ingot'), [CR("copper_ingot"), MC("redstone")])
-	event.shapeless(PR_C('platformed_plate'), [PR_C('plate'), PR_T('red_alloy_wire'), CR("andesite_alloy")])
+	event.recipes.minecraftCraftingShapeless(PR_C('platformed_plate'), [PR_C('plate'), PR_T('red_alloy_wire'), CR("andesite_alloy")])
 
 	let convert = (c, id) => {
-		event.shapeless(PR_I(c + "_inverted" + id), [PR_I(c + id)])
-		event.shapeless(PR_I(c + id), [PR_I(c + "_inverted" + id)])
+		event.recipes.minecraftCraftingShapeless(PR_I(c + "_inverted" + id), [PR_I(c + id)])
+		event.recipes.minecraftCraftingShapeless(PR_I(c + id), [PR_I(c + "_inverted" + id)])
 	}
 
 	colours.forEach(c => {
