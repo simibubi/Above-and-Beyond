@@ -1,0 +1,9 @@
+{
+  "parent": "forge:item/default",
+  "loader": "tconstruct:copper_can",
+  "textures": {
+    "base": "tconstruct:item/copper_can",
+    "particle": "tconstruct:item/copper_can",
+    "fluid": "tconstruct:item/copper_can_fluid"
+  }
+}

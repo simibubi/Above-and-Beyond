@@ -31,6 +31,7 @@ let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
 let OC = (id, x) => MOD("occultism", id, x)
+let FA = (id, x) => MOD("forbidden_arcanus", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -1353,24 +1354,38 @@ function trickierWindmills(event) {
 }
 
 function rubberMatters(event) {
-	let overrideTreeOutput = (id, trunk, leaf) => {
-		event.remove({ id: id })
+	let addTreeOutput = (trunk, leaf, fluid, amount) => {
 		event.custom({
 			"type": "thermal:tree_extractor",
 			"trunk": trunk,
 			"leaves": leaf,
 			"result": {
-				"fluid": "thermal:resin",
-				"amount": 25
+				"fluid": fluid ? fluid : "thermal:resin",
+				"amount": amount ? amount : 25
 			}
-		});
+		})
+	}
+	
+	let overrideTreeOutput = (id, trunk, leaf) => {
+		event.remove({ id: id })
+		addTreeOutput(trunk, leaf)
 	}
 
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_jungle'), MC('jungle_log'), MC('jungle_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_spruce'), MC('spruce_log'), MC('spruce_leaves'))
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_dark_oak'), MC('dark_oak_log'), MC('dark_oak_leaves'))
 	overrideTreeOutput(TE('compat/biomesoplenty/tree_extractor_bop_maple'), MC('oak_log'), 'biomesoplenty:maple_leaves')
-
+	
+	addTreeOutput(AP('twisted_log'), AP('twisted_leaves'))
+	addTreeOutput(BOP('fir_log'), BOP('fir_leaves'))
+	addTreeOutput(BOP('cherry_log'), BOP('white_cherry_leaves'))
+	addTreeOutput(BOP('cherry_log'), BOP('pink_cherry_leaves'))
+	addTreeOutput(BOP('dead_log'), BOP('dead_leaves'))
+	addTreeOutput(FA('cherrywood_log'), FA('cherrywood_leaves'))
+	addTreeOutput(FA('mysterywood_log'), FA('mysterywood_leaves'))
+	addTreeOutput(OC('otherworld_log'), OC('otherworld_leaves'))
+	addTreeOutput(OC('otherworld_log_natural'), OC('otherworld_leaves_natural'))
+	
 	event.remove({ id: CR('crafting/kinetics/belt_connector') })
 	event.shaped(CR('belt_connector', 3), [
 		'SSS',
