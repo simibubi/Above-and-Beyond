@@ -214,6 +214,12 @@ onEvent('block.right_click', event => {
 				{
 					convertBarrel(block, barrelTiers[upgradeTier].block)
 					event.getItem().setCount(event.getItem().getCount() - 1)
+					
+					let item = event.getWorld().createEntity("minecraft:item")
+					item.setPosition(player.getX(), player.getY(), player.getZ())
+					item.setItem(Item.of(barrelTiers[barrelTier].upgrade))
+					item.spawn()
+					
 					event.cancel()
 				}
 			}
