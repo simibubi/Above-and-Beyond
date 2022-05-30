@@ -254,6 +254,10 @@
 									Count: 1b
 								}
 								{
+									id: "minecraft:stripped_jungle_log"
+									Count: 1b
+								}
+								{
 									id: "minecraft:stripped_crimson_stem"
 									Count: 1b
 								}

@@ -51,6 +51,7 @@
 		}
 		{
 			title: "Quartz Seeds"
+			icon: "appliedenergistics2:certus_crystal_seed"
 			x: -6.0d
 			y: 6.5d
 			shape: "circle"
@@ -58,7 +59,7 @@
 			description: [
 				"This piece of quartz is too small. With enough water we might get somewhere."
 				""
-				"If you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accellerate the process. "
+				"If you're not too stoked about waiting hours on crystal growth, you can set up Water Spouts to greatly accelerate the process. "
 			]
 			dependencies: [
 				"0AF5F19F5D9FB5C9"
@@ -69,7 +70,23 @@
 			tasks: [{
 				id: "4D592B701A2AE0BC"
 				type: "item"
-				item: "appliedenergistics2:certus_crystal_seed"
+				title: "Certus or Nether Quartz Seed"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "appliedenergistics2:certus_crystal_seed"
+								Count: 1b
+							}
+							{
+								id: "appliedenergistics2:nether_quartz_seed"
+								Count: 1b
+							}
+						]
+					}
+				}
 				consume_items: false
 			}]
 		}
@@ -116,7 +133,23 @@
 				{
 					id: "68D808533C34AB5C"
 					type: "item"
-					item: "appliedenergistics2:purified_certus_quartz_crystal"
+					title: "Pure Certus or Nether Quartz Crystal"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "appliedenergistics2:purified_certus_quartz_crystal"
+									Count: 1b
+								}
+								{
+									id: "appliedenergistics2:purified_nether_quartz_crystal"
+									Count: 1b
+								}
+							]
+						}
+					}
 					consume_items: false
 				}
 				{

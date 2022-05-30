@@ -61,45 +61,21 @@
 			x: 0.0d
 			y: 7.0d
 			subtitle: "Contraption 25"
-			description: ["For production of chromatic materials, a colour pigment is needed. It is up to you which colour dye should be automated for this purpose. The only exception is white dye."]
+			description: ["For production of chromatic materials, a colour pigment is needed. It is up to you which colour dye should be automated for this purpose. The only exceptions are colourless dyes such as white, gray and black dye."]
 			dependencies: ["402F89CABF6BCDA4"]
 			id: "27C191346BB14D9D"
 			tasks: [
 				{
 					id: "6C47C95A06683D71"
 					type: "item"
-					title: "Dyes except White"
+					title: "Colour Dyes"
 					item: {
 						id: "itemfilters:or"
 						Count: 1b
 						tag: {
 							items: [
 								{
-									id: "minecraft:light_blue_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:magenta_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:gray_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:light_gray_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:pink_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:lime_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:yellow_dye"
+									id: "minecraft:red_dye"
 									Count: 1b
 								}
 								{
@@ -107,19 +83,11 @@
 									Count: 1b
 								}
 								{
-									id: "minecraft:cyan_dye"
+									id: "minecraft:yellow_dye"
 									Count: 1b
 								}
 								{
-									id: "minecraft:purple_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:blue_dye"
-									Count: 1b
-								}
-								{
-									id: "minecraft:brown_dye"
+									id: "minecraft:lime_dye"
 									Count: 1b
 								}
 								{
@@ -127,11 +95,31 @@
 									Count: 1b
 								}
 								{
-									id: "minecraft:red_dye"
+									id: "minecraft:cyan_dye"
 									Count: 1b
 								}
 								{
-									id: "minecraft:black_dye"
+									id: "minecraft:light_blue_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:blue_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:purple_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:magenta_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:pink_dye"
+									Count: 1b
+								}
+								{
+									id: "minecraft:brown_dye"
 									Count: 1b
 								}
 							]
