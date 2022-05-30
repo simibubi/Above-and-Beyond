@@ -2188,13 +2188,12 @@ function fluixMachine(event) {
 	event.replaceInput({ id: AE2("network/cells/storage_components_cell_1k_part") }, MC("redstone"), KJ('calculation_mechanism'))
 	event.replaceInput({ id: AE2("network/cells/storage_components_cell_1k_part") }, AE2("logic_processor"), F('#dusts/redstone'))
 	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, MC("green_dye"), KJ('calculation_mechanism'))
-	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), F("#dyes/green"))
-	// event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), CR("copper_sheet"))
+	event.replaceInput({ id: AE2("network/cells/fluid_storage_components_cell_1k_part") }, AE2("logic_processor"), CR("copper_sheet"))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, MC("glowstone_dust"), KJ('calculation_mechanism'))
 	event.replaceInput({ id: AE2("network/cells/spatial_components") }, AE2("engineering_processor"), F('#dusts/glowstone'))
 	event.replaceInput({ id: AE2("network/crafting/patterns_blank") }, MC("glowstone_dust"), KJ('calculation_mechanism'))
 	
-	// event.replaceInput({ type: "minecraft:crafting_shaped", id: /appliedenergistics2:(?!network\/cables).*/ }, F("#dyes/green"), CR("copper_sheet"))
+	event.replaceInput({ type: "minecraft:crafting_shaped", id: /appliedenergistics2:(?!network\/cables).*/ }, F("#dyes/green"), CR("copper_sheet"))
 	
 	event.recipes.thermal.smelter(AE2("fluix_crystal", 2), [AE2("#crystals/nether"), AE2("charged_certus_quartz_crystal"), MC("redstone")]).energy(4000)
 

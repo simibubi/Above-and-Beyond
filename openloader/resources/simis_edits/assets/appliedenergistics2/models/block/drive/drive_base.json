@@ -1,0 +1,114 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"6": "appliedenergistics2:block/drive/drive_inside_side",
+		"7": "appliedenergistics2:block/drive/drive_inside_back",
+		"inside": "appliedenergistics2:block/drive/drive_inside",
+		"particle": "appliedenergistics2:block/drive/drive_side",
+		"side": "appliedenergistics2:block/drive/drive_side",
+		"bottom": "appliedenergistics2:block/drive/drive_bottom",
+		"top": "appliedenergistics2:block/drive/drive_top",
+		"front": "appliedenergistics2:block/drive/drive_front",
+		"back": "appliedenergistics2:block/drive/drive_back"
+	},
+	"elements": [
+		{
+			"name": "Right Side Panel",
+			"from": [0, 1, 0],
+			"to": [1, 15, 16],
+			"faces": {
+				"north": {"uv": [15, 1, 16, 15], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 1, 16, 15], "rotation": 180, "texture": "#6", "cullface": "north"},
+				"south": {"uv": [0, 1, 1, 15], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 1, 16, 15], "texture": "#side", "cullface": "west"}
+			}
+		},
+		{
+			"name": "Left Side Panel",
+			"from": [15, 1, 0],
+			"to": [16, 15, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 1, 15], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 1, 16, 15], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [15, 1, 16, 15], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 1, 16, 15], "texture": "#6", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Back Panel",
+			"from": [1, 1, 7],
+			"to": [15, 15, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 9]},
+			"faces": {
+				"north": {"uv": [1, 1, 15, 15], "texture": "#7"},
+				"south": {"uv": [1, 1, 15, 15], "texture": "#back", "cullface": "south"}
+			}
+		},
+		{
+			"name": "Bottom Panel",
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [0, 15, 16, 16], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 15, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 15, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 15, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#inside", "cullface": "north"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Top Panel",
+			"from": [0, 15, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 1], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 1], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 1], "texture": "#back", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 1], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#inside", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Middle Strut",
+			"from": [7, 1, 0.5],
+			"to": [9, 15, 1],
+			"faces": {
+				"north": {"uv": [7, 1, 9, 15], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [1, 1, 2, 15], "texture": "#6", "cullface": "north"},
+				"west": {"uv": [1, 1, 2, 15], "texture": "#6", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Middle Strut",
+			"from": [6.5, 1, 1],
+			"to": [9.5, 15, 7],
+			"faces": {
+				"north": {"uv": [6, 1, 10, 15], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [7, 1, 1, 15], "texture": "#6", "cullface": "north"},
+				"west": {"uv": [1, 1, 7, 15], "texture": "#6", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Middle Strut",
+			"from": [14.5, 1, 1],
+			"to": [15, 15, 7],
+			"faces": {
+				"north": {"uv": [1, 1, 2, 15], "texture": "#front", "cullface": "north"},
+				"west": {"uv": [1, 1, 7, 15], "texture": "#6", "cullface": "north"}
+			}
+		},
+		{
+			"name": "Middle Strut",
+			"from": [1, 1, 1],
+			"to": [1.5, 15, 7],
+			"faces": {
+				"north": {"uv": [14, 1, 15, 15], "texture": "#front", "cullface": "north"},
+				"east": {"uv": [7, 1, 1, 15], "texture": "#6", "cullface": "north"}
+			}
+		}
+	]
+}

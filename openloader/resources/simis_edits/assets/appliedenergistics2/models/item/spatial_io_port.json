@@ -1,0 +1,49 @@
+{
+  "parent": "block/block",
+  "ambientocclusion": false,
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [0, 135, 0],
+      "scale": [0.4, 0.4, 0.4],
+      "translation": [0, 0, 0]
+    }
+  },
+  "textures": {
+    "down": "appliedenergistics2:block/spatial_io_port_bottom",
+    "east": "appliedenergistics2:block/spatial_io_port_side",
+    "north": "appliedenergistics2:block/spatial_io_port_front",
+    "particle": "appliedenergistics2:block/spatial_io_port_front",
+    "south": "appliedenergistics2:block/spatial_io_port_back",
+    "up": "appliedenergistics2:block/spatial_io_port_idle",
+    "west": "appliedenergistics2:block/spatial_io_port_side"
+  },
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#down"
+        },
+        "east": {
+          "texture": "#east"
+        },
+        "north": {
+          "texture": "#north"
+        },
+        "south": {
+          "texture": "#south"
+        },
+        "up": {
+		  "rotation": 180,
+          "texture": "#up"
+        },
+        "west": {
+		  "uv": [16, 0, 0, 16], 
+          "texture": "#west"
+        }
+      },
+      "from": [0, 0, 0],
+      "shade": false,
+      "to": [16, 16, 16]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "appliedenergistics2:block/cube/cube_ae_machine",
+  "textures": {
+    "bottom": "appliedenergistics2:block/condenser_bottom",
+    "front": "appliedenergistics2:block/condenser_off",
+    "side": "appliedenergistics2:block/condenser_side_off",
+    "top": "appliedenergistics2:block/condenser_top_off"
+  }
+}

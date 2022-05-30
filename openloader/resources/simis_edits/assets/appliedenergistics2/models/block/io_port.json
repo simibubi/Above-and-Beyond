@@ -1,0 +1,9 @@
+{
+  "parent": "appliedenergistics2:block/cube/cube_ae_machine",
+  "textures": {
+    "bottom": "appliedenergistics2:block/io_port_bottom",
+    "front": "appliedenergistics2:block/io_port_front",
+    "side": "appliedenergistics2:block/io_port_side",
+    "top": "appliedenergistics2:block/io_port"
+  }
+}

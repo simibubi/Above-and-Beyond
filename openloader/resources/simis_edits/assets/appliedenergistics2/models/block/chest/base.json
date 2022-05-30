@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "appliedenergistics2:block/drive/drive_inside",
+		"up": "appliedenergistics2:block/chest/top",
+		"down": "appliedenergistics2:block/chest/bottom",
+		"north": "appliedenergistics2:block/chest/front",
+		"particle": "appliedenergistics2:block/chest/side",
+		"east": "appliedenergistics2:block/chest/side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#east"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#east"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#down"}
+			}
+		},
+		{
+			"name": "drive",
+			"from": [11, 4, 0],
+			"to": [11, 6, 1],
+			"faces": {
+				"west": {"uv": [5, 5, 7, 6], "rotation": 270, "texture": "#4"}
+			}
+		},
+		{
+			"name": "drive",
+			"from": [5, 4, 0],
+			"to": [5, 6, 1],
+			"faces": {
+				"east": {"uv": [5, 5, 7, 6], "rotation": 270, "texture": "#4"}
+			}
+		},
+		{
+			"name": "drive",
+			"from": [5, 6, 0],
+			"to": [11, 6, 1],
+			"faces": {
+				"down": {"uv": [6, 1, 7, 7], "rotation": 90, "texture": "#4"}
+			}
+		},
+		{
+			"name": "drive",
+			"from": [5, 4, 0],
+			"to": [11, 4, 1],
+			"faces": {
+				"up": {"uv": [0, 1, 1, 7], "rotation": 90, "texture": "#4"}
+			}
+		},
+		{
+			"name": "drive",
+			"from": [1, 0.1, 0.6],
+			"to": [15, 10.1, 0.6],
+			"faces": {
+				"north": {"uv": [6, 1, 16, 15], "rotation": 270, "texture": "#4"}
+			}
+		}
+	]
+}
