@@ -96,6 +96,47 @@ onEvent('recipes', event => {
 	log.push('Recipes Updated')
 })
 
+function applyChiselTags(event) {
+	event.get('chisel:basalt').add('extcaves:lavastone').add('extcaves:polished_lavastone')
+	event.get('chisel:limestone').add('extcaves:sedimentstone').add('darkerdepths:limestone').add('darkerdepths:aridrock')
+
+	let stones = ["limestone", "dolomite"]
+	stones.forEach(e => {
+		event.get(e == "dolomite" ? "chisel:marble" : 'chisel:' + e)
+			.add(CR(`${e}`))
+			.add(CR(`polished_${e}`))
+			.add(CR(`${e}_bricks`))
+			.add(CR(`fancy_${e}_bricks`))
+			.add(CR(`${e}_pillar`))
+			.add(CR(`paved_${e}`))
+			.add(CR(`layered_${e}`))
+			.add(CR(`chiseled_${e}`))
+			.add(CR(`mossy_${e}`))
+			.add(CR(`overgrown_${e}`))
+	})
+
+	let v_stones = ["andesite", "diorite", "granite"]
+	v_stones.forEach(e => {
+		event.get('chisel:' + e)
+			.add(CR(`${e}_bricks`))
+			.add(CR(`fancy_${e}_bricks`))
+			.add(CR(`${e}_pillar`))
+			.add(CR(`paved_${e}`))
+			.add(CR(`layered_${e}`))
+			.add(CR(`mossy_${e}`))
+			.add(CR(`overgrown_${e}`))
+	})
+	
+	event.get('chisel:end_stone').add('#forge:end_stones')
+	event.get('chisel:charcoal').add('#forge:storage_blocks/charcoal')
+	event.get('chisel:coal').add('#forge:storage_blocks/coal')
+	event.get('chisel:emerald').add('#forge:storage_blocks/emerald')
+	event.get('chisel:quartz').add('#forge:storage_blocks/quartz')
+	event.get('chisel:redstone').add('#forge:storage_blocks/redstone')
+	event.get('chisel:metals/bronze').add('#forge:storage_blocks/silicon_bronze')
+	event.get('chisel:metals/aluminum').add('#forge:storage_blocks/iron')
+}
+
 onEvent('item.tags', event => {
 
 	colours.forEach(element => {
@@ -204,37 +245,9 @@ onEvent('item.tags', event => {
 		.add("computercraft:computer_command")
 
 	event.get('tconstruct:anvil_metal').add(CR('zinc_block'))
-
-	event.get('chisel:basalt').add('extcaves:lavastone').add('extcaves:polished_lavastone')
-	event.get('chisel:limestone').add('extcaves:sedimentstone').add('darkerdepths:limestone').add('darkerdepths:aridrock')
-
-	let stones = ["limestone", "dolomite"]
-	stones.forEach(e => {
-		event.get(e == "dolomite" ? "chisel:marble" : 'chisel:' + e)
-			.add(CR(`${e}`))
-			.add(CR(`polished_${e}`))
-			.add(CR(`${e}_bricks`))
-			.add(CR(`fancy_${e}_bricks`))
-			.add(CR(`${e}_pillar`))
-			.add(CR(`paved_${e}`))
-			.add(CR(`layered_${e}`))
-			.add(CR(`chiseled_${e}`))
-			.add(CR(`mossy_${e}`))
-			.add(CR(`overgrown_${e}`))
-	})
-
-	let v_stones = ["andesite", "diorite", "granite"]
-	v_stones.forEach(e => {
-		event.get('chisel:' + e)
-			.add(CR(`${e}_bricks`))
-			.add(CR(`fancy_${e}_bricks`))
-			.add(CR(`${e}_pillar`))
-			.add(CR(`paved_${e}`))
-			.add(CR(`layered_${e}`))
-			.add(CR(`mossy_${e}`))
-			.add(CR(`overgrown_${e}`))
-	})
-
+	
+	applyChiselTags(event)
+	
 	event.get("forge:treasure1")
 		.add(MC('cobweb'))
 		.add(MC('dandelion'))
@@ -337,6 +350,10 @@ onEvent('item.tags', event => {
 
 })
 
+onEvent('block.tags', event => {
+	applyChiselTags(event)
+})
+
 // Scripts
 
 function beforeNuke(event) {
@@ -422,12 +439,16 @@ function unwantedRecipes(event) {
 	event.remove({ id: TE('storage/electrum_nugget_from_ingot') })
 	event.remove({ id: TE('machine/pulverizer/pulverizer_electrum_ingot_to_dust') })
 	event.remove({ id: TE('parts/electrum_gear') })
-	event.remove({ id: AP('smelting/charcoal_block_from_logs_that_burn_smoking') })
+	
+	//event.remove({ id: AP('smelting/charcoal_block_from_logs_that_burn_smoking') })
+	event.remove({ type: 'minecraft:smoking', input: '#minecraft:logs_that_burn' })
+	
 	event.remove({ id: 'portality:generator' })
 	event.remove({ mod: 'advancedrocketry' })
 	event.remove({ mod: 'libvulpes' })
 	event.remove({ mod: 'pipez' })
 	event.remove({ mod: 'structurescompass' })
+	event.remove({ mod: 'itemfilters' })
 	event.remove({ input: TE('signalum_dust'), output: TE('signalum_ingot') })
 	event.remove({ output: TE('signalum_dust'), input: TE('signalum_ingot') })
 	event.remove({ output: TE('lightning_charge') })
@@ -744,10 +765,11 @@ function tweaks(event) {
 	event.recipes.createPressing([TE('nickel_plate')], TE('nickel_ingot'))
 
 	event.remove({ id: "chisel:charcoal/raw" })
+	//event.stonecutting("chisel:charcoal/raw", MC('charcoal'))
+	
 	event.remove({ id: AP("charcoal_block") })
-	event.stonecutting("chisel:charcoal/raw", MC('charcoal'))
 	event.stonecutting(AP("charcoal_block"), MC('charcoal'))
-
+	
 	event.remove({ id: CR('splashing/gravel') })
 	event.recipes.createSplashing([
 		Item.of(MC('iron_nugget', 2)).withChance(0.125),
@@ -1166,7 +1188,7 @@ function rocketScience(event) {
 }
 
 function drawersop(event) {
-	let drawer_types = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak']
+	let drawer_types = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped']
 	let drawer_sizes = ['1', '2', '4']
 	event.replaceInput({ id: SD('compacting_drawers_3') }, MC('iron_ingot'), CR('zinc_ingot'))
 	event.remove({ output: SD("upgrade_template") })

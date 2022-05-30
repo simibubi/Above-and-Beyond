@@ -1,0 +1,17 @@
+{
+	"container.autochisel.title": "Auto Chisel",
+    "chisel.tooltip.power.stored": "%s/%s RF",
+    "chisel.tooltip.power.pertick": "%s RF/t",
+	
+	"group.chisel.basalt": "Lavastone",
+	"group.chisel.marble": "Dolomite",
+	"group.chisel.purpur": "Purpur Block",
+	"group.chisel.coal": "Block of Coal",
+	"group.chisel.charcoal": "Block of Charcoal",
+	"group.chisel.quartz": "Block of Quartz",
+	"group.chisel.emerald": "Block of Emerald",
+	"group.chisel.redstone": "Block of Redstone",
+	
+	"group.chisel.metals.bronze": "Block of Tinker's Bronze",
+	"group.chisel.metals.aluminum": "Block of Iron"
+}
