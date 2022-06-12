@@ -1,0 +1,13 @@
+name = "Above and Beyond"
+author = "simibubi"
+version = "1.4"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "a012e31e33e07de911279b4d4e2ed773f9cc6e6bc6c6bb337d8f946421a81340"
+
+[versions]
+forge = "36.2.34"
+minecraft = "1.16.5"
