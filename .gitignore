@@ -12,6 +12,8 @@ saves/**
 schematics/**
 screenshots/**
 themes/**
+backups/**
+test/**
 config.json
 hotbar.nbt
 knownkeys.txt
@@ -23,3 +25,5 @@ servers.dat
 servers.dat_old
 usercache.json
 usernamecache.json
+.curseclient
+minecraftinstance.json
