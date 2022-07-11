@@ -16,7 +16,7 @@ function opposite(face) {
 
 onEvent('entity.spawned', event => {
 	let entity = event.getEntity()
-	if (entity.getType() == "appliedenergistics2:singularity") {
+	/*if (entity.getType() == "appliedenergistics2:singularity") {
 		let item = entity.getItem()
 		if (item == null)
 			return
@@ -26,7 +26,7 @@ onEvent('entity.spawned', event => {
 		entity.setMotionY(0)
 		entity.setMotionZ(0)
 		return
-	}
+	}*/
 	if (entity.getType() != "minecraft:item")
 		return
 	let item = entity.getItem()
@@ -45,26 +45,6 @@ onEvent('entity.spawned', event => {
 	entity.setX(Math.floor(entity.getX()) + .5)
 	entity.setY(Math.floor(entity.getY()) - .5)
 	entity.setZ(Math.floor(entity.getZ()) + .5)
-})
-
-onEvent('server.datapack.first', event => {
-
-	// "Fixes" Extended Caves wiping its config contents
-	let extcaves_conf = java("com.polyvalord.extcaves.config.Config")
-	let suppl_conf = java("net.mehvahdjukaar.supplementaries.configs.ServerConfigs")
-	let no_thankyou = suppl_conf.block.CAGE_ALL_MOBS
-
-	extcaves_conf.gen_block_lavastone = no_thankyou
-	extcaves_conf.gen_block_oldstone = no_thankyou
-	extcaves_conf.gen_vines = no_thankyou
-	extcaves_conf.gen_block_sedimentstone = no_thankyou
-	extcaves_conf.gen_block_dirtstone = no_thankyou
-	extcaves_conf.gen_block_marlstone = no_thankyou
-	extcaves_conf.gen_block_packed_ice = no_thankyou
-	extcaves_conf.gen_mushrooms = no_thankyou
-	extcaves_conf.gen_mosses = no_thankyou
-	extcaves_conf.gen_rock_flints = no_thankyou
-
 })
 
 /*
@@ -205,7 +185,9 @@ onEvent('block.right_click', event => {
 	{
 		let upgradeTier = upgradeIdToBarrelTier.get(event.getItem().getId())
 		let block = event.getBlock()
-		if(block && upgradeTier != undefined)
+		if(block == null) return
+		
+		if(upgradeTier != undefined)
 		{
 			let barrelTier = blockIdToBarrelTier.get(block.getId())
 			if(barrelTier != undefined)
@@ -229,6 +211,22 @@ onEvent('block.right_click', event => {
 				event.getItem().setCount(event.getItem().getCount() - 1)
 				event.cancel()
 			}
+		}
+		else if(block.getId() == "minecraft:spawner" && event.getItem().getId().endsWith("_spawn_egg"))
+		{
+			let nbt = block.getEntityData()
+			if(nbt == null) return
+			
+			// Remove SpawnPotentials list from a spawner's NBT data when using a spawn egg on it
+			// This prevents an issue where certain spawners would still sometimes spawn their original mob
+			nbt.func_82580_o("SpawnData")
+			
+			let data = utils.newMap()
+			data.put("id", "minecraft:zombie")
+			nbt.func_218657_a("SpawnData", data.toNBT())
+			
+			nbt.func_82580_o("SpawnPotentials")
+			block.setEntityData(nbt)
 		}
 	}
 })

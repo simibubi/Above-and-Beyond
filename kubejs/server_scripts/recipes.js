@@ -177,6 +177,7 @@ onEvent('item.tags', event => {
 		.add(/advancedrocketry:.*/)
 		.add(/xreliquary:.*/)
 		.add(/waterstrainer:.*/)
+		.add("desolation:ash_pile")
 		.add(OC("#miners/ores"))
 		.add(PR_C("draw_plate"))
 		.add(PR_C("multimeter"))
@@ -398,6 +399,8 @@ function unwantedRecipes(event) {
 	event.remove({ id: "grapplemod:magnethook" })
 	event.remove({ id: "grapplemod:rockethook" })
 	event.remove({ id: "randomium:duplicate" })
+	event.remove({ id: "fairylights:copy_color" })
+	event.remove({ id: "fairylights:edit_color" })
 	event.remove({ id: "forbidden_arcanus:eternal_stella" })
 	event.remove({ id: OC('miner/ores/redstone_ore') })
 	event.remove({ id: OC('miner/ores/aluminum_ore') })
@@ -459,7 +462,9 @@ function unwantedRecipes(event) {
 	event.remove({ input: TE('earth_charge') })
 	event.remove({ input: "forbidden_arcanus:edelwood_bucket" })
 	event.remove({ output: "forbidden_arcanus:edelwood_bucket" })
-
+	
+	event.remove({ output: "forbidden_arcanus:forbiddenmicon" })
+	
 	event.remove({ id: 'ravencoffee:croissant' })
 	event.remove({ input: 'ravencoffee:croissant' })
 	event.remove({ id: 'ravencoffee:bagel' })
@@ -470,6 +475,11 @@ function unwantedRecipes(event) {
 	event.remove({ id: 'ravencoffee:sandwich_ham' })
 	event.remove({ id: 'ravencoffee:sandwich_beef' })
 	event.remove({ id: 'ravencoffee:sandwich_chicken' })
+	
+	event.remove({ id: 'darkerdepths:rope' })
+	event.remove({ id: 'darkerdepths:resin' })
+	event.remove({ id: 'darkerdepths:amber' })
+	event.remove({ id: 'darkerdepths:amber_block' })
 	
 	event.remove({ id: /projectred-core:(?!(.*_illumar|screwdriver|multimeter|plate)).*/ })
 	event.remove({ id: PR_T('low_load_power_wire') })
@@ -532,8 +542,8 @@ function tweaks(event) {
 	event.remove({ id: "forbidden_arcanus:iron_chain" }) // vanilla recipe conflict. what a world we live in
 	event.recipes.minecraftCraftingShapeless(Item.of("forbidden_arcanus:iron_chain", 3), "minecraft:chain")
 
-	event.remove({ id: "forbidden_arcanus:boom_arrow" })
-	event.shaped("4x forbidden_arcanus:boom_arrow", [
+	event.remove({ id: "archers_paradox:explosive_arrow" })
+	event.shaped("4x archers_paradox:explosive_arrow", [
 		'T',
 		'S',
 		'F'
@@ -1358,6 +1368,38 @@ function unify(event) {
 	// add missing chiller recipes
 	event.recipes.thermal.chiller(CR("zinc_ingot"), [Fluid.of("tconstruct:molten_zinc", 144), TE('chiller_ingot_cast')]).energy(5000)
 	event.recipes.thermal.chiller(CR("brass_ingot"), [Fluid.of("tconstruct:molten_brass", 144), TE('chiller_ingot_cast')]).energy(5000)
+	
+	// darker depths resin unification
+	event.shaped("darkerdepths:amber_block", [
+		'SS',
+		'SS'
+	], {
+		S: "darkerdepths:amber"
+	})
+	event.recipes.minecraftCraftingShapeless("4x darkerdepths:amber", "darkerdepths:amber_block")
+	
+	event.recipes.thermal.crucible(Fluid.of("thermal:resin", 250), ["darkerdepths:amber"]).energy(20)
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "darkerdepths:amber" },
+		"result": {
+			"fluid": "thermal:resin",
+			"amount": 250
+		},
+		"temperature": 200,
+		"time": 20
+	})
+	event.recipes.thermal.crucible(Fluid.of("thermal:resin", 1000), ["darkerdepths:amber_block"]).energy(80)
+	event.custom({
+		"type": "tconstruct:melting",
+		"ingredient": { "item": "darkerdepths:amber_block" },
+		"result": {
+			"fluid": "thermal:resin",
+			"amount": 1000
+		},
+		"temperature": 200,
+		"time": 80
+	})
 }
 
 function trickierWindmills(event) {
@@ -1522,7 +1564,9 @@ function oreProcessing(event) {
 		let fluid_byproduct = TC("molten_" + fluid_byproduct_name)
 
 		event.smelting(Item.of(nugget, 3), crushed)
+		event.blasting(Item.of(nugget, 3), crushed)
 		event.smelting(Item.of(nugget, 1), dust).cookingTime(40)
+		event.blasting(Item.of(nugget, 1), dust).cookingTime(20)
 		event.recipes.createMilling([Item.of(crushed, 1), stone], ore)
 		event.recipes.createMilling([Item.of(dust, 3)], crushed)
 		event.recipes.createCrushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushed)
