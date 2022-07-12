@@ -65,7 +65,7 @@ onEvent('item.tooltip', tooltip => {
 	ore("minecraft:gold_ore", 1, 32)
 	ore("minecraft:diamond_ore", 1, 16)
 
-	tooltip.add("advancedrocketry:planet_id_chip", [`§3How to Use:`, `1. §7Use the Survival Mode recipes to obtain these`, `2. §7Open the UI of your Rocket`, `3. §7Click on the displayed Guidance Computer item`, `4. §7Insert chip into the empty slot`, "§8§o(Using the Planet Selection menu crashes the game)"]);
+	tooltip.add("advancedrocketry:planet_id_chip", [`§3How to Use:`, `1. §7Use the Survival Mode recipes to obtain these`, `2. §7Open the UI of your Rocket`, `3. §7Insert chip into the empty slot`]);
 
 	holds('copper', 5 * 9)
 	holds('iron', 6 * 9)
@@ -163,18 +163,4 @@ onEvent('jei.information', event => {
 	event.add('kubejs:substrate_chaos', catalyst("Catalyst", "Chaos Catalyst").concat([
 		" ", "§8Usage:§0", "Running the §9Chaos Catalyst§0 with any amount of one §9Reagent§0 through an §5Alchemical Laser§0 will §9transmute§0 the Reagent to another. The Transmutation Pairings are §9unique to each World§0."
 	]))
-})
-
-
-onEvent('client.tick', event => {
-	if (event.world.getDimension() != "custommoon:moon")
-		return
-	
-	let player = event.getPlayer()
-	if(!player.isOnGround() && !player.isOnLadder() && !player.isSpectator() && !player.minecraftPlayer.field_71075_bZ.field_75100_b && !client.getMinecraft().func_147113_T())
-	{
-		let dy = player.getMotionY()
-		dy += 0.06
-		player.setMotionY(dy)
-	}
 })

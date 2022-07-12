@@ -61,16 +61,18 @@
 	OverrideGCAir = true
 	#Blocks that are not automatically detected as sealable but should seal.  Format "Mod:Blockname"  for example "minecraft:chest"
 	sealableBlockWhiteList = []
+	#Multiplier on how much O2 an oxygen vent consumes per tick
+	oxygenVentConsumptionMultiplier = 1.0
+	#If true, breaking an extinguished torch will drop an extinguished torch instead of a vanilla torch
+	dropExtinguishedTorches = false
+	#Mod:Blockname  for example "minecraft:chest"
+	torchBlocks = []
 	#Maximum time in minutes that the spacesuit's internal buffer can store O2 for
 	spaceSuitO2Buffer = 30
 	#Blocks that are automatically detected as sealable but should not seal.  Format "Mod:Blockname"  for example "minecraft:chest"
 	sealableBlockBlackList = []
 	#If true, allows players being hurt due to lack of oxygen and allows effects from non-standard atmosphere types
 	EnableAtmosphericEffects = true
-	#Multiplier on how much O2 an oxygen vent consumes per tick
-	oxygenVentConsumptionMultiplier = 1.0
-	#If true, breaking an extinguished torch will drop an extinguished torch instead of a vanilla torch
-	dropExtinguishedTorches = false
 	#Amount of damage inflicted with each tick on an entity in a vacuum
 	#Range: 0 ~ 100
 	vacuumDamage = 1
