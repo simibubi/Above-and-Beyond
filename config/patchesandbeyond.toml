@@ -1,0 +1,56 @@
+
+[Create]
+	#Fixes hose pulleys from Create not consuming input fluid when receiving more than 1000 mB per tick.
+	hosePulleyInputFix = true
+	#Fixes pulley contraptions sometimes phasing through solid blocks when unloaded then reloaded while in motion.
+	ropePulleyFix = true
+	#Fixes bulk blasting setups destroying items when a single input stack yields more than one stack of items.
+	bulkBlastingFix = true
+	#Fixes minecart contraptions spawning at a slight offset when assembled.
+	minecartContraptionOffsetFix = true
+
+[General]
+	#Forces registries to reload after loading an existing world on a dedicated server. Mainly fixes biome shuffling when adding or updating biome mods.
+	#This has no effect on singleplayer or LAN worlds as Forge already fixes biome IDs on those.
+	dedicatedServerRegistryFix = true
+
+[Chisel]
+	#Restores JEI integration for Chisel.
+	jeiIntegrationFix = true
+	#Fixes the auto chisel block having incorrect transparency.
+	autoChiselTransparencyFix = true
+
+[ChiselsAndBits]
+	#Fixes several item duplication bugs caused by bit storage tanks.
+	bitStorageDupeFix = true
+
+[AdvancedRocketry]
+	#When set to true, the space suit will no longer display its installed modules in the top left corner of the screen.
+	#Mainly intended for Create: Above and Beyond as spacesuit gear cannot be customized and comes with pre-installed modules.
+	disableSuitHUD = true
+	#When set to true, replaces the rocket interface with a simplified version which a single inventory slot for inserting planet ID chips into the rocket's guidance computer.
+	#Mainly intended for Create: Above and Beyond as the guidance computer is the only craftable rocket module.
+	simplifiedRocketGUI = true
+	#Fixes gravity modifiers not working on the moon (or other planets).
+	gravityFix = true
+	#Fixes Advanced Rocketry creating backups of its config file on startup.
+	configFix = true
+
+[BiomesOPlenty]
+	#Fixes certain saplings from BOP overwriting their base block with dirt when growing.
+	saplingDirtFix = true
+
+[AppliedEnergistics2]
+	#Fixes glitchy collisions from singularities and charged certus quartz when created by a pair of Create crushing wheels.
+	singularityCrushingFix = true
+	#Give crystal seeds from AE2 the same collision box as a standard item, fixes glitchy behaviour when dropped from a Create chute/funnel.
+	crystalSizeFix = true
+	#Remove the random velocity applied to quantum-entangled singularities from AE2 when created by exploding singularities.
+	removeQESingularityVelocity = true
+
+[Thermal]
+	#Fixes dynamos from Thermal becoming waterlogged when loading a world previously played with a version of Thermal Foundation older than 1.5.0.14.
+	dynamoDataFix = true
+	#Fixes grenades from Thermal being registered with an incorrect name on Thermal Foundation 1.5.0.14.
+	grenadeRegistrationFix = true
+
