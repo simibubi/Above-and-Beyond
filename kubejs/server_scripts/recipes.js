@@ -1300,6 +1300,11 @@ function rubberMatters(event) {
 	overrideTreeOutput(TE('devices/tree_extractor/tree_extractor_dark_oak'), MC('dark_oak_log'), MC('dark_oak_leaves'))
 	overrideTreeOutput(TE('compat/biomesoplenty/tree_extractor_bop_maple'), MC('oak_log'), 'biomesoplenty:maple_leaves')
 
+	// TODO: KubeJS-Thermal eol/1.16 has a bug and can't recognize output for tree_extractor_boost
+	// Replace this line after updating KubeJS-Thermal to a more recent version
+	// event.recipes.thermal.tree_extractor_boost(['waterstrainer:fertilizer']).cycles(8).output(1.5);
+	event.recipes.thermal.tree_extractor_boost(['waterstrainer:fertilizer']).cycles(8).merge({output: 1.5});
+
 	event.remove({ id: CR('crafting/kinetics/belt_connector') })
 	event.shaped(CR('belt_connector', 3), [
 		'SSS',
@@ -2823,7 +2828,7 @@ function trading(event) {
 	});
 }
 
-// Program 
+// Program
 
 events.listen('player.chat', function (event) {
 	// Check if message equals creeper, ignoring case
@@ -2847,7 +2852,3 @@ events.listen('player.chat', function (event) {
 		event.cancel()
 	}
 })
-
-
-
-
